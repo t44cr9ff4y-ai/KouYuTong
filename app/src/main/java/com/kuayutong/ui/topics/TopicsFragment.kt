@@ -45,7 +45,7 @@ class TopicsFragment : Fragment() {
             // Navigate to scene list for this level
             val sceneFragment = SceneListFragment.newInstance(levelItem.level.code, levelItem.level.displayName)
             parentFragmentManager.beginTransaction()
-                .replace(id, sceneFragment)
+                .replace(R.id.fragment_container, sceneFragment)
                 .addToBackStack(null)
                 .commit()
         }

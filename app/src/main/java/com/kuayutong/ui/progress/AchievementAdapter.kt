@@ -1,6 +1,7 @@
 package com.kuayutong.ui.progress
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -24,7 +25,7 @@ class AchievementAdapter(
 
     override fun getItemCount(): Int = achievements.size
 
-    inner class ViewHolder(android.view.View) : RecyclerView.ViewHolder(android.view.View) {
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val tvEmoji: TextView = itemView.findViewById(R.id.tv_achievement_emoji)
         private val tvName: TextView = itemView.findViewById(R.id.tv_achievement_name)
         private val tvDesc: TextView = itemView.findViewById(R.id.tv_achievement_desc)

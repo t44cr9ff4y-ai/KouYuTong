@@ -1,9 +1,9 @@
 package com.kuayutong.ui.topics
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
 import com.kuayutong.R
 import com.kuayutong.data.AppDatabase
@@ -29,7 +29,7 @@ class SceneAdapter(
 
     override fun getItemCount(): Int = scenes.size
 
-    inner class SceneViewHolder(android.view.View) : RecyclerView.ViewHolder(android.view.View) {
+    inner class SceneViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val tvNumber: android.widget.TextView = itemView.findViewById(R.id.tv_scene_number)
         private val tvName: android.widget.TextView = itemView.findViewById(R.id.tv_scene_name)
         private val progressBar: android.widget.ProgressBar = itemView.findViewById(R.id.progress_scene)
