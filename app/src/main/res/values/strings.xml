@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">口语通</string>
+    
+    <!-- Navigation -->
+    <string name="nav_practice">练习</string>
+    <string name="nav_topics">主题</string>
+    <string name="nav_progress">进度</string>
+    
+    <!-- Practice Page -->
+    <string name="practice_select_level">选择等级</string>
+    <string name="practice_hint">输入英文翻译…</string>
+    <string name="practice_submit">提交</string>
+    <string name="practice_next">下一句</string>
+    <string name="practice_prev">上一句</string>
+    <string name="practice_hint_btn">提示</string>
+    <string name="practice_correct">正确！</string>
+    <string name="practice_incorrect">答案不正确，请重试</string>
+    
+    <!-- Topics Page -->
+    <string name="topics_title">主题</string>
+    <string name="topics_scenes">场景</string>
+    <string name="topics_sentences">句子</string>
+    
+    <!-- Progress Page -->
+    <string name="progress_title">学习进度</string>
+    <string name="progress_stats">学习统计</string>
+    <string name="progress_total_practice">总练习次数</string>
+    <string name="progress_accuracy">正确率</string>
+    <string name="progress_mastered">掌握句子</string>
+    <string name="progress_streak">连续天数</string>
+    <string name="progress_overall">总体进度</string>
+    <string name="progress_achievements">成就徽章</string>
+    
+    <!-- CEFR Levels -->
+    <string name="level_a1_entry">入门级A1</string>
+    <string name="level_a1_basic">初级A1</string>
+    <string name="level_a1_advanced">高级A1</string>
+    <string name="level_a2">A2</string>
+    <string name="level_b1_basic">初级B1</string>
+    <string name="level_b1_advanced">高级B1</string>
+    <string name="level_b2_basic">初级B2</string>
+    <string name="level_b2_advanced">高级B2</string>
+    <string name="level_c1">C1</string>
+    <string name="level_c2">C2</string>
+    
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+        
+        <!-- Level Selector Button -->
+        <Button
+            android:id="@+id/btn_level_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/practice_select_level"
+            android:backgroundTint="@color/primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        
+        <!-- Chinese Sentence Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_sentence"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/surface"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_level_selector">
+            
+            <TextView
+                android:id="@+id/tv_chinese_sentence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:text="你好，世界"
+                android:textColor="@color/text_primary"
+                android:textSize="24sp"
+                android:textAlignment="center" />
+            
+        </androidx.cardview.widget.CardView>
+        
+        <!-- English Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_english_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_sentence">
+            
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_english_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/practice_hint"
+                android:inputType="text"
+                android:maxLines="3" />
+            
+        </com.google.android.material.textfield.TextInputLayout>
+        
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/practice_submit"
+            android:backgroundTint="@color/primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_english_input" />
+        
+        <!-- Result Message -->
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_submit" />
+        
+        <!-- Hint Button -->
+        <Button
+            android:id="@+id/btn_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/practice_hint_btn"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_result" />
+        
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:id="@+id/layout_navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_hint">
+            
+            <Button
+                android:id="@+id/btn_prev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/practice_prev"
+                android:backgroundTint="@color/text_secondary" />
+            
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="@string/practice_next"
+                android:backgroundTint="@color/primary"
+                android:enabled="false" />
+            
+        </LinearLayout>
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</ScrollView>
