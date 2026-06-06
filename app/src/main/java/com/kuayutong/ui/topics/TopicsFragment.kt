@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kuayutong.KouYuTongApplication
+import com.kuayutong.R
 import com.kuayutong.data.model.CefrLevel
 import com.kuayutong.databinding.FragmentTopicsBinding
 
@@ -17,7 +18,7 @@ class TopicsFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel: TopicsViewModel by viewModels {
-        TopicsViewModelFactory((requireActivity().application as KouYuTongApplication).database)
+        TopicsViewModelFactory(KouYuTongApplication.database)
     }
 
     private lateinit var adapter: LevelAdapter

@@ -49,7 +49,7 @@ class SceneListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         tvTitle.text = levelName
 
-        val database = (requireActivity().application as KouYuTongApplication).database
+        val database = KouYuTongApplication.database
 
         lifecycleScope.launch {
             val scenes = database.sentenceDao().getScenesByLevel(levelCode)

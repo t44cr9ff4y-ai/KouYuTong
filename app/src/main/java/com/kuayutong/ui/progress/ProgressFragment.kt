@@ -16,7 +16,7 @@ class ProgressFragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel: ProgressViewModel by viewModels {
-        ProgressViewModelFactory((requireActivity().application as KouYuTongApplication).database)
+        ProgressViewModelFactory(KouYuTongApplication.database)
     }
 
     private lateinit var achievementAdapter: AchievementAdapter
