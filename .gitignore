@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Android
+*.apk
+*.ap_
+*.aab
+local.properties
+.idea/
+*.iml
+.gradle/
+build/
+*/build/
+app/release/
+
+# Keystore files
+*.jks
+*.keystore
