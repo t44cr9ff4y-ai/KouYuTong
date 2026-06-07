@@ -1571,7 +1571,7 @@ object NewConceptData {
         Triple("吸烟有害健康。", "Smoking is harmful to health.", "戒烟"),
         Triple("少喝酒对身体好。", "Drinking less is good for the body.", "限酒"),
         Triple("保持积极的心态。", "Keep a positive attitude.", "心态"),
-        Triple("学会说"不"。", "Learn to say 'no'.", "边界"),
+        Triple("学会说「不」。", "Learn to say 'no'.", "边界"),
         Triple("不要和别人比较。", "Don't compare with others.", "比较"),
         Triple("接受不完美的自己。", "Accept your imperfect self.", "接纳"),
         Triple("早睡早起身体好。", "Early to bed, early to rise makes a man healthy.", "养生"),
