@@ -53,7 +53,6 @@ class PracticeFragment : Fragment() {
                 binding.tvResult.visibility = View.VISIBLE
                 if (message == "正确！") {
                     binding.tvResult.setTextColor(resources.getColor(R.color.success, null))
-                    // Play TTS on correct answer
                     viewModel.currentSentence.value?.let { sentence ->
                         TtsManager.speak(sentence.englishAnswer)
                     }
@@ -73,7 +72,6 @@ class PracticeFragment : Fragment() {
             if (hint.isNotEmpty()) {
                 binding.tvResult.text = hint
                 binding.tvResult.setTextColor(resources.getColor(R.color.warning, null))
-                // Play TTS when hint is shown (after 2 wrong attempts)
                 viewModel.currentSentence.value?.let { sentence ->
                     TtsManager.speak(sentence.englishAnswer)
                 }
@@ -82,6 +80,34 @@ class PracticeFragment : Fragment() {
 
         viewModel.canGoNext.observe(viewLifecycleOwner) { canGo ->
             binding.btnNext.isEnabled = canGo
+        }
+
+        // Progress text observer
+        viewModel.progressText.observe(viewLifecycleOwner) { progress ->
+            binding.tvProgress.text = progress
+        }
+
+        // Mode switch observer
+        viewModel.currentMode.observe(viewLifecycleOwner) { mode ->
+            when (mode) {
+                PracticeMode.MODE_PRACTICE -> {
+                    binding.btnModePractice.setBackgroundTintList(
+                        resources.getColorStateList(R.color.primary, null)
+                    )
+                    binding.btnModeReview.setBackgroundTintList(
+                        resources.getColorStateList(R.color.text_secondary, null)
+                    )
+                }
+                PracticeMode.MODE_REVIEW -> {
+                    binding.btnModePractice.setBackgroundTintList(
+                        resources.getColorStateList(R.color.text_secondary, null)
+                    )
+                    binding.btnModeReview.setBackgroundTintList(
+                        resources.getColorStateList(R.color.primary, null)
+                    )
+                }
+                null -> {}
+            }
         }
     }
 
@@ -107,6 +133,20 @@ class PracticeFragment : Fragment() {
 
         binding.btnLevelSelector.setOnClickListener {
             showLevelSelectorDialog()
+        }
+
+        // Mode switch buttons
+        binding.btnModePractice.setOnClickListener {
+            viewModel.switchMode(PracticeMode.MODE_PRACTICE)
+        }
+
+        binding.btnModeReview.setOnClickListener {
+            viewModel.switchMode(PracticeMode.MODE_REVIEW)
+        }
+
+        // Settings button
+        binding.btnSettings.setOnClickListener {
+            // TODO: open settings fragment/dialog
         }
     }
 

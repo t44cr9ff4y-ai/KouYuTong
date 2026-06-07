@@ -10,15 +10,74 @@
         android:layout_height="wrap_content"
         android:padding="24dp">
         
+        <!-- Mode Switch Buttons -->
+        <LinearLayout
+            android:id="@+id/layout_mode_switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            
+            <Button
+                android:id="@+id/btn_mode_practice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:text="学习新句"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white" />
+            
+            <Button
+                android:id="@+id/btn_mode_review"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:text="复习旧句"
+                android:backgroundTint="@color/text_secondary"
+                android:textColor="@color/white" />
+            
+        </LinearLayout>
+        
+        <!-- Progress Text -->
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="今日已学 0/20 句"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_mode_switch" />
+        
         <!-- Level Selector Button -->
         <Button
             android:id="@+id/btn_level_selector"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="@string/practice_select_level"
             android:backgroundTint="@color/primary"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/tv_progress" />
+        
+        <!-- Settings Button (top right) -->
+        <ImageButton
+            android:id="@+id/btn_settings"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@android:drawable/ic_menu_preferences"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_progress" />
         
         <!-- Chinese Sentence Card -->
         <androidx.cardview.widget.CardView
@@ -101,7 +160,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_result" />
         
-        <!-- Navigation Buttons -->
+        <!-- Navigation Buttons (Prev/Next) -->
         <LinearLayout
             android:id="@+id/layout_navigation"
             android:layout_width="0dp"
