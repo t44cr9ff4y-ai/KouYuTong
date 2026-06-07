@@ -17,6 +17,12 @@ interface SentenceDao {
     @Query("SELECT COUNT(*) FROM sentences")
     suspend fun getTotalSentenceCount(): Int
 
+    @Query("SELECT * FROM sentences WHERE cefrLevel = :level ORDER BY sentenceId")
+    suspend fun getSentencesByLevel(level: String): List<SentenceEntity>
+
+    @Query("SELECT * FROM sentences WHERE cefrLevel = :level AND sceneId = :sceneId ORDER BY sentenceId")
+    suspend fun getSentencesByLevelAndScene(level: String, sceneId: Int): List<SentenceEntity>
+
     @Query("SELECT * FROM sentences WHERE cefrLevel = :level AND sceneId = :sceneId ORDER BY sentenceId")
     suspend fun getSentencesByScene(level: String, sceneId: Int): List<SentenceEntity>
 
@@ -24,7 +30,7 @@ interface SentenceDao {
     suspend fun getNewSentencesByLevel(level: String, limit: Int): List<SentenceEntity>
 
     @Query("SELECT DISTINCT cefrLevel FROM sentences ORDER BY cefrLevel")
-    suspend fun getAllCefrLevels(): List<String>
+    suspend fun getAllLevels(): List<String>
 
     @Query("SELECT COUNT(*) FROM sentences WHERE cefrLevel LIKE :prefix || '%'")
     suspend fun getCountByLevelPrefix(prefix: String): Int
