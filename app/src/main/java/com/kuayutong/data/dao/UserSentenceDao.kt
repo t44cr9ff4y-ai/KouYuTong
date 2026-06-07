@@ -50,4 +50,31 @@ interface UserSentenceDao {
 
     @Query("SELECT COUNT(*) FROM user_sentences WHERE level = :level")
     suspend fun getCountByLevel(level: String): Int
+
+    @Query("SELECT * FROM user_sentences WHERE sentenceId = :sentenceId ORDER BY translatedAt DESC LIMIT 1")
+    suspend fun getLatestUserSentence(sentenceId: Long): UserSentenceEntity?
+
+    @Query("SELECT COUNT(*) FROM user_sentences")
+    suspend fun getTotalPracticeCount(): Int
+
+    @Query("SELECT COUNT(*) FROM user_sentences WHERE isCorrect = 1")
+    suspend fun getTotalCorrectCount(): Int
+
+    @Query("SELECT COUNT(*) FROM user_sentences WHERE level = :level AND isCorrect = 1")
+    suspend fun getCorrectCountByLevel(level: String): Int
+
+    @Query("SELECT COUNT(*) FROM user_sentences WHERE level = :level AND isCorrect = 1")
+    suspend fun getMasteredSentenceCountByLevel(level: String): Int
+
+    @Query("SELECT DISTINCT translatedAt FROM user_sentences ORDER BY translatedAt DESC")
+    suspend fun getAllPracticeDates(): List<Long>
+
+    @Query("""
+        SELECT COUNT(*) FROM user_sentences 
+        INNER JOIN sentences ON user_sentences.sentenceId = sentences.id 
+        WHERE user_sentences.level = :levelCode 
+          AND sentences.sceneId = :sceneId 
+          AND user_sentences.isCorrect = 1
+    """)
+    suspend fun getMasteredCountByScene(levelCode: String, sceneId: Int): Int
 }

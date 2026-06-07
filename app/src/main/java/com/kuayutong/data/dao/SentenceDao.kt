@@ -28,4 +28,13 @@ interface SentenceDao {
 
     @Query("SELECT COUNT(*) FROM sentences WHERE cefrLevel LIKE :prefix || '%'")
     suspend fun getCountByLevelPrefix(prefix: String): Int
+
+    @Query("SELECT COUNT(*) FROM sentences WHERE cefrLevel = :level")
+    suspend fun getSentenceCountByLevel(level: String): Int
+
+    @Query("SELECT DISTINCT sceneId, sceneName FROM sentences WHERE cefrLevel = :level ORDER BY sceneId")
+    suspend fun getScenesByLevel(level: String): List<SceneInfo>
+
+    @Query("SELECT COUNT(*) FROM sentences WHERE cefrLevel = :levelCode AND sceneId = :sceneId")
+    suspend fun getSentenceCountByLevelAndScene(levelCode: String, sceneId: Int): Int
 }
