@@ -48,7 +48,19 @@ object SentenceData {
         Triple("你还好吗？", "Are you okay?", "关心询问"),
         Triple("祝你周末愉快。", "Have a good weekend.", "祝福表达"),
         Triple("请等一下。", "Please wait a moment.", "请求表达"),
-    ) = listOf(
+        Triple("慢走。", "Take care.", "告别用语"),
+        Triple("你也是学生吗？", "Are you a student too?", "一般疑问句"),
+        Triple("我们走吧。", "Let's go.", "提议表达"),
+        Triple("你今天忙吗？", "Are you busy today?", "一般疑问句"),
+        Triple("我有时间。", "I have time.", "状态表达"),
+        Triple("现在不行。", "Not now.", "否定表达"),
+        Triple("明天见。", "See you tomorrow.", "告别用语"),
+        Triple("你住在哪里？", "Where do you live?", "居住询问"),
+        Triple("我住在北京。", "I live in Beijing.", "居住表达"),
+        Triple("你有什么问题吗？", "Do you have any questions?", "疑问句"),
+    )
+
+    val a1EntryFamily = listOf(
         Triple("这是我的妈妈。", "This is my mother.", "指示代词"),
         Triple("我有爸爸和一个姐姐。", "I have a father and an older sister.", "家庭成员词汇"),
         Triple("他是我哥哥。", "He is my older brother.", "家庭成员称谓"),
@@ -89,6 +101,16 @@ object SentenceData {
         Triple("我家人都很健康。", "My family members are all healthy.", "健康描述"),
         Triple("我爱我的爸爸妈妈。", "I love my mom and dad.", "情感表达"),
         Triple("周末我们去看爷爷奶奶。", "We visit our grandparents on weekends.", "计划表达"),
+        Triple("我哥哥在工作。", "My older brother is working.", "家庭成员+工作"),
+        Triple("我姐姐结婚了。", "My older sister is married.", "家庭成员+状态"),
+        Triple("我有一个儿子。", "I have a son.", "家庭成员"),
+        Triple("我女儿五岁了。", "My daughter is five years old.", "年龄"),
+        Triple("我们住在一起。", "We live together.", "居住"),
+        Triple("我妈妈不工作。", "My mother doesn't work.", "否定+工作"),
+        Triple("我爸爸做饭。", "My father cooks.", "日常活动"),
+        Triple("我们家有四口人。", "There are four people in my family.", "数字"),
+        Triple("我妹妹在上学。", "My younger sister goes to school.", "教育"),
+        Triple("我爱我的家。", "I love my home.", "情感"),
     )
 
     val a1EntryObjects = listOf(
@@ -132,6 +154,16 @@ object SentenceData {
         Triple("请把窗户关上。", "Please close the window.", "祈使句"),
         Triple("谁的尺子在这里？", "Whose ruler is this?", "疑问代词"),
         Triple("桌子下面有一只猫。", "There is a cat under the table.", "位置+There be"),
+        Triple("这是一张纸。", "This is a piece of paper.", "名词词汇"),
+        Triple("我的包在椅子上。", "My bag is on the chair.", "位置表达"),
+        Triple("那支笔是新的。", "That pen is new.", "形容词描述"),
+        Triple("请给我一杯水。", "Please give me a glass of water.", "请求表达"),
+        Triple("你有橡皮吗？", "Do you have an eraser?", "物品询问"),
+        Triple("这本书很有趣。", "This book is very interesting.", "形容词描述"),
+        Triple("桌子上有一些钱。", "There is some money on the table.", "There be+不定"),
+        Triple("我的手机没电了。", "My phone has no battery.", "状态描述"),
+        Triple("请把书递给我。", "Please pass me the book.", "祈使句"),
+        Triple("那些花是送给你的。", "Those flowers are for you.", "所属表达"),
     )
 
     val a1EntryNumbers = listOf(
@@ -175,6 +207,15 @@ object SentenceData {
         Triple("我每天学习两个小时。", "I study for two hours every day.", "时段表达"),
         Triple("昨天是五月五号。", "Yesterday was May fifth.", "过去日期"),
         Triple("现在是整点。", "It is exactly on the hour.", "时间表达"),
+        Triple("现在九点了。", "It is nine o'clock now.", "时间点"),
+        Triple("星期三在星期二之后。", "Wednesday comes after Tuesday.", "星期关系"),
+        Triple("我的电话是123456。", "My phone number is 123456.", "数字表达"),
+        Triple("三减二等于一。", "Three minus two equals one.", "数字运算"),
+        Triple("我晚上八点吃饭。", "I eat dinner at eight in the evening.", "作息+时间"),
+        Triple("今天几度？", "What is the temperature today?", "温度询问"),
+        Triple("一月有三十一天。", "January has thirty-one days.", "月份知识"),
+        Triple("我九点上班。", "I start work at nine.", "时间安排"),
+        Triple("一周有五天完成工作。", "There are five working days in a week.", "数量表达"),
     )
 
     val a1EntryFood = listOf(
@@ -218,6 +259,16 @@ object SentenceData {
         Triple("这鱼很新鲜。", "This fish is very fresh.", "食物品质"),
         Triple("我通常喝白开水。", "I usually drink plain water.", "习惯表达"),
         Triple("晚饭准备好了。", "Dinner is ready.", "状态表达"),
+        Triple("我吃面包。", "I eat bread.", "饮食"),
+        Triple("请给我一碗米饭。", "Please give me a bowl of rice.", "请求表达"),
+        Triple("这个苹果很脆。", "This apple is crunchy.", "食物品质"),
+        Triple("我不喝可乐。", "I don't drink cola.", "饮食偏好"),
+        Triple("午餐在十二点。", "Lunch is at twelve.", "餐食时间"),
+        Triple("这个蛋糕很甜。", "This cake is very sweet.", "味道描述"),
+        Triple("我想吃水果。", "I want to eat fruit.", "意愿表达"),
+        Triple("咖啡很苦。", "Coffee is bitter.", "味道描述"),
+        Triple("请递给我勺子。", "Please pass me the spoon.", "请求表达"),
+        Triple("这家餐厅很好。", "This restaurant is very good.", "评价表达"),
     )
 
     val a1EntryWeather = listOf(
@@ -261,6 +312,16 @@ object SentenceData {
         Triple("我喜欢雪。", "I like snow.", "喜好表达"),
         Triple("注意防寒。", "Keep warm.", "天气提醒"),
         Triple("明天去公园吧。", "Let's go to the park tomorrow.", "提议+天气"),
+        Triple("今天有风。", "It is windy today.", "天气描述"),
+        Triple("明天会下雨。", "It will rain tomorrow.", "天气预测"),
+        Triple("今年冬天很冷。", "This winter is very cold.", "季节描述"),
+        Triple("春天来了。", "Spring is coming.", "季节变化"),
+        Triple("外面刮风了。", "It is windy outside.", "天气现象"),
+        Triple("天气干燥。", "The weather is dry.", "天气描述"),
+        Triple("夏天下冰雹。", "It hails in summer.", "极端天气"),
+        Triple("我不喜欢冬天。", "I don't like winter.", "天气偏好"),
+        Triple("秋天很舒服。", "Autumn is very comfortable.", "季节描述"),
+        Triple("记得带伞。", "Remember to bring an umbrella.", "天气提醒"),
     )
 
     val a1EntryTraffic = listOf(
@@ -304,6 +365,16 @@ object SentenceData {
         Triple("轮渡在那边。", "The ferry is over there.", "交通设施"),
         Triple("第一班车几点？", "What time is the first bus?", "时间询问"),
         Triple("公交车票多少钱？", "How much is the bus fare?", "价格询问"),
+        Triple("我走路回家。", "I walk home.", "日常交通"),
+        Triple("车站在那边。", "The station is over there.", "方位表达"),
+        Triple("这辆车是出租车。", "This car is a taxi.", "交通方式"),
+        Triple("请上车。", "Please get in the car.", "指令表达"),
+        Triple("走路十分钟。", "Walking takes ten minutes.", "时间+方式"),
+        Triple("坐公交车去。", "Go by bus.", "交通方式"),
+        Triple("这条路堵车。", "This road is congested.", "交通状况"),
+        Triple("问一下警察。", "Ask the police.", "建议表达"),
+        Triple("到站了。", "We arrived at the station.", "到达表达"),
+        Triple("买票。", "Buy a ticket.", "购票行为"),
     )
 
     val a1EntryClothes = listOf(
@@ -347,6 +418,16 @@ object SentenceData {
         Triple("付现金还是刷卡？", "Pay by cash or card?", "支付方式"),
         Triple("这个款式很流行。", "This style is very popular.", "时尚表达"),
         Triple("请给我包起来。", "Please wrap it up for me.", "购物用语"),
+        Triple("这件衣服很便宜。", "This shirt is cheap.", "价格评价"),
+        Triple("我要买这件。", "I want to buy this one.", "购物决定"),
+        Triple("这件衣服是红色的。", "This one is red.", "颜色描述"),
+        Triple("商店九点关门。", "The shop closes at nine.", "营业时间"),
+        Triple("我可以退货吗？", "Can I return it?", "请求表达"),
+        Triple("这件衣服是新的。", "This is new.", "新旧描述"),
+        Triple("我不喜欢这件。", "I don't like this one.", "喜好表达"),
+        Triple("还有别的颜色吗？", "Do you have other colors?", "颜色询问"),
+        Triple("这件衣服很舒服。", "This is very comfortable.", "穿着感受"),
+        Triple("我买两件。", "I'll buy two.", "购物数量"),
     )
 
     val a1EntryHealth = listOf(
@@ -390,6 +471,16 @@ object SentenceData {
         Triple("坐直不要驼背。", "Sit up straight, don't slouch.", "体态提醒"),
         Triple("多笑笑心情好。", "Smile more to feel good.", "心情建议"),
         Triple("注意身体别感冒。", "Take care and don't catch a cold.", "健康叮嘱"),
+        Triple("我头不疼。", "My head doesn't hurt.", "身体不适"),
+        Triple("请吃药。", "Please take medicine.", "建议表达"),
+        Triple("你感冒了吗？", "Do you have a cold?", "病情询问"),
+        Triple("我咳嗽。", "I have a cough.", "疾病表达"),
+        Triple("多休息。", "Rest more.", "健康建议"),
+        Triple("我身体很健康。", "I am very healthy.", "健康描述"),
+        Triple("别担心。", "Don't worry.", "关心表达"),
+        Triple("早睡觉。", "Sleep early.", "健康建议"),
+        Triple("喝温水。", "Drink warm water.", "健康建议"),
+        Triple("看医生。", "See a doctor.", "健康建议"),
     )
 
     val a1EntrySchool = listOf(
@@ -433,6 +524,16 @@ object SentenceData {
         Triple("朗读声音要大一点。", "Read aloud a bit louder.", "课堂指示"),
         Triple("中午有午休。", "There is a lunch break at noon.", "学校作息"),
         Triple("放学后一起玩。", "Let's play together after school.", "提议表达"),
+        Triple("今天是周一。", "Today is Monday.", "时间表达"),
+        Triple("我八点去学校。", "I go to school at eight.", "日常作息"),
+        Triple("学校很大。", "The school is very big.", "学校场景"),
+        Triple("我喜欢学校。", "I like school.", "喜好表达"),
+        Triple("老师很好。", "The teacher is very good.", "人物描述"),
+        Triple("我们上语文课。", "We have Chinese class.", "科目表达"),
+        Triple("下课了休息。", "Class is over, let's rest.", "学校场景"),
+        Triple("我在三年级。", "I am in third grade.", "班级询问"),
+        Triple("学校很漂亮。", "The school is very beautiful.", "学校场景"),
+        Triple("我不喜欢考试。", "I don't like exams.", "观点表达"),
     )
 
     val a1bMyHome = listOf(
@@ -476,6 +577,16 @@ object SentenceData {
         Triple("每间房都有一扇窗户。", "Every room has a window.", "数量+特征"),
         Triple("这是我们住过的最好的房子。", "This is the best house we have lived in.", "最高级+评价"),
         Triple("家里的灯很明亮。", "The lights at home are very bright.", "状态描述"),
+        Triple("我家住在三楼。", "My home is on the third floor.", "楼层表达"),
+        Triple("楼梯在房子的左边。", "The stairs are on the left side of the house.", "方位表达"),
+        Triple("我家有无线网络。", "My home has Wi-Fi.", "设施表达"),
+        Triple("后院可以停车。", "You can park cars in the backyard.", "功能表达"),
+        Triple("我家养了一只猫。", "My family has a cat.", "宠物表达"),
+        Triple("周末我在家做饭。", "I cook at home on weekends.", "日常表达"),
+        Triple("我的卧室朝东。", "My bedroom faces east.", "方位表达"),
+        Triple("家里很安静。", "It is very quiet at home.", "状态描述"),
+        Triple("我邀请朋友来我家。", "I invite friends to my home.", "社交表达"),
+        Triple("这是我童年的家。", "This is the home of my childhood.", "情感表达"),
     )
 
     val a1bWork = listOf(
@@ -519,6 +630,16 @@ object SentenceData {
         Triple("她在公司工作了五年。", "She has worked in the company for five years.", "持续时间"),
         Triple("今天的工作比昨天少。", "There is less work today than yesterday.", "比较级"),
         Triple("我的办公桌上有一台电脑。", "There is a computer on my desk.", "位置表达"),
+        Triple("我坐电梯上楼。", "I take the elevator upstairs.", "交通表达"),
+        Triple("老板今天不在办公室。", "The boss is not in the office today.", "状态表达"),
+        Triple("我们中午一起吃饭。", "We have lunch together at noon.", "日常表达"),
+        Triple("我下午有个会议。", "I have a meeting in the afternoon.", "日程表达"),
+        Triple("他工作很认真。", "He works very seriously.", "态度描述"),
+        Triple("公司提供午餐。", "The company provides lunch.", "福利表达"),
+        Triple("我需要打印文件。", "I need to print documents.", "工作需求"),
+        Triple("同事帮我解决了问题。", "My colleague helped me solve the problem.", "帮助表达"),
+        Triple("我坐地铁去上班。", "I take the subway to work.", "交通方式"),
+        Triple("周五我们提前下班。", "We get off work early on Fridays.", "工作时间"),
     )
 
     val a1bHobbies = listOf(
@@ -562,6 +683,16 @@ object SentenceData {
         Triple("你觉得哪种运动最有趣？", "Which sport do you think is the most interesting?", "最高级+询问"),
         Triple("我花了两年学会弹吉他。", "It took me two years to learn to play the guitar.", "时间+技能"),
         Triple("放假的时候我喜欢做手工。", "I like doing crafts during holidays.", "爱好+时间"),
+        Triple("我喜欢看喜剧片。", "I like watching comedy films.", "爱好表达"),
+        Triple("他经常去健身房。", "He often goes to the gym.", "频度表达"),
+        Triple("周末我想去野餐。", "I want to go for a picnic on weekends.", "计划表达"),
+        Triple("她喜欢喝咖啡。", "She likes drinking coffee.", "喜好表达"),
+        Triple("我学过跳舞。", "I learned to dance.", "过去时"),
+        Triple("他玩游戏很厉害。", "He is very good at playing games.", "能力表达"),
+        Triple("我妹妹喜欢画画。", "My younger sister likes drawing.", "喜好表达"),
+        Triple("我们一起看球赛吧。", "Let's watch the ball game together.", "提议表达"),
+        Triple("她每天练瑜伽。", "She practices yoga every day.", "日常表达"),
+        Triple("这是我最喜欢的爱好。", "This is my favorite hobby.", "最高级"),
     )
 
     val a1bDaily = listOf(
@@ -605,6 +736,16 @@ object SentenceData {
         Triple("她每天早上跑步。", "She runs every morning.", "运动习惯"),
         Triple("今天比昨天更忙。", "Today is busier than yesterday.", "比较级+日程"),
         Triple("晚饭是我一天中最重要的一餐。", "Dinner is the most important meal of my day.", "最高级+饮食"),
+        Triple("我每天早上喝一杯水。", "I drink a glass of water every morning.", "日常习惯"),
+        Triple("晚上我洗个澡。", "I take a shower in the evening.", "日常活动"),
+        Triple("我通常九点吃早餐。", "I usually have breakfast at nine.", "日常作息"),
+        Triple("下午我喜欢喝咖啡。", "I like to drink coffee in the afternoon.", "日常习惯"),
+        Triple("我晚上睡觉前看书。", "I read a book before going to bed at night.", "睡前习惯"),
+        Triple("早上我要赶地铁。", "I have to catch the subway in the morning.", "日常通勤"),
+        Triple("我每天吃三顿饭。", "I eat three meals every day.", "饮食习惯"),
+        Triple("晚上我和家人一起看电视。", "In the evening I watch TV with my family.", "家庭活动"),
+        Triple("我周末睡懒觉。", "I sleep in on weekends.", "周末习惯"),
+        Triple("我下午会打个盹。", "I take a nap in the afternoon.", "日常习惯"),
     )
 
     val a1bDirections = listOf(
@@ -648,6 +789,16 @@ object SentenceData {
         Triple("北边那栋白色建筑就是。", "That white building on the north side is it.", "地标+方位"),
         Triple("跟我走，我知道路。", "Follow me, I know the way.", "引导表达"),
         Triple("这条街比那条街更热闹。", "This street is busier than that one.", "比较级+街道"),
+        Triple("请问地铁站怎么走？", "Excuse me, how do I get to the subway station?", "问路"),
+        Triple("一直往前走。", "Go straight ahead.", "方向指示"),
+        Triple("在红绿灯右转。", "Turn right at the traffic light.", "方向指示"),
+        Triple("银行在我左边。", "The bank is on my left.", "方位表达"),
+        Triple("学校在公园旁边。", "The school is next to the park.", "位置表达"),
+        Triple("我迷路了。", "I am lost.", "状态表达"),
+        Triple("你能带我去吗？", "Can you take me there?", "求助表达"),
+        Triple("地图上说往北走。", "The map says to go north.", "地图使用"),
+        Triple("出地铁后左转。", "Turn left after exiting the subway.", "方向指示"),
+        Triple("前边就是车站了。", "The station is right ahead.", "位置表达"),
     )
 
     val a1bRestaurant = listOf(
@@ -691,6 +842,16 @@ object SentenceData {
         Triple("这里的菜量很大。", "The portions here are very big.", "份量评价"),
         Triple("一共多少钱？", "How much is the total?", "结账询问"),
         Triple("这家餐厅是附近最好的。", "This is the best restaurant nearby.", "最高级+评价"),
+        Triple("我想吃中餐。", "I want to eat Chinese food.", "饮食偏好"),
+        Triple("服务员，点菜。", "Waiter, I would like to order.", "点餐"),
+        Triple("这杯饮料很甜。", "This drink is very sweet.", "口味描述"),
+        Triple("我饿了。", "I am hungry.", "状态表达"),
+        Triple("我们要结账。", "We would like to pay the bill.", "结账"),
+        Triple("这家餐厅很便宜。", "This restaurant is very cheap.", "价格评价"),
+        Triple("我不吃辣。", "I don't eat spicy food.", "饮食偏好"),
+        Triple("请给我一杯水。", "Please give me a glass of water.", "请求"),
+        Triple("今天吃了很多。", "I ate a lot today.", "过去时+饮食"),
+        Triple("餐厅在二楼。", "The restaurant is on the second floor.", "位置"),
     )
 
     val a1bShopping = listOf(
@@ -734,6 +895,16 @@ object SentenceData {
         Triple("你有会员卡吗？", "Do you have a membership card?", "会员询问"),
         Triple("买两件可以打折吗？", "Is there a discount for buying two?", "优惠询问"),
         Triple("这是商场里最流行的款式。", "This is the most popular style in the mall.", "最高级+时尚"),
+        Triple("我想买一件衣服。", "I want to buy a piece of clothing.", "购物意图"),
+        Triple("这个多少钱？", "How much is this?", "价格询问"),
+        Triple("有没有便宜的？", "Is there a cheaper one?", "价格询问"),
+        Triple("我可以试穿吗？", "Can I try it on?", "试穿请求"),
+        Triple("我买两个。", "I will buy two.", "购物数量"),
+        Triple("可以刷卡吗？", "Can I pay by card?", "支付方式"),
+        Triple("我不需要袋子。", "I don't need a bag.", "购物细节"),
+        Triple("这是礼物。", "This is a gift.", "购物目的"),
+        Triple("可以退吗？", "Can I return it?", "退货询问"),
+        Triple("我逛了很多商店。", "I visited many shops.", "过去时+购物"),
     )
 
     val a1bTravel = listOf(
@@ -777,6 +948,16 @@ object SentenceData {
         Triple("我们一起去了博物馆。", "We went to the museum together.", "过去时+活动"),
         Triple("这是最难忘的一次旅行。", "This is the most unforgettable trip.", "最高级+评价"),
         Triple("旅行让我学到了很多。", "Traveling taught me a lot.", "过去时+收获"),
+        Triple("我去年去了上海。", "I went to Shanghai last year.", "过去时+旅行"),
+        Triple("我喜欢坐火车。", "I like taking the train.", "交通偏好"),
+        Triple("飞机很快。", "Planes are very fast.", "速度描述"),
+        Triple("我带了一个行李箱。", "I brought a suitcase.", "行李"),
+        Triple("酒店很舒服。", "The hotel is very comfortable.", "住宿评价"),
+        Triple("我拍了照片。", "I took photos.", "过去时+活动"),
+        Triple("风景很美。", "The scenery is very beautiful.", "景色描述"),
+        Triple("我明天出发。", "I leave tomorrow.", "将来计划"),
+        Triple("我订了一张票。", "I booked a ticket.", "过去时+预订"),
+        Triple("这次旅行很开心。", "This trip was very happy.", "情感表达"),
     )
 
     val a1bPeople = listOf(
@@ -820,6 +1001,16 @@ object SentenceData {
         Triple("他是个很可靠的人。", "He is a very reliable person.", "品质评价"),
         Triple("她看起来比以前更精神了。", "She looks more energetic than before.", "比较级+状态"),
         Triple("他是我们班最有趣的人。", "He is the most interesting person in our class.", "最高级+性格"),
+        Triple("他很高。", "He is very tall.", "外貌描述"),
+        Triple("她很漂亮。", "She is very beautiful.", "外貌描述"),
+        Triple("他很年轻。", "He is very young.", "年龄描述"),
+        Triple("她有一双大眼睛。", "She has big eyes.", "面部特征"),
+        Triple("他很强壮。", "He is very strong.", "体格描述"),
+        Triple("她很善良。", "She is very kind.", "品质描述"),
+        Triple("他是我朋友。", "He is my friend.", "关系表达"),
+        Triple("她是学生。", "She is a student.", "身份表达"),
+        Triple("他很聪明。", "He is very smart.", "智力描述"),
+        Triple("她很开心。", "She is very happy.", "情感表达"),
     )
 
     val a1bFeelings = listOf(
@@ -863,6 +1054,16 @@ object SentenceData {
         Triple("我真的很想念家乡。", "I really miss my hometown.", "思念表达"),
         Triple("他总是那么乐观。", "He is always so optimistic.", "性格+频度"),
         Triple("这是我最高兴的一天。", "This is the happiest day of my life.", "最高级+情感"),
+        Triple("我很开心。", "I am very happy.", "正面情感"),
+        Triple("我很难过。", "I am very sad.", "负面情感"),
+        Triple("我很生气。", "I am very angry.", "负面情感"),
+        Triple("我很紧张。", "I am very nervous.", "情绪表达"),
+        Triple("我很累。", "I am very tired.", "状态表达"),
+        Triple("我很兴奋。", "I am very excited.", "正面情感"),
+        Triple("我很害怕。", "I am very scared.", "负面情感"),
+        Triple("我很担心。", "I am very worried.", "焦虑表达"),
+        Triple("我很满意。", "I am very satisfied.", "正面情感"),
+        Triple("我很失望。", "I am very disappointed.", "负面情感"),
     )
 
     val a1aNeighbor = listOf(
@@ -906,6 +1107,16 @@ object SentenceData {
         Triple("如果天气好我们就在楼下烧烤。", "If the weather is good, we will barbecue downstairs.", "条件+活动"),
         Triple("邻里之间多一点理解就好了。", "A little more understanding between neighbors would be nice.", "愿望表达"),
         Triple("我已经习惯了这里的生活节奏。", "I have gotten used to the pace of life here.", "完成时+适应"),
+        Triple("社区每年都会举办文艺演出。", "The community holds artistic performances every year.", "频度+活动"),
+        Triple("如果你有困难邻居会帮忙。", "If you have difficulties, neighbors will help.", "条件+互助"),
+        Triple("小区里新装了健身器材。", "New fitness equipment has been installed in the community.", "完成时+设施"),
+        Triple("这里的绿化面积越来越大。", "The green area here is getting bigger and bigger.", "趋势+环境"),
+        Triple("社区门口安装了监控摄像头。", "Surveillance cameras have been installed at the community gate.", "完成时+安全"),
+        Triple("我们经常在楼下散步聊天。", "We often take walks and chat downstairs.", "频度+社交"),
+        Triple("旧小区已经改造完了。", "The old community has already been renovated.", "完成时+改造"),
+        Triple("住在这里让我感到很安全。", "Living here makes me feel very safe.", "感受+安全"),
+        Triple("社区规定不能养大型犬。", "The community regulation says you can't keep large dogs.", "规定+限制"),
+        Triple("如果有机会我想搬到大房子。", "If I have the chance, I want to move to a bigger house.", "条件+愿望"),
     )
 
     val a1aWorkday = listOf(
@@ -949,6 +1160,16 @@ object SentenceData {
         Triple("明年的目标已经定下来了。", "Next year's goals have been set.", "被动+计划"),
         Triple("如果能升职就好了。", "It would be great if I could get promoted.", "条件+愿望"),
         Triple("这种充实的感觉真好。", "This fulfilling feeling is truly great.", "感受表达"),
+        Triple("如果客户满意我们就成功了。", "If the client is satisfied, we will have succeeded.", "条件+成功"),
+        Triple("团队会议每周一举行。", "Team meetings are held every Monday.", "被动+频度"),
+        Triple("我已经连续工作十个小时了。", "I have been working continuously for ten hours.", "完成时+时长"),
+        Triple("这份工作让我学到了很多。", "This job has taught me a lot.", "完成时+学习"),
+        Triple("如果明天不加班就能休息。", "If there's no overtime tomorrow, I can rest.", "条件+休息"),
+        Triple("公司提供了很多培训机会。", "The company provides many training opportunities.", "提供+机会"),
+        Triple("我的工作能力提高了。", "My work ability has improved.", "完成时+进步"),
+        Triple("如果你努力升职是可能的。", "If you work hard, promotion is possible.", "条件+可能性"),
+        Triple("今天的工作效率特别高。", "Today's work efficiency is particularly high.", "评价+效率"),
+        Triple("已经习惯了早起上班。", "I have gotten used to getting up early for work.", "完成时+习惯"),
     )
 
     val a1aSubjects = listOf(
@@ -992,6 +1213,16 @@ object SentenceData {
         Triple("考试前一定要好好复习。", "You must review well before the exam.", "建议+复习"),
         Triple("如果你认真学一定能学会。", "If you study seriously, you will definitely learn it.", "条件+鼓励"),
         Triple("学习语言需要耐心和时间。", "Learning a language requires patience and time.", "观点+要求"),
+        Triple("如果考试不及格就要重修。", "If I fail the exam, I will have to retake it.", "条件+后果"),
+        Triple("老师布置的作业太多了。", "The teacher has assigned too much homework.", "完成时+作业"),
+        Triple("我更喜欢线上学习。", "I prefer online learning.", "偏好+方式"),
+        Triple("已经参加了两次模拟考。", "I have taken the mock exam twice already.", "完成时+考试"),
+        Triple("如果你有疑问可以问同学。", "If you have questions, you can ask classmates.", "条件+建议"),
+        Triple("这个学期的成绩出来了。", "This semester's grades have come out.", "完成时+成绩"),
+        Triple("图书馆是最适合学习的地方。", "The library is the most suitable place for studying.", "最高级+地点"),
+        Triple("如果时间够我想学吉他。", "If I have enough time, I want to learn guitar.", "条件+意愿"),
+        Triple("我的学习计划已经制定好了。", "My study plan has been made.", "完成时+计划"),
+        Triple("每天背单词是最基本的。", "Memorizing vocabulary every day is the most basic.", "最高级+方法"),
     )
 
     val a1aHoliday = listOf(
@@ -1035,6 +1266,16 @@ object SentenceData {
         Triple("最好提前下载离线地图。", "It's best to download an offline map in advance.", "建议+准备"),
         Triple("旅途中我交到了新朋友。", "I made new friends during the trip.", "过去时+社交"),
         Triple("这次经历值得一辈子回忆。", "This experience is worth remembering for a lifetime.", "价值表达"),
+        Triple("如果再去我会选冬天。", "If I go again, I will choose winter.", "条件+选择"),
+        Triple("海边的日出真美。", "The sunrise by the sea was so beautiful.", "过去时+自然"),
+        Triple("我已经把照片整理好了。", "I have already organized the photos.", "完成时+整理"),
+        Triple("假期是最好的放松时间。", "Holiday is the best time to relax.", "最高级+放松"),
+        Triple("如果你没去过那里很可惜。", "It's a pity if you haven't been there.", "条件+遗憾"),
+        Triple("这次旅行让我更独立了。", "This trip has made me more independent.", "完成时+成长"),
+        Triple("明年我还想来这里。", "I still want to come here next year.", "意愿+重复"),
+        Triple("如果时间能停下来就好了。", "If only time could stop.", "条件+愿望"),
+        Triple("假期结束要回去上班了。", "The holiday is over and I have to go back to work.", "时间+工作"),
+        Triple("最难忘的是那次探险。", "The most unforgettable was that adventure.", "最高级+经历"),
     )
 
     val a1aServices = listOf(
@@ -1078,6 +1319,16 @@ object SentenceData {
         Triple("在线办理比现场办理快多了。", "Online processing is much faster than on-site processing.", "比较+方式"),
         Triple("如果系统故障可以去柜台。", "If the system fails, you can go to the counter.", "条件+替代"),
         Triple("公共服务让生活更便利了。", "Public services have made life more convenient.", "完成时+影响"),
+        Triple("如果你需要帮助可以找志愿者。", "If you need help, you can find volunteers.", "条件+帮助"),
+        Triple("新的办事大厅已经启用了。", "The new service hall has been put into use.", "完成时+设施"),
+        Triple("办理身份证需要带照片。", "You need to bring a photo to apply for an ID card.", "要求+材料"),
+        Triple("这个应用程序可以查公交。", "This app can check bus routes.", "功能+应用"),
+        Triple("如果排队太长可以改天再来。", "If the line is too long, you can come another day.", "条件+建议"),
+        Triple("我已经下载了政务服务应用。", "I have downloaded the government service app.", "完成时+应用"),
+        Triple("社区医疗服务覆盖全员。", "Community medical services cover all members.", "服务+覆盖"),
+        Triple("如果你不懂可以看指示牌。", "If you don't understand, you can look at the signs.", "条件+指引"),
+        Triple("公共WiFi已经全面覆盖了。", "Public WiFi has been fully covered.", "完成时+设施"),
+        Triple("办事流程比以前简单多了。", "The service process is much simpler than before.", "比较+流程"),
     )
 
     val a1aInvitation = listOf(
@@ -1121,6 +1372,16 @@ object SentenceData {
         Triple("如果觉得尴尬我陪你。", "If you feel awkward, I will accompany you.", "条件+陪伴"),
         Triple("大家聊得很开心。", "Everyone had a great chat.", "社交评价"),
         Triple("下次聚会你来组织怎么样？", "How about you organize the next gathering?", "提议"),
+        Triple("如果你不想去可以不去。", "If you don't want to go, you don't have to.", "条件+选择"),
+        Triple("派对主题是新年庆典。", "The party theme is New Year celebration.", "主题+描述"),
+        Triple("我们需要准备更多饮料。", "We need to prepare more drinks.", "需求+准备"),
+        Triple("如果你早来可以帮忙布置。", "If you come early, you can help decorate.", "条件+帮助"),
+        Triple("我已经买好了聚会用品。", "I have already bought the party supplies.", "完成时+购物"),
+        Triple("邀请多少人比较合适？", "How many people is it appropriate to invite?", "数量+建议"),
+        Triple("如果你有特长可以表演。", "If you have a talent, you can perform.", "条件+表演"),
+        Triple("聚会上大家拍了很多照片。", "Everyone took many photos at the party.", "过去时+活动"),
+        Triple("如果结束太晚我可以送你。", "If it ends too late, I can drive you home.", "条件+帮助"),
+        Triple("这次邀请是我最大的诚意。", "This invitation is my greatest sincerity.", "表达+诚意"),
     )
 
     val a1aExperience = listOf(
@@ -1164,6 +1425,16 @@ object SentenceData {
         Triple("这些照片让我想起很多。", "These photos remind me of many things.", "触发记忆"),
         Triple("人总要经历一些挫折。", "Everyone has to experience some setbacks.", "哲理表达"),
         Triple("每一段经历都是财富。", "Every experience is a treasure.", "总结+价值"),
+        Triple("如果你愿意听我可以分享。", "If you are willing to listen, I can share.", "条件+分享"),
+        Triple("那次经历是我人生的转折点。", "That experience was a turning point in my life.", "评价+转折"),
+        Triple("我已经克服了那个困难。", "I have overcome that difficulty.", "完成时+克服"),
+        Triple("经历过后才明白道理。", "Only after experience do you understand the truth.", "哲理+理解"),
+        Triple("如果你有机会一定要试试。", "If you have the chance, you must try it.", "条件+建议"),
+        Triple("我最骄傲的是那次成功。", "What I am most proud of is that success.", "最高级+骄傲"),
+        Triple("那段记忆已经模糊了。", "That memory has become blurry.", "完成时+记忆"),
+        Triple("如果重新选择我还是会这样做。", "If I could choose again, I would still do this.", "条件+选择"),
+        Triple("经历是最好的老师。", "Experience is the best teacher.", "哲理+总结"),
+        Triple("我已经从过去学到了很多。", "I have learned a lot from the past.", "完成时+学习"),
     )
 
     val a1aCity = listOf(
@@ -1207,6 +1478,16 @@ object SentenceData {
         Triple("城市的地铁网络很发达。", "The city's subway network is very developed.", "交通+发达"),
         Triple("我觉得小镇生活最舒服。", "I think small town life is the most comfortable.", "最高级+观点"),
         Triple("无论哪里住得开心最重要。", "No matter where you live, being happy is the most important.", "总结+价值"),
+        Triple("如果你喜欢自然就住农村。", "If you like nature, live in the countryside.", "条件+建议"),
+        Triple("我已经习惯了城市的噪音。", "I have gotten used to the city noise.", "完成时+适应"),
+        Triple("农村的风景如画。", "The countryside scenery is picturesque.", "描述+风景"),
+        Triple("交通拥堵是大城市的问题。", "Traffic congestion is a big city problem.", "问题+交通"),
+        Triple("如果你有钱可以住别墅。", "If you have money, you can live in a villa.", "条件+居住"),
+        Triple("城市的文化活动更丰富。", "City cultural activities are richer.", "比较+文化"),
+        Triple("农村的孩子需要走路上学。", "Countryside children need to walk to school.", "描述+教育"),
+        Triple("如果我可以选择会住海边。", "If I could choose, I would live by the sea.", "条件+愿望"),
+        Triple("城市的灯光彻夜不熄。", "City lights never go out all night.", "描述+夜景"),
+        Triple("住在哪儿都要好好生活。", "Wherever you live, you must live well.", "总结+生活"),
     )
 
     val a1aFestival = listOf(
@@ -1250,6 +1531,16 @@ object SentenceData {
         Triple("端午节的粽子自己包的最好吃。", "Homemade zongzi for Dragon Boat Festival tastes the best.", "最高级+食物"),
         Triple("如果每个节日都放假就好了。", "It would be great if every festival were a holiday.", "条件+愿望"),
         Triple("传统文化值得我们每个人珍惜。", "Traditional culture is worth being cherished by everyone.", "价值+文化"),
+        Triple("如果你喜欢热闹就来春节。", "If you like lively atmospheres, come for Spring Festival.", "条件+建议"),
+        Triple("月饼的种类越来越多了。", "There are more and more types of mooncakes.", "趋势+食物"),
+        Triple("我已经吃过端午粽子了。", "I have already eaten Dragon Boat Festival zongzi.", "完成时+食物"),
+        Triple("节日是文化传承的方式。", "Festivals are a way of cultural inheritance.", "文化+传承"),
+        Triple("如果你有机会要体验春节。", "If you have the chance, you should experience Spring Festival.", "条件+建议"),
+        Triple("烟花表演是最精彩的。", "The fireworks show is the most exciting.", "最高级+活动"),
+        Triple("我已经准备好了过节礼物。", "I have already prepared holiday gifts.", "完成时+准备"),
+        Triple("不同国家节日不同。", "Different countries have different festivals.", "比较+文化"),
+        Triple("如果你在外国过年会很特别。", "If you celebrate New Year abroad, it will be very special.", "条件+体验"),
+        Triple("节日带给人们希望和快乐。", "Festivals bring people hope and happiness.", "总结+价值"),
     )
 
     val a1aProblems = listOf(
@@ -1293,6 +1584,16 @@ object SentenceData {
         Triple("每种困难都是一次锻炼。", "Every difficulty is an exercise.", "哲理+正面"),
         Triple("我已经从失败中吸取了教训。", "I have learned lessons from my failure.", "完成时+教训"),
         Triple("只要你坚持就一定能解决。", "As long as you persist, you will definitely solve it.", "条件+鼓励"),
+        Triple("如果你需要帮助我可以协助。", "If you need help, I can assist.", "条件+帮助"),
+        Triple("分析问题是第一步。", "Analyzing the problem is the first step.", "方法+步骤"),
+        Triple("我已经找到了原因。", "I have found the cause.", "完成时+原因"),
+        Triple("不要害怕提出问题。", "Don't be afraid to raise questions.", "建议+勇气"),
+        Triple("如果大家都努力会更快。", "If everyone works hard, it will be faster.", "条件+效率"),
+        Triple("这个问题很常见。", "This problem is very common.", "评价+常见"),
+        Triple("我已经咨询了专家。", "I have consulted an expert.", "完成时+咨询"),
+        Triple("如果提前预防就好了。", "If only we had prevented it earlier.", "条件+预防"),
+        Triple("解决问题需要耐心。", "Solving problems requires patience.", "观点+耐心"),
+        Triple("这次的问题让我成长了。", "This problem has made me grow.", "完成时+成长"),
     )
 
     val a2_travel = listOf(

@@ -129,6 +129,11 @@ object NewConceptData {
         Triple("为什么？", "Why?", "追问"),
         Triple("离公司太远了。", "Too far from the company.", "原因"),
         Triple("祝你顺利。", "Good luck with that.", "祝福"),
+        Triple("搬家需要帮忙吗？", "Do you need help moving?", "帮忙"),
+        Triple("谢谢，已经找了搬家公司。", "Thanks, already found a moving company.", "回答"),
+        Triple("新家离这儿远吗？", "Is the new home far from here?", "距离"),
+        Triple("开车半小时。", "Half an hour by car.", "回答"),
+        Triple("有空来新家玩。", "Come visit my new home when you're free.", "邀请"),
     )
 
     val nce_nce1_3 = listOf(
@@ -183,6 +188,10 @@ object NewConceptData {
         Triple("熬夜对身体不好。", "Staying up late is bad for health.", "建议"),
         Triple("我知道。", "I know.", "知道"),
         Triple("习惯的力量很强大。", "The power of habit is very strong.", "感悟"),
+        Triple("每天坚持一点点。", "Persist a little every day.", "坚持"),
+        Triple("积少成多。", "Little by little makes a lot.", "积累"),
+        Triple("成功来源于自律。", "Success comes from self-discipline.", "成功"),
+        Triple("一起加油吧。", "Let's work hard together.", "鼓励"),
     )
 
     val nce_nce1_4 = listOf(
@@ -235,6 +244,12 @@ object NewConceptData {
         Triple("别灰心。", "Don't lose heart.", "安慰"),
         Triple("功夫不负有心人。", "Hard work pays off.", "谚语"),
         Triple("学海无涯苦作舟。", "Learning is an endless sea of hard work.", "谚语"),
+        Triple("学习需要耐心。", "Learning requires patience.", "耐心"),
+        Triple("每天进步一点点。", "Improve a little every day.", "进步"),
+        Triple("不懂就问。", "Ask if you don't understand.", "提问"),
+        Triple("复习很重要。", "Review is very important.", "复习"),
+        Triple("做好准备。", "Be well prepared.", "准备"),
+        Triple("相信自己。", "Believe in yourself.", "自信"),
     )
 
     val nce_nce1_5 = listOf(
@@ -278,6 +293,21 @@ object NewConceptData {
         Triple("我下楼买。", "I'll go down and buy some.", "补救"),
         Triple("你穿这件很好看。", "You look great in this.", "赞美"),
         Triple("谢谢，我也很喜欢。", "Thanks, I like it too.", "回应"),
+        Triple("这件衣服打折吗？", "Is this clothes on sale?", "打折"),
+        Triple("打八折。", "Twenty percent off.", "折扣"),
+        Triple("我要付现金。", "I'll pay cash.", "现金"),
+        Triple("找零多少钱？", "How much change?", "找零"),
+        Triple("这家店关门了。", "This shop is closed.", "关门"),
+        Triple("明天再来吧。", "Come again tomorrow.", "改天"),
+        Triple("吃什么好呢？", "What should we eat?", "疑问"),
+        Triple("随便吃点吧。", "Just eat something simple.", "简单"),
+        Triple("太咸了。", "Too salty.", "口味"),
+        Triple("加水。", "Add water.", "要求"),
+        Triple("服务员买单。", "Waiter, check please.", "买单"),
+        Triple("走了，回家。", "Let's go, home.", "回家"),
+        Triple("路上小心。", "Be careful on the road.", "提醒"),
+        Triple("到了给我打电话。", "Call me when you arrive.", "通知"),
+        Triple("晚安。", "Good night.", "晚安"),
     )
 
     val nce_nce1_6 = listOf(
@@ -328,6 +358,14 @@ object NewConceptData {
         Triple("早餐一定要吃。", "You must eat breakfast.", "强调"),
         Triple("睡眠不足影响健康。", "Lack of sleep affects health.", "睡眠"),
         Triple("每天至少睡七小时。", "At least seven hours of sleep a day.", "建议"),
+        Triple("多喝热水。", "Drink more hot water.", "建议"),
+        Triple("穿暖和点。", "Dress warmly.", "保暖"),
+        Triple("别感冒了。", "Don't catch a cold.", "提醒"),
+        Triple("开窗通风。", "Open windows for fresh air.", "通风"),
+        Triple("晒太阳。", "Get some sun.", "阳光"),
+        Triple("心情好身体好。", "Good mood, good health.", "心情"),
+        Triple("笑一笑十年少。", "Smile and you'll be ten years younger.", "谚语"),
+        Triple("健康是福。", "Health is fortune.", "谚语"),
     )
 
     val nce_nce1_7 = listOf(
@@ -373,6 +411,19 @@ object NewConceptData {
         Triple("不会骑车。", "I can't ride a bike.", "不会"),
         Triple("地铁还是打车？", "Subway or taxi?", "方式"),
         Triple("地铁更准时。", "Subway is more punctual.", "偏好"),
+        Triple("走路十分钟。", "Ten minutes on foot.", "步行"),
+        Triple("距离不远。", "Not far.", "距离"),
+        Triple("出发吧。", "Let's go.", "出发"),
+        Triple("打车快。", "Taxi is fast.", "打车"),
+        Triple("但是贵。", "But expensive.", "价格"),
+        Triple("坐公交吧。", "Take the bus.", "公交"),
+        Triple("几路车？", "Which bus?", "路线"),
+        Triple("八路车。", "Bus number eight.", "回答"),
+        Triple("上车投币。", "Put coins in when boarding.", "投币"),
+        Triple("到站下车。", "Get off at the stop.", "下车"),
+        Triple("记住站名。", "Remember the stop name.", "记住"),
+        Triple("别坐过站。", "Don't miss your stop.", "提醒"),
+        Triple("注意安全。", "Be careful.", "安全"),
     )
 
     val nce_nce1_8 = listOf(
@@ -419,6 +470,18 @@ object NewConceptData {
         Triple("健康第一。", "Health comes first.", "观点"),
         Triple("今天辛苦了一天。", "Hard day at work.", "辛苦"),
         Triple("辛苦啦。", "Good job.", "安慰"),
+        Triple("工作完成了。", "Work is done.", "完成"),
+        Triple("可以下班了。", "Can get off work.", "下班"),
+        Triple("明天见。", "See you tomorrow.", "告别"),
+        Triple("周末愉快。", "Happy weekend.", "祝福"),
+        Triple("加油。", "Come on.", "鼓励"),
+        Triple("再努力一点。", "Work a bit harder.", "努力"),
+        Triple("你会成功的。", "You will succeed.", "成功"),
+        Triple("相信你自己。", "Believe in yourself.", "自信"),
+        Triple("不要放弃。", "Don't give up.", "坚持"),
+        Triple("机会是留给有准备的人的。", "Opportunity is for the prepared.", "谚语"),
+        Triple("我们一起努力。", "We work together.", "合作"),
+        Triple("团结就是力量。", "Unity is strength.", "谚语"),
     )
 
     val nce_nce1_9 = listOf(
@@ -474,6 +537,9 @@ object NewConceptData {
         Triple("非常喜欢。", "Very much.", "程度"),
         Triple("喜欢小说吗？", "Like novels?", "小说"),
         Triple("对，推理小说。", "Yes, mystery novels.", "偏好"),
+        Triple("读书使人进步。", "Reading makes people progress.", "读书"),
+        Triple("音乐让人放松。", "Music relaxes people.", "音乐"),
+        Triple("享受生活。", "Enjoy life.", "生活"),
     )
 
     val nce_nce1_10 = listOf(
@@ -521,6 +587,17 @@ object NewConceptData {
         Triple("味道怎么样？", "How does it taste?", "口味"),
         Triple("很不错。", "Really good.", "赞赏"),
         Triple("自己动手丰衣足食。", "Work with your own hands and you'll have enough.", "谚语"),
+        Triple("好吃不如饺子。", "Nothing tastes better than dumplings.", "饺子"),
+        Triple("吃了吗？", "Have you eaten?", "问候"),
+        Triple("还没吃。", "Not yet.", "回答"),
+        Triple("一起吃饭吧。", "Let's eat together.", "邀请"),
+        Triple("好的。", "OK.", "同意"),
+        Triple("吃什么？", "What to eat?", "询问"),
+        Triple("面条。", "Noodles.", "回答"),
+        Triple("太好吃了。", "So delicious.", "赞美"),
+        Triple("饱了。", "Full.", "饱"),
+        Triple("谢谢款待。", "Thanks for the treat.", "感谢"),
+        Triple("下次再聚。", "Get together next time.", "邀约"),
     )
 
     val nce_nce2_1 = listOf(
@@ -560,6 +637,25 @@ object NewConceptData {
         Triple("希望十年后还能这样聊天。", "Hope we can still chat like this in ten years.", "愿望"),
         Triple("一定会的。", "I'm sure we will.", "确信"),
         Triple("人生苦短及时行乐。", "Life is short, enjoy it while you can.", "哲理"),
+        Triple("分享你的故事吧。", "Share your story please.", "邀请"),
+        Triple("那是一次偶遇改变了我的想法。", "That encounter changed the way I think.", "偶遇"),
+        Triple("从没想过会经历那些事。", "Never thought I would go through those things.", "意外"),
+        Triple("想听听我的故事吗？", "Want to hear my story?", "分享"),
+        Triple("好的说来听听。", "Sure, go ahead.", "回应"),
+        Triple("那天雨下得很大。", "It was raining heavily that day.", "场景"),
+        Triple("本来计划都取消了。", "All plans were cancelled.", "转折"),
+        Triple("没想到好事发生了。", "Then something good happened unexpectedly.", "转折"),
+        Triple("遇到了对我影响很深的人。", "I met someone who influenced me deeply.", "关键"),
+        Triple("他教我换个角度看问题。", "He taught me to see things from a different angle.", "收获"),
+        Triple("真的改变了我的生活。", "It really changed my life.", "影响"),
+        Triple("珍惜平凡日子里的闪光时刻。", "Treasure the bright moments in ordinary days.", "感悟"),
+        Triple("无论发生什么生活继续。", "No matter what happens, life goes on.", "哲理"),
+        Triple("你最后悔错过什么？", "What do you regret missing most?", "提问"),
+        Triple("错过了见初恋的最后一面。", "Missed seeing my first love one last time.", "遗憾"),
+        Triple("有些错过就是一辈子。", "Some misses last a lifetime.", "感悟"),
+        Triple("所以珍惜每一次相遇。", "So treasure every encounter.", "升华"),
+        Triple("回忆是最好的财富。", "Memories are the best treasure.", "哲理"),
+        Triple("每一天都是一份礼物。", "Every day is a gift.", "感悟"),
     )
 
     val nce_nce2_2 = listOf(
@@ -600,6 +696,24 @@ object NewConceptData {
         Triple("一个人自由但孤独。", "Solo travel is free but lonely.", "矛盾"),
         Triple("可以更好与自己对话。", "Can have better conversations with yourself.", "优点"),
         Triple("旅行让你成为更好的自己。", "Travel makes you a better you.", "哲理"),
+        Triple("去过最远的地方是哪里？", "What's the farthest place you've been to?", "提问"),
+        Triple("最壮观的风景是什么？", "What's the most spectacular scenery?", "提问"),
+        Triple("大峡谷让人叹为观止。", "The Grand Canyon is breathtaking.", "赞叹"),
+        Triple("站在高处看世界感觉真好。", "It feels great to see the world from up high.", "感受"),
+        Triple("喜欢坐飞机还是火车？", "Do you prefer flying or taking the train?", "偏好"),
+        Triple("火车可以看风景。", "The train lets you see the scenery.", "理由"),
+        Triple("坐了一夜火车横穿整个国家。", "Took a night train across the entire country.", "经历"),
+        Triple("路上的风景也很美。", "The scenery along the way was also beautiful.", "风景"),
+        Triple("在小镇住了几天特别悠闲。", "Staying in a small town for a few days was so relaxing.", "悠闲"),
+        Triple("当地人很友好给我指路。", "The locals were very friendly and gave me directions.", "友善"),
+        Triple("迷路时反而发现惊喜。", "Getting lost sometimes leads to surprises.", "惊喜"),
+        Triple("一路走一路吃是最大乐趣。", "Eating while traveling is the biggest joy.", "乐趣"),
+        Triple("每个地方的美食都不同。", "Every place has its own unique cuisine.", "美食"),
+        Triple("带回来的纪念品装满一箱。", "Souvenirs filled an entire suitcase.", "纪念"),
+        Triple("最好的纪念品是照片和回忆。", "The best souvenirs are photos and memories.", "感悟"),
+        Triple("还会再去那个地方吗？", "Would you go back to that place?", "提问"),
+        Triple("当然，还有很多没看。", "Of course, there's still a lot I haven't seen.", "重游"),
+        Triple("世界是最好的一本书。", "The world is the best book you can read.", "哲理"),
     )
 
     val nce_nce2_3 = listOf(
@@ -655,6 +769,9 @@ object NewConceptData {
         Triple("你从第一份工作学到了什么？", "What did you learn from your first job?", "教训"),
         Triple("不要害怕问问题。", "Don't be afraid to ask questions.", "经验"),
         Triple("细节决定成败。", "Details determine success or failure.", "感悟"),
+        Triple("失败是成功之母。", "Failure is the mother of success.", "哲理"),
+        Triple("每次犯错都是成长的机会。", "Every mistake is a chance to grow.", "成长"),
+        Triple("坚持到底就是胜利。", "Persistence leads to victory.", "信念"),
     )
 
     val nce_nce2_4 = listOf(
@@ -796,6 +913,9 @@ object NewConceptData {
         Triple("但人也变得越来越懒。", "But people are also getting lazier.", "反思"),
         Triple("技术只是工具不是目的。", "Technology is just a tool, not a goal.", "哲理"),
         Triple("用好科技才能造福生活。", "Using tech wisely can bring a better life.", "建议"),
+        Triple("网络安全也越来越重要。", "Cybersecurity is also increasingly important.", "安全"),
+        Triple("数据隐私需要更好保护。", "Data privacy needs better protection.", "隐私"),
+        Triple("相信科技会让明天更好。", "I believe technology will make tomorrow better.", "信心"),
     )
 
     val nce_nce2_6 = listOf(
@@ -1137,6 +1257,9 @@ object NewConceptData {
         Triple("第一次当众演讲我紧张极了。", "I was so nervous the first time I spoke in public.", "经历"),
         Triple("不试试怎么知道不行。", "You won't know unless you try.", "鼓励"),
         Triple("每突破一次就强大一分。", "You become stronger every time you break through.", "鼓励"),
+        Triple("后悔没早点开始改变。", "I regret not starting to change earlier.", "反思"),
+        Triple("晚改也比不改强。", "Better late than never to change.", "鼓励"),
+        Triple("带着微笑迎接每一天。", "Welcome each new day with a smile.", "态度"),
     )
 
     val nce_nce3_1 = listOf(
@@ -1191,6 +1314,10 @@ object NewConceptData {
         Triple("社会福利需要制度创新。", "Social welfare needs institutional innovation.", "创新"),
         Triple("贫富差距影响社会凝聚力。", "The wealth gap affects social cohesion.", "凝聚力"),
         Triple("社会议题需要公众理性讨论。", "Social issues require rational public discussion.", "讨论"),
+        Triple("社会问题的根源往往很复杂。", "The root causes of social problems are often complex.", "根源"),
+        Triple("单靠政府无法解决所有问题。", "The government alone cannot solve all problems.", "政府"),
+        Triple("公民社会应该发挥更大作用。", "Civil society should play a bigger role.", "公民社会"),
+        Triple("每个人都应该是社会变革的参与者。", "Everyone should be a participant in social change.", "参与"),
     )
 
     val nce_nce3_2 = listOf(
@@ -1244,6 +1371,11 @@ object NewConceptData {
         Triple("量子计算可能破解现有加密。", "Quantum computing may crack existing encryption.", "量子"),
         Triple("新能源转型需要时间和投入。", "New energy transition requires time and investment.", "新能源"),
         Triple("科技创新需要长期投入。", "Technological innovation requires long-term investment.", "创新"),
+        Triple("人工智能的发展速度超出预期。", "The development of artificial intelligence has exceeded expectations.", "AI"),
+        Triple("技术伦理问题日益突出。", "Ethical issues in technology are becoming increasingly prominent.", "伦理"),
+        Triple("科技创新需要跨学科合作。", "Technological innovation requires interdisciplinary collaboration.", "合作"),
+        Triple("开源软件推动了技术普及。", "Open-source software has promoted technology popularization.", "开源"),
+        Triple("数字化转型是企业生存的关键。", "Digital transformation is the key to enterprise survival.", "数字化"),
     )
 
     val nce_nce3_3 = listOf(
@@ -1297,6 +1429,11 @@ object NewConceptData {
         Triple("旅游文化促进和平理解。", "Tourism culture promotes peace and understanding.", "旅游"),
         Triple("文化软实力是国家竞争力。", "Cultural soft power is national competitiveness.", "软实力"),
         Triple("保护非遗就是保护文化基因。", "Protecting intangible heritage is protecting cultural genes.", "非遗"),
+        Triple("文化自信是民族自信的基础。", "Cultural confidence is the foundation of national confidence.", "自信"),
+        Triple("文化交流促进民心相通。", "Cultural exchange promotes people-to-people connectivity.", "交流"),
+        Triple("数字化技术改变文化传播方式。", "Digital technology changes the way culture is disseminated.", "数字化"),
+        Triple("青年是文化传承的主力军。", "Youth are the main force in cultural inheritance.", "青年"),
+        Triple("文化创新需要扎根传统面向未来。", "Cultural innovation needs to be rooted in tradition and face the future.", "创新"),
     )
 
     val nce_nce3_4 = listOf(
@@ -1350,6 +1487,11 @@ object NewConceptData {
         Triple("幸福可以自己创造。", "Happiness can be created by oneself.", "幸福"),
         Triple("时间证明一切。", "Time proves everything.", "时间"),
         Triple("生死教育很有必要。", "Education on life and death is necessary.", "生死"),
+        Triple("人生的价值在于创造和奉献。", "The value of life lies in creation and dedication.", "价值"),
+        Triple("逆境是成长的最好老师。", "Adversity is the best teacher for growth.", "逆境"),
+        Triple("宽容是一种高级的智慧。", "Tolerance is a high-level wisdom.", "宽容"),
+        Triple("人生的意义需要自己去寻找。", "The meaning of life needs to be found by oneself.", "意义"),
+        Triple("珍惜当下就是对生命最大的尊重。", "Cherishing the present is the greatest respect for life.", "珍惜"),
     )
 
     val nce_nce3_5 = listOf(
@@ -1523,6 +1665,11 @@ object NewConceptData {
         Triple("科学成果应该造福人类。", "Scientific achievements should benefit humanity.", "宗旨"),
         Triple("科学普及提高公众素养。", "Science popularization improves public literacy.", "意义"),
         Triple("批判性思维是科学精神核心。", "Critical thinking is the core of scientific spirit.", "观点"),
+        Triple("科学探索需要勇气和毅力。", "Scientific exploration requires courage and perseverance.", "探索"),
+        Triple("大数据技术改变科研方式。", "Big data technology changes the way scientific research is conducted.", "大数据"),
+        Triple("科学普及提高全民科学素养。", "Science popularization improves the scientific literacy of the whole people.", "科普"),
+        Triple("科研诚信是科学发展的基石。", "Research integrity is the cornerstone of scientific development.", "诚信"),
+        Triple("科学精神包括怀疑和求证。", "Scientific spirit includes doubt and verification.", "精神"),
     )
 
     val nce_nce3_8 = listOf(
@@ -1576,6 +1723,11 @@ object NewConceptData {
         Triple("成长型思维推动进步。", "Growth mindset drives progress.", "观点"),
         Triple("失败是成功之母。", "Failure is the mother of success.", "谚语"),
         Triple("行动比空想更有力。", "Action is more powerful than daydreaming.", "观点"),
+        Triple("自我认知是成长的起点。", "Self-awareness is the starting point of growth.", "认知"),
+        Triple("持续学习才能适应快速变化。", "Continuous learning is the only way to adapt to rapid changes.", "学习"),
+        Triple("情绪管理影响生活质量。", "Emotional management affects the quality of life.", "情绪"),
+        Triple("建立支持网络有助于成长。", "Building a support network helps with growth.", "支持"),
+        Triple("定期反思总结才能持续进步。", "Regular reflection and summary enable continuous progress.", "反思"),
     )
 
     val nce_nce3_9 = listOf(
@@ -1629,6 +1781,11 @@ object NewConceptData {
         Triple("年轻一代肩负未来。", "The young generation shoulders the future.", "期望"),
         Triple("让社会变得更好是共同目标。", "Making society better is a shared goal.", "目标"),
         Triple("每个人都可以做出贡献。", "Everyone can make a difference.", "鼓励"),
+        Triple("企业社会责任不只是捐款。", "Corporate social responsibility is not just about donating money.", "企业"),
+        Triple("环保是每个人的责任。", "Environmental protection is everyone's responsibility.", "环保"),
+        Triple("公益事业需要全社会参与。", "Public welfare needs participation from the whole society.", "公益"),
+        Triple("志愿服务传递社会温暖。", "Volunteer service conveys social warmth.", "志愿"),
+        Triple("社会责任意识需要从小培养。", "Social responsibility awareness needs to be cultivated from childhood.", "培养"),
     )
 
     val nce_nce3_10 = listOf(
@@ -1682,6 +1839,11 @@ object NewConceptData {
         Triple("未经审视的人生不值得过。", "The unexamined life is not worth living.", "名言"),
         Triple("留一点时间思考大问题吧。", "Save some time for thinking about big questions.", "建议"),
         Triple("思考让生活更有深度。", "Thinking makes life deeper.", "总结"),
+        Triple("哲学思考让人更加清醒。", "Philosophical thinking makes people more sober.", "清醒"),
+        Triple("理性是人类最宝贵的财富。", "Reason is the most precious wealth of humanity.", "理性"),
+        Triple("怀疑精神推动知识进步。", "The spirit of doubt promotes knowledge progress.", "怀疑"),
+        Triple("哲学没有标准答案只有思考。", "Philosophy has no standard answers, only thinking.", "思考"),
+        Triple("用哲学眼光看世界更深刻。", "Viewing the world with a philosophical eye is more profound.", "深刻"),
     )
 
     val nce_nce4_1 = listOf(
@@ -1735,6 +1897,11 @@ object NewConceptData {
         Triple("有效的推理形式不一定产出真结论。", "Valid logical forms do not necessarily yield true conclusions.", "逻辑"),
         Triple("前提必须本身为真才行。", "Premises must themselves be true.", "逻辑"),
         Triple("但什么算作真又成了问题。", "But what counts as truth becomes the problem.", "真理"),
+        Triple("倘若没有自由意志，道德责任便无从谈起。", "Were there no free will, moral responsibility would be out of the question.", "虚拟"),
+        Triple("唯有通过不断质疑，方能接近真理。", "Only through constant questioning can we approach the truth.", "倒装"),
+        Triple("被深深误解的，往往是最伟大的思想。", "What is most deeply misunderstood is often the greatest thought.", "被动"),
+        Triple("不仅理性重要，情感亦不可或缺。", "Not only does reason matter, but emotion is also indispensable.", "倒装"),
+        Triple("正是这种不确定性，激发了哲学的永恒魅力。", "It is precisely this uncertainty that inspires philosophy's eternal charm.", "强调"),
     )
 
     val nce_nce4_2 = listOf(
@@ -1786,6 +1953,13 @@ object NewConceptData {
         Triple("人类命运共同体不是口号而是行动。", "A community with a shared future for mankind is not a slogan but action.", "行动"),
         Triple("需要各国共同努力才能实现。", "It requires joint efforts from all countries to realize.", "合作"),
         Triple("我们的命运紧密相连不可分割。", "Our destinies are closely connected and inseparable.", "命运"),
+        Triple("倘若各国能摒弃偏见，合作必将更加顺畅。", "Were countries able to discard prejudice, cooperation would be much smoother.", "虚拟"),
+        Triple("文化冲突在全球化进程中最为显著。", "Nowhere is cultural clash more evident than in the process of globalization.", "倒装"),
+        Triple("被全球化浪潮裹挟的，不仅仅是经济体。", "What is swept up by the tide of globalization is not merely economies.", "被动"),
+        Triple("无论挑战多么严峻，人类终将找到出路。", "However severe the challenges may be, humanity will ultimately find a way out.", "让步"),
+        Triple("不仅政府，每个公民都应参与其中。", "Not only governments but every citizen should participate.", "倒装"),
+        Triple("正是通过对话，我们才能化解分歧。", "It is through dialogue that we can resolve differences.", "强调"),
+        Triple("随着科技发展，世界正变得前所未有地紧密。", "With the development of technology, the world is becoming unprecedentedly interconnected.", "伴随"),
     )
 
     val nce_nce4_3 = listOf(
@@ -1837,6 +2011,13 @@ object NewConceptData {
         Triple("组织记忆承载文化和价值观。", "Organizational memory carries culture and values.", "记忆"),
         Triple("老员工是活的历史书。", "Senior employees are living history books.", "历史"),
         Triple("平衡权威和平等是艺术。", "Balancing authority and equality is an art.", "平衡"),
+        Triple("倘若领导者缺乏诚信，团队必将分崩离析。", "Were leaders lacking in integrity, the team would inevitably fall apart.", "虚拟"),
+        Triple("领导力中，不仅有远见，执行力亦不可或缺。", "Not only is vision important in leadership, but execution is also indispensable.", "倒装"),
+        Triple("被团队成员真心追随的，是那些以身作则的人。", "Followed wholeheartedly by team members are those who lead by example.", "被动倒装"),
+        Triple("无论压力多大，真正的领导者从不放弃。", "No matter how great the pressure, a true leader never gives up.", "让步"),
+        Triple("领导力之核心，不仅是决策，更是沟通。", "At the core of leadership is not only decision-making but also communication.", "倒装"),
+        Triple("正是这种担当，铸就了伟大的领导者。", "It is precisely this sense of responsibility that forged great leaders.", "强调"),
+        Triple("随着团队成长，领导者的角色也在不断演变。", "As the team grows, the leader's role is also constantly evolving.", "伴随"),
     )
 
     val nce_nce4_4 = listOf(
@@ -1888,6 +2069,13 @@ object NewConceptData {
         Triple("正念练习帮助回到当下时刻。", "Mindfulness practice helps return to the present moment.", "正念"),
         Triple("过去已逝未来未至唯今可贵。", "The past is gone, the future hasn't arrived, only now is precious.", "当下"),
         Triple("时钟时间和心理时间截然不同。", "Clock time and psychological time are completely different.", "时间"),
+        Triple("倘若时间可以倒流，许多人会做出不同选择。", "Were time to flow backward, many would make different choices.", "虚拟"),
+        Triple("我们很少意识到时间的价值，直到它流逝。", "Seldom do we realize the value of time until it has passed.", "倒装"),
+        Triple("被时间冲刷掉的，往往是珍贵却平凡的瞬间。", "Washed away by time are often precious yet ordinary moments.", "被动倒装"),
+        Triple("无论多么忙碌，也应留出时间反思。", "However busy one may be, time should be set aside for reflection.", "让步"),
+        Triple("不仅时间管理，精力管理更加重要。", "Not only does time management matter, but energy management matters even more.", "倒装"),
+        Triple("正是当下这一刻，构成了我们生命的全部。", "It is this very moment that constitutes the entirety of our lives.", "强调"),
+        Triple("随着年岁增长，时间似乎流逝得愈发迅速。", "As years advance, time seems to pass ever more swiftly.", "伴随"),
     )
 
     val nce_nce4_5 = listOf(
@@ -1941,6 +2129,11 @@ object NewConceptData {
         Triple("韵律和节奏是诗歌的身体。", "Rhythm and meter are the body of poetry.", "韵律"),
         Triple("戏剧是活生生的社会实验场。", "Drama is a living laboratory of social experiment.", "戏剧"),
         Triple("每次演出都是对文本的新诠释。", "Each performance is a new interpretation of the text.", "演出"),
+        Triple("倘若没有深度阅读，思想的深度将无从谈起。", "Were there no deep reading, the depth of thought would be out of the question.", "虚拟"),
+        Triple("通过阅读，不仅获得信息，更获得智慧。", "Through reading, not only is information obtained, but wisdom is also gained.", "倒装"),
+        Triple("被反复阅读的书，往往是最有价值的。", "Books that are read repeatedly are often the most valuable.", "被动"),
+        Triple("正是文字的力量，跨越了时空的界限。", "It is the power of words that transcends the boundaries of time and space.", "强调"),
+        Triple("随着数字时代到来，阅读方式正发生巨变。", "With the advent of the digital age, reading methods are undergoing tremendous changes.", "伴随"),
     )
 
     val nce_nce4_6 = listOf(
@@ -1994,6 +2187,11 @@ object NewConceptData {
         Triple("人类需要保持对AI系统的最终控制权。", "Humans need to maintain ultimate control over AI systems.", "控制"),
         Triple("多模态AI正在整合视觉语言行动。", "Multimodal AI is integrating vision, language, and action.", "多模态"),
         Triple("通用人工智能将重塑文明的每一个维度。", "Artificial general intelligence will reshape every dimension of civilization.", "通用"),
+        Triple("倘若AI拥有意识，我们将如何对待它们？", "Were AI to possess consciousness, how would we treat them?", "虚拟"),
+        Triple("AI发展中，不仅必须考虑效率，还必须考虑伦理。", "In AI development, not only must efficiency be considered, but ethics must also be considered.", "倒装"),
+        Triple("被算法支配的决策，正日益影响人类生活。", "Decisions dominated by algorithms are increasingly affecting human life.", "被动"),
+        Triple("正是这种不确定性，使AI研究充满挑战。", "It is precisely this uncertainty that makes AI research so challenging.", "强调"),
+        Triple("随着技术进步，AI伦理问题愈发凸显。", "With technological progress, AI ethical issues are becoming increasingly prominent.", "伴随"),
     )
 
     val nce_nce4_7 = listOf(
@@ -2047,6 +2245,11 @@ object NewConceptData {
         Triple("怨恨像自己喝毒希望别人死。", "Resentment is like drinking poison hoping others die.", "怨恨"),
         Triple("接受不确定性是成人必修课。", "Accepting uncertainty is a necessary adult lesson.", "不确定"),
         Triple("控制可控的放下不可控的。", "Control what you can, let go of what you can't.", "控制"),
+        Triple("倘若物质的追求永无止境，幸福将遥不可及。", "Were the pursuit of material things endless, happiness would be far out of reach.", "虚拟"),
+        Triple("不仅财富，健康同样有助于幸福。", "Not only does wealth contribute to happiness, but health does as well.", "倒装"),
+        Triple("被内心平静滋养的，是真正的幸福感。", "Nurtured by inner peace is true happiness.", "被动倒装"),
+        Triple("正是感恩的心态，让幸福变得触手可及。", "It is precisely a grateful mindset that makes happiness within reach.", "强调"),
+        Triple("随着年龄增长，人们对幸福的理解愈发深刻。", "As people age, their understanding of happiness becomes ever more profound.", "伴随"),
     )
 
     val nce_nce4_8 = listOf(
@@ -2100,6 +2303,11 @@ object NewConceptData {
         Triple("沉默本身也是一种强有力的表达。", "Silence itself is also a powerful form of expression.", "沉默"),
         Triple("推理链条上的每一个环节都要检验。", "Every link in the reasoning chain must be examined.", "链条"),
         Triple("批判性思维是现代民主社会的基石。", "Critical thinking is the cornerstone of a modern democratic society.", "基石"),
+        Triple("倘若缺乏批判性思维，我们将沦为信息的奴隶。", "Were critical thinking lacking, we would become slaves to information.", "虚拟"),
+        Triple("批判性思维中，不仅逻辑重要，证据亦重要。", "In critical thinking, not only does logic matter, but evidence also matters.", "倒装"),
+        Triple("被情绪左右的决定，往往是错误的决定。", "Decisions swayed by emotions are often wrong decisions.", "被动"),
+        Triple("正是质疑的精神，推动了人类知识的进步。", "It is precisely the spirit of questioning that drives the progress of human knowledge.", "强调"),
+        Triple("随着信息爆炸，批判性思维变得愈发重要。", "With the information explosion, critical thinking has become ever more important.", "伴随"),
     )
 
     val nce_nce4_9 = listOf(
@@ -2153,6 +2361,11 @@ object NewConceptData {
         Triple("博物馆是历史教育的关键场所。", "Museums are key sites for history education.", "博物馆"),
         Triple("数字人文正在革新历史研究的方法。", "Digital humanities are revolutionizing historical research methods.", "数字"),
         Triple("大数据揭示历史模式的全新维度。", "Big data reveals new dimensions of historical patterns.", "数据"),
+        Triple("倘若忘记历史，我们必将重蹈覆辙。", "Were history forgotten, we would inevitably repeat the same mistakes.", "虚拟"),
+        Triple("治理方面，历史教训的需求无处不在。", "Nowhere is the lesson of history more needed than in governance.", "倒装"),
+        Triple("被历史尘封的真相，终将大白于天下。", "Truths buried by history will eventually come to light.", "被动"),
+        Triple("正是以史为鉴，我们才能更好地面向未来。", "It is precisely by learning from history that we can better face the future.", "强调"),
+        Triple("随着时代发展，历史研究的方法也在不断革新。", "With the development of the times, methods of historical research are also constantly being innovated.", "伴随"),
     )
 
     val nce_nce4_10 = listOf(
@@ -2206,6 +2419,11 @@ object NewConceptData {
         Triple("创新者需要理解采纳曲线的动力学。", "Innovators need to understand adoption curve dynamics.", "动力"),
         Triple("可持续创新需同时考虑环境和社会影响。", "Sustainable innovation must consider both environmental and social impacts.", "可持续"),
         Triple("面向未来的创造需要负责任的想象力。", "Future-oriented creation requires responsible imagination.", "责任"),
+        Triple("倘若没有创新的勇气，文明将停滞不前。", "Were there no courage to innovate, civilization would stagnate.", "虚拟"),
+        Triple("不仅创造力，坚持同样能带来突破。", "Not only does creativity bring breakthroughs, but persistence does as well.", "倒装"),
+        Triple("被传统束缚的思维，难以产生真正的创新。", "Thinking constrained by tradition can hardly produce true innovation.", "被动"),
+        Triple("正是不断探索的精神，推动着人类文明前进。", "It is precisely the spirit of constant exploration that drives human civilization forward.", "强调"),
+        Triple("随着科技进步，创新的边界正不断被拓展。", "With technological progress, the boundaries of innovation are constantly being expanded.", "伴随"),
     )
 
     fun generateAllSentences(): List<SentenceEntity> {
