@@ -41,6 +41,14 @@ jobs:
         ./gradlew assembleDebug --no-daemon --stacktrace 2>&1 | tee build-log.txt
         echo "EXIT_CODE=${PIPESTATUS[0]}" >> $GITHUB_ENV
 
+    - name: Show error summary (if build failed)
+      if: env.EXIT_CODE != '0'
+      run: |
+        echo "=== BUILD ERRORS ==="
+        grep -i "error" build-log.txt | head -30 || echo "No error lines found"
+        echo "=== FAILURE SUMMARY ==="
+        grep -A 10 "FAILURE\|What went wrong" build-log.txt | head -30 || echo "No failure summary"
+
     - name: Upload build log
       uses: actions/upload-artifact@v4
       with:
