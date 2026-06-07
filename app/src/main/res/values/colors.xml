@@ -12,6 +12,7 @@
     <!-- Background Colors -->
     <color name="background">#F5F5F5</color>
     <color name="surface">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
     
     <!-- Text Colors -->
     <color name="text_primary">#212121</color>
