@@ -20,7 +20,7 @@ interface SentenceDao {
     @Query("SELECT * FROM sentences WHERE cefrLevel = :level AND sceneId = :sceneId ORDER BY sentenceId")
     suspend fun getSentencesByScene(level: String, sceneId: Int): List<SentenceEntity>
 
-    @Query("SELECT * FROM sentences WHERE cefrLevel = :level AND id NOT IN (SELECT sentenceId FROM user_sentences WHERE level = :level) ORDER BY id LIMIT :limit")
+    @Query("SELECT * FROM sentences WHERE cefrLevel = :level AND id NOT IN (SELECT sentenceId FROM user_sentences) ORDER BY id LIMIT :limit")
     suspend fun getNewSentencesByLevel(level: String, limit: Int): List<SentenceEntity>
 
     @Query("SELECT DISTINCT cefrLevel FROM sentences ORDER BY cefrLevel")

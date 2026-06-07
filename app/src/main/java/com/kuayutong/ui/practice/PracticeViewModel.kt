@@ -196,6 +196,7 @@ class PracticeViewModel : ViewModel() {
             database.userSentenceDao().insertUserSentence(
                 UserSentenceEntity(
                     sentenceId = sentenceId,
+                    level = currentLevel,
                     isCorrect = true,
                     attempts = wrongAttempts + 1,
                     translatedAt = System.currentTimeMillis(),

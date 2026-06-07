@@ -11,6 +11,9 @@ data class UserSentenceEntity(
     // Sentence ID (foreign key to SentenceEntity)
     val sentenceId: Long,
     
+    // CEFR/NCE level (e.g., "A1_ENTRY", "NCE1") - added in version 3
+    val level: String = "",
+    
     // Whether the user translated correctly
     val isCorrect: Boolean,
     
