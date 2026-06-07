@@ -35,10 +35,27 @@ interface SentenceDao {
 
     @Query("SELECT DISTINCT sceneId, sceneName FROM sentences WHERE cefrLevel = :level ORDER BY sceneId")
     suspend fun getScenesByLevel(level: String): List<SceneInfo>
-}
 
-// Raw query projection for scene listing
-data class SceneInfo(
-    val sceneId: Int,
-    val sceneName: String
-)
+    // ===== New methods for spaced repetition =====
+    
+    // Get sentences that user has never practiced (for daily new sentences)
+    @Query("""
+        SELECT s.* FROM sentences s 
+        WHERE s.id NOT IN (
+            SELECT DISTINCT sentenceId FROM user_sentences 
+            WHERE isCorrect = 1
+        )
+        AND s.cefrLevel = :level
+        ORDER BY s.sceneId, s.sentenceId
+        LIMIT :limit
+    """)
+    suspend fun getNewSentencesByLevel(level: String, limit: Int): List<SentenceEntity>
+
+    // Get all sentence IDs that user has ever practiced correctly
+    @Query("""
+        SELECT DISTINCT sentenceId FROM user_sentences 
+        WHERE sentenceId IN (SELECT id FROM sentences WHERE cefrLevel = :level)
+        AND isCorrect = 1
+    """)
+    suspend fun getPracticedSentenceIdsByLevel(level: String): List<Long>
+}

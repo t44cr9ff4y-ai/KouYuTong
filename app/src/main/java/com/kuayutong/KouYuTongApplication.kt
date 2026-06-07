@@ -22,7 +22,8 @@ class KouYuTongApplication : Application() {
             applicationContext,
             AppDatabase::class.java,
             "kuayutong_database"
-        ).fallbackToDestructiveMigration()
+        ).addMigrations(AppDatabase.MIGRATION_1_2)
+            .fallbackToDestructiveMigration()
             .build()
 
         // Seed database on first launch
