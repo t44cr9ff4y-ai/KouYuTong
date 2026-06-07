@@ -9,7 +9,7 @@ import com.kuayutong.data.entity.SentenceEntity
  */
 object NewConceptData {
 
-    val nce_nce1_1 = listOf(
+    val nce_nce1_1 by lazy { listOf(
         Triple("你好。", "Hello.", "问候"),
         Triple("早上好。", "Good morning.", "时间"),
         Triple("下午好。", "Good afternoon.", "时间"),
@@ -100,9 +100,9 @@ object NewConceptData {
         Triple("我在医院上班。", "I work at a hospital.", "工作"),
         Triple("这是我的名片。", "This is my business card.", "名片"),
         Triple("谢谢，这是我的。", "Thanks, here's mine.", "交换"),
-    )
+    ) }
 
-    val nce_nce1_2 = listOf(
+    val nce_nce1_2 by lazy { listOf(
         Triple("这是我家。", "This is my home.", "家"),
         Triple("欢迎来我家。", "Welcome to my home.", "待客"),
         Triple("请进。", "Come in please.", "邀请"),
@@ -193,9 +193,9 @@ object NewConceptData {
         Triple("家里需要买什么？", "What do we need to buy?", "购物"),
         Triple("卫生纸快用完了。", "We're running out of toilet paper.", "需求"),
         Triple("家里真温馨。", "Home sweet home.", "感受"),
-    )
+    ) }
 
-    val nce_nce1_3 = listOf(
+    val nce_nce1_3 by lazy { listOf(
         Triple("我每天六点起床。", "I get up at six every day.", "起床"),
         Triple("你几点起床？", "What time do you get up?", "询问"),
         Triple("一般七点。", "Usually at seven.", "回答"),
@@ -286,9 +286,9 @@ object NewConceptData {
         Triple("它很贵。", "It's expensive.", "价格"),
         Triple("这个很便宜。", "This is cheap.", "价格"),
         Triple("我要买一个。", "I want to buy one.", "购买"),
-    )
+    ) }
 
-    val nce_nce1_4 = listOf(
+    val nce_nce1_4 by lazy { listOf(
         Triple("在哪里上学？", "Where do you go to school?", "学校"),
         Triple("北京大学。", "Peking University.", "回答"),
         Triple("学什么专业？", "What's your major?", "专业"),
@@ -379,9 +379,9 @@ object NewConceptData {
         Triple("快一点。", "Hurry up.", "催促"),
         Triple("等我一分钟。", "Wait for me one minute.", "请求"),
         Triple("时间过得真快。", "Time flies.", "感叹"),
-    )
+    ) }
 
-    val nce_nce1_5 = listOf(
+    val nce_nce1_5 by lazy { listOf(
         Triple("这件外套多少钱？", "How much is this coat?", "问价"),
         Triple("三百元。", "Three hundred yuan.", "价格"),
         Triple("太贵了。", "Too expensive.", "评价"),
@@ -472,9 +472,9 @@ object NewConceptData {
         Triple("蔬菜要多吃。", "Eat more vegetables.", "健康"),
         Triple("你吃素吗？", "Are you a vegetarian?", "饮食"),
         Triple("多喝水对身体好。", "Drinking more water is good for you.", "健康"),
-    )
+    ) }
 
-    val nce_nce1_6 = listOf(
+    val nce_nce1_6 by lazy { listOf(
         Triple("今天天气怎么样？", "What's the weather like today?", "天气"),
         Triple("晴朗。", "It's sunny.", "回答"),
         Triple("今天好热。", "It's so hot today.", "温度"),
@@ -565,9 +565,9 @@ object NewConceptData {
         Triple("能见度很低。", "Visibility is low.", "雾"),
         Triple("糟糕的天气。", "Terrible weather.", "评价"),
         Triple("天气预报说明天晴天。", "The forecast says sunny tomorrow.", "预报"),
-    )
+    ) }
 
-    val nce_nce1_7 = listOf(
+    val nce_nce1_7 by lazy { listOf(
         Triple("公交站在哪里？", "Where's the bus stop?", "公交"),
         Triple("往前走两百米。", "Go straight ahead two hundred meters.", "指路"),
         Triple("这趟车去哪？", "Where does this bus go?", "路线"),
@@ -658,9 +658,9 @@ object NewConceptData {
         Triple("请系好安全带。", "Please fasten your seat belt.", "安全"),
         Triple("限速多少？", "What's the speed limit?", "交通"),
         Triple("注意安全。", "Be safe.", "提醒"),
-    )
+    ) }
 
-    val nce_nce1_8 = listOf(
+    val nce_nce1_8 by lazy { listOf(
         Triple("做什么的？", "What do you do?", "职业"),
         Triple("软件工程师。", "Software engineer.", "回答"),
         Triple("在哪家公司？", "Which company?", "公司"),
@@ -751,9 +751,9 @@ object NewConceptData {
         Triple("今天洗衣服。", "I'm doing laundry today.", "家务"),
         Triple("买一送一。", "Buy one get one free.", "促销"),
         Triple("这个质量不错。", "The quality is good.", "评价"),
-    )
+    ) }
 
-    val nce_nce1_9 = listOf(
+    val nce_nce1_9 by lazy { listOf(
         Triple("打算去哪里旅游？", "Where do you plan to travel?", "计划"),
         Triple("想去云南。", "Want to go to Yunnan.", "回答"),
         Triple("什么时候出发？", "When do you leave?", "时间"),
@@ -844,9 +844,9 @@ object NewConceptData {
         Triple("预防胜于治疗。", "Prevention is better than cure.", "谚语"),
         Triple("早睡早起身体好。", "Early to bed, early to rise keeps you healthy.", "谚语"),
         Triple("祝你早日康复。", "Get well soon.", "祝福"),
-    )
+    ) }
 
-    val nce_nce1_10 = listOf(
+    val nce_nce1_10 by lazy { listOf(
         Triple("你饿不饿？", "Are you hungry?", "问饿"),
         Triple("饿了。", "I'm hungry.", "回答"),
         Triple("去吃点东西吧。", "Let's go grab something to eat.", "提议"),
@@ -937,9 +937,9 @@ object NewConceptData {
         Triple("及格了。", "Yes I passed.", "通过"),
         Triple("没及格。", "I didn't pass.", "未通过"),
         Triple("继续努力。", "Keep trying.", "鼓励"),
-    )
+    ) }
 
-    val nce_nce2_1 = listOf(
+    val nce_nce2_1 by lazy { listOf(
         Triple("上周末经历了有趣的事。", "Something interesting happened last weekend.", "叙事"),
         Triple("遇到了老朋友。", "I met an old friend.", "偶遇"),
         Triple("十年没见了。", "Hadn't seen each other for ten years.", "时间"),
@@ -1030,9 +1030,9 @@ object NewConceptData {
         Triple("经历越多你的人生越丰富。", "The more experiences, the richer your life.", "哲理"),
         Triple("不要只活在别人的故事里。", "Don't just live in other people's stories.", "劝诫"),
         Triple("去创造属于自己的精彩故事吧。", "Go and create your own wonderful story.", "鼓励"),
-    )
+    ) }
 
-    val nce_nce2_2 = listOf(
+    val nce_nce2_2 by lazy { listOf(
         Triple("最喜欢哪里？", "What's your favorite place to visit?", "问题"),
         Triple("最喜欢京都。", "I like Kyoto the most.", "偏好"),
         Triple("有什么特别的？", "What's special about it?", "追问"),
@@ -1123,9 +1123,9 @@ object NewConceptData {
         Triple("别等有钱了再说。", "Don't wait until you have more money.", "建议"),
         Triple("存够了就走现在就开始存。", "Go once you have saved enough, start saving now.", "行动"),
         Triple("下一站你打算去哪儿？", "Where are you going next?", "提问"),
-    )
+    ) }
 
-    val nce_nce2_3 = listOf(
+    val nce_nce2_3 by lazy { listOf(
         Triple("最大的成就是什么？", "What's your greatest achievement?", "成就"),
         Triple("完成这个项目。", "Completing this project.", "回答"),
         Triple("很有挑战性吧？", "Very challenging, right?", "挑战"),
@@ -1216,9 +1216,9 @@ object NewConceptData {
         Triple("取长补短共同进步。", "Learn from each other's strengths and improve together.", "合作"),
         Triple("职场中情商比智商更重要。", "Emotional intelligence is more important than IQ at work.", "观点"),
         Triple("良好的沟通能力是无价的。", "Good communication skills are priceless.", "观点"),
-    )
+    ) }
 
-    val nce_nce2_4 = listOf(
+    val nce_nce2_4 by lazy { listOf(
         Triple("环境保护越来越重要了。", "Environmental protection is increasingly important.", "观点"),
         Triple("我也这么想。", "I think so too.", "赞同"),
         Triple("有什么具体环保行动？", "Any specific environmental actions?", "行动"),
@@ -1319,9 +1319,9 @@ object NewConceptData {
         Triple("买本地蔬菜减少碳排放。", "Buy local vegetables to reduce carbon footprint.", "本地"),
         Triple("环保不需要做什么大事。", "Protecting the environment does not need big actions.", "小事"),
         Triple("从身边的小事做起就好。", "Starting with small things around you is enough.", "行动"),
-    )
+    ) }
 
-    val nce_nce2_5 = listOf(
+    val nce_nce2_5 by lazy { listOf(
         Triple("现代科技改变了一切。", "Modern technology has changed everything.", "主题"),
         Triple("每天用手机多久？", "How long on your phone daily?", "提问"),
         Triple("五六个小时。", "Five or six hours.", "回答"),
@@ -1422,9 +1422,9 @@ object NewConceptData {
         Triple("永远不要低估科技的力量。", "Never underestimate the power of technology.", "警醒"),
         Triple("但科技应该为人所用不是反过来。", "But tech should serve people, not the other way around.", "原则"),
         Triple("未来已来只是分布不均。", "The future is already here, just unevenly distributed.", "名言"),
-    )
+    ) }
 
-    val nce_nce2_6 = listOf(
+    val nce_nce2_6 by lazy { listOf(
         Triple("友谊对谁都很重要。", "Friendship is important for everyone.", "主题"),
         Triple("你怎么看？", "What do you think?", "提问"),
         Triple("我同意。", "I agree.", "赞同"),
@@ -1515,9 +1515,9 @@ object NewConceptData {
         Triple("人际交往中最忌讳什么？", "What should you avoid most in relationships?", "忌讳"),
         Triple("背后说人坏话最不好。", "Talking badly behind someone's back is the worst.", "回答"),
         Triple("做个善良的人比什么都重要。", "Being a kind person is more important than anything else.", "总结"),
-    )
+    ) }
 
-    val nce_nce2_7 = listOf(
+    val nce_nce2_7 by lazy { listOf(
         Triple("生命在于运动。", "Life lies in movement.", "谚语"),
         Triple("不运动会生锈。", "The body will rust without exercise.", "比喻"),
         Triple("喜欢什么运动？", "What sports do you like?", "提问"),
@@ -1608,9 +1608,9 @@ object NewConceptData {
         Triple("没有健康一切都无从谈起。", "Without health nothing else matters.", "哲理"),
         Triple("投资健康永远不会亏。", "Investing in health never loses.", "哲理"),
         Triple("活得长不如活得健康。", "Living healthily is better than living long.", "哲理"),
-    )
+    ) }
 
-    val nce_nce2_8 = listOf(
+    val nce_nce2_8 by lazy { listOf(
         Triple("你认为什么是好教育？", "What do you think is good education?", "主题"),
         Triple("不是填鸭式而是启发式。", "Not rote learning but heuristic.", "观点"),
         Triple("教人思考比教知识更重要。", "Teaching how to think is more important than teaching knowledge.", "对比"),
@@ -1712,9 +1712,9 @@ object NewConceptData {
         Triple("提出好问题比记住答案更重要。", "Asking good questions is more important than remembering answers.", "提问"),
         Triple("练习越多进步越快。", "The more you practice, the faster you improve.", "练习"),
         Triple("学习是一辈子的事情。", "Learning is a lifelong thing.", "终身"),
-    )
+    ) }
 
-    val nce_nce2_9 = listOf(
+    val nce_nce2_9 by lazy { listOf(
         Triple("成功需要付出什么代价？", "What price does success require?", "成功"),
         Triple("时间和努力。", "Time and effort.", "回答"),
         Triple("还必须接受失败。", "Must also accept failure.", "补充"),
@@ -1805,9 +1805,9 @@ object NewConceptData {
         Triple("经历过低谷才懂得感恩。", "You learn gratitude after hitting rock bottom.", "感恩"),
         Triple("成功不是战胜所有人。", "Success is not about beating everyone.", "定义"),
         Triple("真正的成功是超越了自己。", "Real success is going beyond yourself.", "定义"),
-    )
+    ) }
 
-    val nce_nce2_10 = listOf(
+    val nce_nce2_10 by lazy { listOf(
         Triple("改掉坏习惯真难。", "Breaking bad habits is so hard.", "习惯"),
         Triple("有什么好建议吗？", "Any good suggestions?", "建议"),
         Triple("从小目标开始。", "Start with small goals.", "方法"),
@@ -1898,9 +1898,9 @@ object NewConceptData {
         Triple("今天的努力是明天的礼物。", "Today's effort is tomorrow's gift.", "哲理"),
         Triple("你的每一个选择都在塑造未来。", "Every choice you make shapes your future.", "哲理"),
         Triple("从今天开始就做一个改变吧。", "Start making one change from today.", "号召"),
-    )
+    ) }
 
-    val nce_nce3_1 = listOf(
+    val nce_nce3_1 by lazy { listOf(
         Triple("现代社会面临很多挑战。", "Modern society faces many challenges.", "主题"),
         Triple("贫富差距越来越大。", "The wealth gap is getting wider.", "举例"),
         Triple("政府该采取措施吗？", "Should the government take measures?", "提问"),
@@ -2024,9 +2024,9 @@ object NewConceptData {
         Triple("文化多元主义挑战了传统的民族国家观念。", "Cultural pluralism challenges traditional concepts of nation-states.", "多元"),
         Triple("社会政策的评估应该基于实际效果而非 ideology。", "The evaluation of social policies should be based on actual effects rather than ideology.", "评估"),
         Triple("公共领域的衰落威胁了民主制度的根基。", "The decline of the public sphere threatens the foundation of democratic institutions.", "公共"),
-    )
+    ) }
 
-    val nce_nce3_2 = listOf(
+    val nce_nce3_2 by lazy { listOf(
         Triple("AI正在改变每个行业。", "AI is transforming every industry.", "主题"),
         Triple("用过AI助手吗？", "Have you used an AI assistant?", "提问"),
         Triple("用过非常强大。", "Yes, very powerful.", "回答"),
@@ -2150,9 +2150,9 @@ object NewConceptData {
         Triple("技术伦理审查应该成为研发流程的必经环节。", "Ethical review of technology should become a necessary part of the R&D process.", "审查"),
         Triple("可解释人工智能是建立算法问责制的基础。", "Explainable artificial intelligence is the foundation for establishing algorithm accountability.", "可解释"),
         Triple("技术社会学研究创新如何被社会所塑造和接纳。", "The sociology of technology studies how innovations are shaped and adopted by society.", "社会学"),
-    )
+    ) }
 
-    val nce_nce3_3 = listOf(
+    val nce_nce3_3 by lazy { listOf(
         Triple("文化多样性是全人类的财富。", "Cultural diversity is the wealth of all humanity.", "主题"),
         Triple("全球化加速文化交流。", "Globalization accelerates cultural exchange.", "现象"),
         Triple("经历过文化冲突吗？", "Ever experienced culture clash?", "提问"),
@@ -2276,9 +2276,9 @@ object NewConceptData {
         Triple("文化研究揭示了常识如何成为统治的自然化工具。", "Cultural studies reveal how common sense becomes a tool for naturalizing domination.", "研究"),
         Triple("文化传播效果取决于接收者的解码能力与意愿。", "The effect of cultural communication depends on the receiver's decoding ability and willingness.", "效果"),
         Triple("文化政策应该在市场逻辑与文化价值之间保持平衡。", "Cultural policy should maintain balance between market logic and cultural value.", "平衡"),
-    )
+    ) }
 
-    val nce_nce3_4 = listOf(
+    val nce_nce3_4 by lazy { listOf(
         Triple("人生的意义是需要回答的问题。", "The meaning of life is a question to answer.", "主题"),
         Triple("人生的意义是什么？", "What is the meaning of life?", "提问"),
         Triple("这个问题我思考很久了。", "I've thought about this for a long time.", "深思"),
@@ -2402,9 +2402,9 @@ object NewConceptData {
         Triple("人生智慧在于理解并接受自己的局限性。", "Life wisdom lies in understanding and accepting one's own limitations.", "智慧"),
         Triple("真正的自由是能够诚实面对自己内心的能力。", "True freedom is the ability to face one's own heart honestly.", "自由"),
         Triple("人生是一场自我发现的旅程而非目的地。", "Life is a journey of self-discovery rather than a destination.", "旅程"),
-    )
+    ) }
 
-    val nce_nce3_5 = listOf(
+    val nce_nce3_5 by lazy { listOf(
         Triple("全球经济的未来充满不确定性。", "The future of the global economy is uncertain.", "主题"),
         Triple("通货膨胀是主要挑战。", "Inflation is the main challenge.", "议题"),
         Triple("普通人如何应对通胀？", "How can ordinary people deal with inflation?", "提问"),
@@ -2524,9 +2524,9 @@ object NewConceptData {
         Triple("制度创新降低了交易成本促进了经济交换。", "Institutional innovation reduces transaction costs and promotes economic exchange.", "制度"),
         Triple("全球价值链分工重塑了国际贸易的收益分配格局。", "The division of labor in global value chains has reshaped the pattern of benefit distribution in international trade.", "价值链"),
         Triple("经济治理结构决定了发展成果的分享方式。", "Economic governance structure determines the way development fruits are shared.", "治理"),
-    )
+    ) }
 
-    val nce_nce3_6 = listOf(
+    val nce_nce3_6 by lazy { listOf(
         Triple("艺术是人类精神的表达。", "Art is the expression of the human spirit.", "定义"),
         Triple("文学音乐绘画都承载文明。", "Literature, music, and painting carry civilization.", "列举"),
         Triple("最喜欢的小说？", "Favorite novel?", "提问"),
@@ -2649,9 +2649,9 @@ object NewConceptData {
         Triple("文化政策研究分析了政府干预如何在自由表达与文化治理间寻求平衡。", "Cultural policy studies analyze how government intervention seeks balance between free expression and cultural governance.", "政策"),
         Triple("艺术哲学追问美的本质、艺术的定义与审美的普遍性或相对性问题。", "Philosophy of art questions the essence of beauty, the definition of art, and the universality or relativity of aesthetics.", "哲学"),
         Triple("文学世界主义探讨跨民族文化流通如何重塑了世界文学的版图。", "Literary cosmopolitanism explores how cross-national cultural circulation reshapes the map of world literature.", "世界"),
-    )
+    ) }
 
-    val nce_nce3_7 = listOf(
+    val nce_nce3_7 by lazy { listOf(
         Triple("科学发现源于好奇心。", "Scientific discoveries originate from curiosity.", "主题"),
         Triple("简单问题可能引发重大突破。", "Simple questions can lead to major breakthroughs.", "观点"),
         Triple("牛顿问苹果为什么掉下来。", "Newton asked why apples fall down.", "举例"),
@@ -2775,9 +2775,9 @@ object NewConceptData {
         Triple("水资源的可持续管理需要科学评估与政策执行的紧密结合。", "Sustainable management of water resources requires the close integration of scientific assessment and policy implementation.", "水资源"),
         Triple("科学知识的不确定性与风险沟通是科学传播的重要挑战。", "Uncertainty and risk communication of scientific knowledge are important challenges for science communication.", "不确定性"),
         Triple("复杂系统科学为我们理解生命和社会现象提供了全新的视角。", "Complex systems science provides a entirely new perspective for understanding life and social phenomena.", "复杂"),
-    )
+    ) }
 
-    val nce_nce3_8 = listOf(
+    val nce_nce3_8 by lazy { listOf(
         Triple("成长是一个终身的旅程。", "Growth is a lifelong journey.", "主题"),
         Triple("反思是成长的必要条件。", "Reflection is necessary for growth.", "观点"),
         Triple("过度反思也会导致焦虑。", "Excessive reflection may also lead to anxiety.", "限制"),
@@ -2901,9 +2901,9 @@ object NewConceptData {
         Triple("意义的建构是人类应对存在性焦虑的重要心理机制。", "The construction of meaning is an important psychological mechanism for coping with existential anxiety.", "意义"),
         Triple("成长不应该是强迫性的而应是自我选择的发展路径。", "Growth should not be compulsive but a self-chosen path of development.", "选择"),
         Triple("内在平静与持续成长的辩证统一是人生修行的高级境界。", "The dialectical unity of inner peace and continuous growth is the advanced realm of life cultivation.", "修行"),
-    )
+    ) }
 
-    val nce_nce3_9 = listOf(
+    val nce_nce3_9 by lazy { listOf(
         Triple("每个人都是社会的一员。", "Everyone is a member of society.", "主题"),
         Triple("你有社会责任吗？", "Do you have social responsibility?", "提问"),
         Triple("当然有。", "Of course I do.", "回答"),
@@ -3027,9 +3027,9 @@ object NewConceptData {
         Triple("企业漂绿行为损害了社会责任话语的公信力和正当性。", "Corporate greenwashing behavior damages the credibility and legitimacy of social responsibility discourse.", "漂绿"),
         Triple("社会责任的边界在现代性条件下被不断地重新定义和扩大。", "The boundaries of social responsibility are constantly redefined and expanded under conditions of modernity.", "边界"),
         Triple("捐赠伦理涉及施与受之间权力关系和不平等地位的反思。", "Donation ethics involves reflection on the power relations and inequality between givers and receivers.", "捐赠"),
-    )
+    ) }
 
-    val nce_nce3_10 = listOf(
+    val nce_nce3_10 by lazy { listOf(
         Triple("你思考过人生的意义吗？", "Have you thought about the meaning of life?", "提问"),
         Triple("这个问题没有标准答案。", "There is no standard answer to this question.", "回答"),
         Triple("哲学不再是冷冰冰的学问。", "Philosophy is no longer a cold academic subject.", "观点"),
@@ -3153,9 +3153,9 @@ object NewConceptData {
         Triple("自由社会中的强制概念需要严格界定以免伤害少数人权益。", "The concept of coercion in a free society needs to be strictly defined to avoid harming minority rights.", "强制"),
         Triple("哲学的实践性要求理论思考与日常生活的关怀相结合。", "The practical nature of philosophy requires combining theoretical reflection with the cares of everyday life.", "实践"),
         Triple("价值多元主义认为不可通约的价值之间可能存在着永恒的冲突。", "Value pluralism holds that perpetual conflicts may exist among incommensurable values.", "多元"),
-    )
+    ) }
 
-    val nce_nce4_1 = listOf(
+    val nce_nce4_1 by lazy { listOf(
         Triple("哲学不只在书本上。", "Philosophy is not just in books.", "主题"),
         Triple("关乎我们如何生活。", "It's about how we live.", "解释"),
         Triple("苏格拉底说未经审视的人生不值得过。", "Socrates said the unexamined life is not worth living.", "引用"),
@@ -3246,9 +3246,9 @@ object NewConceptData {
         Triple("系统与生活世界的殖民化需要批判。", "The colonization of the lifeworld by systems needs criticism.", "殖民"),
         Triple("商谈伦理以理解为导向的互动。", "Discourse ethics is understanding-oriented interaction.", "商谈"),
         Triple("唯有在不屈不挠的思辨中，真理才显现自身。", "Only in unyielding speculation does truth reveal itself.", "倒装"),
-    )
+    ) }
 
-    val nce_nce4_2 = listOf(
+    val nce_nce4_2 by lazy { listOf(
         Triple("我们生活在一个互联互通的世界。", "We live in an interconnected world.", "主题"),
         Triple("蝴蝶效应真实存在。", "The butterfly effect is real.", "概念"),
         Triple("一国危机可能波及全球。", "A crisis in one country can affect the whole world.", "分析"),
@@ -3339,9 +3339,9 @@ object NewConceptData {
         Triple("南南合作提供发展新路径。", "South-South cooperation offers new development paths.", "南南"),
         Triple("一带一路倡议促进基础设施联通。", "The Belt and Road Initiative promotes infrastructure connectivity.", "一带一路"),
         Triple("无论国界如何，人类命运与共。", "Whatever the borders, human destiny is shared.", "命运"),
-    )
+    ) }
 
-    val nce_nce4_3 = listOf(
+    val nce_nce4_3 by lazy { listOf(
         Triple("真正的领导力不是权力。", "True leadership is not about power.", "主题"),
         Triple("而是影响力。", "It's about influence.", "解释"),
         Triple("怎样才算好领导？", "What makes a good leader?", "提问"),
@@ -3432,9 +3432,9 @@ object NewConceptData {
         Triple("多元化领导团队表现更佳。", "Diverse leadership teams perform better.", "多元"),
         Triple("继任计划确保领导力延续。", "Succession planning ensures leadership continuity.", "继任"),
         Triple("培养接班人是最好的遗产。", "Developing successors is the best legacy.", "遗产"),
-    )
+    ) }
 
-    val nce_nce4_4 = listOf(
+    val nce_nce4_4 by lazy { listOf(
         Triple("时间是世间最公平的东西。", "Time is the fairest thing in the world.", "主题"),
         Triple("每人每天都有二十四小时。", "Everyone has twenty-four hours a day.", "事实"),
         Triple("区别在于如何利用。", "The difference is in how we use it.", "关键"),
@@ -3525,9 +3525,9 @@ object NewConceptData {
         Triple("时间观影响生活满意度。", "Time perspective influences life satisfaction.", "时间观"),
         Triple("平衡的过去现在未来观最佳。", "Balanced past, present, future perspective is best.", "平衡"),
         Triple("无论时间如何流逝，珍惜当下足矣。", "Whatever time flows, cherishing the present is enough.", "珍惜"),
-    )
+    ) }
 
-    val nce_nce4_5 = listOf(
+    val nce_nce4_5 by lazy { listOf(
         Triple("阅读是穿越时空的对话。", "Reading is a conversation across time and space.", "定义"),
         Triple("与那些你永远见不到的人交流。", "Communicating with people you'll never meet.", "升华"),
         Triple("你最近读了印象深刻的书？", "What book recently impressed you?", "提问"),
@@ -3618,9 +3618,9 @@ object NewConceptData {
         Triple("公共图书馆是民主的基石。", "Public libraries are a cornerstone of democracy.", "图书馆"),
         Triple("知识自由是公民的基本权利。", "Freedom of knowledge is a basic citizen right.", "自由"),
         Triple("无论媒介如何变迁，深度阅读的灵魂不变。", "Whatever medium changes, the soul of deep reading remains.", "灵魂"),
-    )
+    ) }
 
-    val nce_nce4_6 = listOf(
+    val nce_nce4_6 by lazy { listOf(
         Triple("AI到底有没有意识？", "Does AI really have consciousness?", "话题"),
         Triple("这个问题没有标准答案目前。", "There's no standard answer yet.", "现状"),
         Triple("但可能不久的将来就会有。", "But likely in the near future.", "预测"),
@@ -3711,9 +3711,9 @@ object NewConceptData {
         Triple("AI不应替代人类判断而应辅助。", "AI should not replace but augment human judgment.", "辅助"),
         Triple("保留人类否决权至关重要。", "Retaining human override authority is crucial.", "否决"),
         Triple("无论AI多强大，伦理底线不可突破。", "However powerful AI may be, ethical bottom lines must not be crossed.", "底线"),
-    )
+    ) }
 
-    val nce_nce4_7 = listOf(
+    val nce_nce4_7 by lazy { listOf(
         Triple("幸福是什么？", "What is happiness?", "永恒"),
         Triple("一直在变可能永远在变。", "Always changing, maybe forever changing.", "动态"),
         Triple("小时候的快乐和现在就不一样。", "Happiness as a child is different from now.", "对比"),
@@ -3804,9 +3804,9 @@ object NewConceptData {
         Triple("长期练习改变大脑结构。", "Long-term practice changes brain structure.", "神经可塑"),
         Triple("环境的有序程度影响内心平静。", "Environmental orderliness affects inner peace.", "环境"),
         Triple("整洁空间促进清晰思维。", "A tidy space promotes clear thinking.", "整洁"),
-    )
+    ) }
 
-    val nce_nce4_8 = listOf(
+    val nce_nce4_8 by lazy { listOf(
         Triple("批判性思维是检验论证质量的能力。", "Critical thinking is the ability to examine argument quality.", "定义"),
         Triple("它要求我们不轻易接受任何主张。", "It demands we don't readily accept any claim.", "要求"),
         Triple("论证分析要看前提是否支持结论。", "Argument analysis examines whether premises support the conclusion.", "分析"),
@@ -3897,9 +3897,9 @@ object NewConceptData {
         Triple("反对立场应建立在证据和逻辑之上。", "Opposition should be built on evidence and logic.", "反对"),
         Triple("批判性思维不是愤世嫉俗。", "Critical thinking is not cynicism.", "区别"),
         Triple("而是理性地评估和审慎地判断。", "But rationally evaluating and prudently judging.", "理性"),
-    )
+    ) }
 
-    val nce_nce4_9 = listOf(
+    val nce_nce4_9 by lazy { listOf(
         Triple("历史不是孤立事件的简单罗列。", "History is not a simple list of isolated events.", "定义"),
         Triple("它揭示人类社会发展的深层规律。", "It reveals deep patterns of human social development.", "规律"),
         Triple("文明兴衰是历史学家的核心研究课题。", "The rise and fall of civilizations is a core historical topic.", "文明"),
@@ -3990,9 +3990,9 @@ object NewConceptData {
         Triple("反恐战争开启二十一世纪的新冲突。", "The War on Terror opened new conflicts in the 21st century.", "反恐"),
         Triple("阿拉伯之春展示了变革的复杂性。", "The Arab Spring demonstrated the complexity of change.", "阿拉伯"),
         Triple("无论时代如何变化，人性始终如一。", "Whatever the era changes, human nature remains the same.", "人性"),
-    )
+    ) }
 
-    val nce_nce4_10 = listOf(
+    val nce_nce4_10 by lazy { listOf(
         Triple("创造是产生有价值的新颖想法的过程。", "Creativity is the process of generating valuable novel ideas.", "定义"),
         Triple("创新思维挑战默认的思考框架。", "Innovative thinking challenges default thinking frameworks.", "挑战"),
         Triple("设计思维以人为中心来解决问题。", "Design thinking solves problems with a human-centered approach.", "设计"),
@@ -4083,7 +4083,7 @@ object NewConceptData {
         Triple("虚拟现实开辟全新创作空间。", "Virtual reality opens entirely new creative spaces.", "虚拟"),
         Triple("区块链技术可能革新信任机制。", "Blockchain technology may revolutionize trust mechanisms.", "区块链"),
         Triple("无论技术如何演进，创新精神永不熄灭。", "Whatever technology evolves, the spirit of innovation never extinguishes.", "精神"),
-    )
+    ) }
 
     fun generateAllSentences(): List<SentenceEntity> {
         val all = mutableListOf<SentenceEntity>()
