@@ -7,7 +7,7 @@ import com.kuayutong.data.entity.SentenceEntity
  */
 object SentenceData {
 
-    val a1EntryGreeting = listOf(
+    val a1EntryGreeting  by lazy { listOf(
         Triple("你好。", "Hello.", "基本问候语"),
         Triple("早上好。", "Good morning.", "时间问候语"),
         Triple("下午好。", "Good afternoon.", "时间问候语"),
@@ -78,9 +78,9 @@ object SentenceData {
         Triple("我很乐意。", "I would love to.", "回应表达"),
         Triple("我认识你。", "I know you.", "社交表达"),
         Triple("很高兴。", "Very happy.", "情感表达"),
-    )
+    ) }
 
-    val a1EntryFamily = listOf(
+    val a1EntryFamily  by lazy { listOf(
         Triple("这是我的妈妈。", "This is my mother.", "指示代词"),
         Triple("我有爸爸和一个姐姐。", "I have a father and an older sister.", "家庭成员词汇"),
         Triple("他是我哥哥。", "He is my older brother.", "家庭成员称谓"),
@@ -151,9 +151,9 @@ object SentenceData {
         Triple("我爱我的家庭。", "I love my family.", "情感"),
         Triple("我表哥在上海。", "My cousin is in Shanghai.", "居住表达"),
         Triple("我们家养了一只猫。", "We have a cat at home.", "宠物表达"),
-    )
+    ) }
 
-    val a1EntryObjects = listOf(
+    val a1EntryObjects  by lazy { listOf(
         Triple("这是一本书。", "This is a book.", "指示代词"),
         Triple("桌子上有一个杯子。", "There is a cup on the table.", "There be句型"),
         Triple("我的手机在哪里？", "Where is my phone?", "疑问句"),
@@ -224,9 +224,9 @@ object SentenceData {
         Triple("这个礼物很漂亮。", "This gift is very beautiful.", "赞美表达"),
         Triple("那是你的吗？", "Is that yours?", "所属询问"),
         Triple("请擦桌子。", "Please wipe the table.", "祈使句"),
-    )
+    ) }
 
-    val a1EntryNumbers = listOf(
+    val a1EntryNumbers  by lazy { listOf(
         Triple("现在几点了？", "What time is it now?", "时间询问"),
         Triple("今天是星期一。", "Today is Monday.", "星期表达"),
         Triple("一加一等于二。", "One plus one equals two.", "数字运算"),
@@ -297,9 +297,9 @@ object SentenceData {
         Triple("请打123456。", "Please dial 123456.", "电话号码"),
         Triple("我需要一个小时。", "I need one hour.", "时间需求"),
         Triple("现在是中午十二点。", "It is twelve noon now.", "时间表达"),
-    )
+    ) }
 
-    val a1EntryFood = listOf(
+    val a1EntryFood  by lazy { listOf(
         Triple("我喜欢吃苹果。", "I like to eat apples.", "喜欢表达"),
         Triple("请给我一杯水。", "Please give me a glass of water.", "请求表达"),
         Triple("你饿了吗？", "Are you hungry?", "一般疑问句"),
@@ -370,9 +370,9 @@ object SentenceData {
         Triple("我想吃米饭。", "I want to eat rice.", "意愿表达"),
         Triple("这个不好吃。", "This is not delicious.", "评价表达"),
         Triple("我们去买菜。", "Let's go buy groceries.", "提议表达"),
-    )
+    ) }
 
-    val a1EntryWeather = listOf(
+    val a1EntryWeather  by lazy { listOf(
         Triple("今天天气很好。", "The weather is nice today.", "天气表达"),
         Triple("外面很冷。", "It is very cold outside.", "感觉描述"),
         Triple("我喜欢春天。", "I like spring.", "季节喜好"),
@@ -443,9 +443,9 @@ object SentenceData {
         Triple("四季中我喜欢春天。", "Of the four seasons, I like spring best.", "季节偏好"),
         Triple("温度升高了。", "The temperature rose.", "温度变化"),
         Triple("今天是阴天。", "Today is an overcast day.", "天气描述"),
-    )
+    ) }
 
-    val a1EntryTraffic = listOf(
+    val a1EntryTraffic  by lazy { listOf(
         Triple("我坐公共汽车去上班。", "I go to work by bus.", "交通方式"),
         Triple("学校在银行旁边。", "The school is next to the bank.", "方位表达"),
         Triple("请直走然后左转。", "Go straight and turn left.", "方向指示"),
@@ -516,9 +516,9 @@ object SentenceData {
         Triple("我赶不上车了。", "I missed the bus.", "状态表达"),
         Triple("车马上就来。", "The bus is coming soon.", "等待表达"),
         Triple("这里有地铁吗？", "Is there a subway here?", "交通询问"),
-    )
+    ) }
 
-    val a1EntryClothes = listOf(
+    val a1EntryClothes  by lazy { listOf(
         Triple("这件衣服多少钱？", "How much is this shirt?", "价格询问"),
         Triple("我穿红色裙子。", "I wear a red dress.", "衣服描述"),
         Triple("这件太大了。", "This one is too big.", "大小表达"),
@@ -589,9 +589,9 @@ object SentenceData {
         Triple("我想看看别的。", "I want to see others.", "购物意愿"),
         Triple("这个帽子多少钱？", "How much is this hat?", "价格询问"),
         Triple("我们走吧。", "Let's go.", "提议表达"),
-    )
+    ) }
 
-    val a1EntryHealth = listOf(
+    val a1EntryHealth  by lazy { listOf(
         Triple("我头疼。", "I have a headache.", "身体不适"),
         Triple("你应该多喝水。", "You should drink more water.", "建议表达"),
         Triple("他很高。", "He is very tall.", "身高描述"),
@@ -662,9 +662,9 @@ object SentenceData {
         Triple("跑步让身体健康。", "Running makes you healthy.", "运动好处"),
         Triple("你看起来不舒服。", "You look unwell.", "外貌观察"),
         Triple("请叫医生。", "Please call the doctor.", "请求表达"),
-    )
+    ) }
 
-    val a1EntrySchool = listOf(
+    val a1EntrySchool  by lazy { listOf(
         Triple("我是学生。", "I am a student.", "身份表达"),
         Triple("请打开书。", "Please open the book.", "课堂用语"),
         Triple("老师在教室里。", "The teacher is in the classroom.", "位置表达"),
@@ -735,9 +735,9 @@ object SentenceData {
         Triple("每个学生都有书。", "Every student has a book.", "存在描述"),
         Triple("老师请休息。", "The teacher said to take a break.", "课堂活动"),
         Triple("今天我们学新课文。", "Today we will study a new text.", "学习计划"),
-    )
+    ) }
 
-    val a1bMyHome = listOf(
+    val a1bMyHome  by lazy { listOf(
         Triple("我家有三间卧室。", "My home has three bedrooms.", "房间词汇"),
         Triple("客厅里有一张沙发。", "There is a sofa in the living room.", "There be句型"),
         Triple("我的房间是蓝色的。", "My room is blue.", "颜色描述"),
@@ -808,9 +808,9 @@ object SentenceData {
         Triple("邻居昨天来我家做客。", "The neighbor visited our home yesterday.", "过去时"),
         Triple("我家附近有一个公园。", "There is a park near my home.", "周边环境"),
         Triple("这是我住过的最舒服的地方。", "This is the most comfortable place I have lived in.", "最高级"),
-    )
+    ) }
 
-    val a1bWork = listOf(
+    val a1bWork  by lazy { listOf(
         Triple("我爸爸是工程师。", "My father is an engineer.", "职业表达"),
         Triple("她在一家医院工作。", "She works in a hospital.", "工作地点"),
         Triple("你做什么工作？", "What do you do for a living?", "职业询问"),
@@ -881,9 +881,9 @@ object SentenceData {
         Triple("我的电脑昨天坏了。", "My computer broke yesterday.", "过去时"),
         Triple("今天的工作完成了。", "Today's work is finished.", "状态表达"),
         Triple("上班路上我碰到了一个同事。", "I met a colleague on the way to work.", "过去时"),
-    )
+    ) }
 
-    val a1bHobbies = listOf(
+    val a1bHobbies  by lazy { listOf(
         Triple("我喜欢打篮球。", "I like to play basketball.", "爱好表达"),
         Triple("周末我经常画画。", "I often draw pictures on weekends.", "频度副词"),
         Triple("你会弹钢琴吗？", "Can you play the piano?", "能力询问"),
@@ -954,9 +954,9 @@ object SentenceData {
         Triple("我们一起学唱歌。", "We learn to sing together.", "共同爱好"),
         Triple("这个游戏很有趣。", "This game is very interesting.", "评价表达"),
         Triple("我昨天听到一首好歌。", "I heard a good song yesterday.", "过去时"),
-    )
+    ) }
 
-    val a1bDaily = listOf(
+    val a1bDaily  by lazy { listOf(
         Triple("我每天早上七点起床。", "I get up at seven every morning.", "日常作息"),
         Triple("起床后我先洗脸刷牙。", "After getting up I wash my face and brush my teeth.", "顺序表达"),
         Triple("我通常在家吃早餐。", "I usually eat breakfast at home.", "频度副词"),
@@ -1027,9 +1027,9 @@ object SentenceData {
         Triple("早上我喝咖啡。", "I drink coffee in the morning.", "早餐习惯"),
         Triple("周六我打扫房间。", "I clean the room on Saturday.", "周末家务"),
         Triple("每天的作息很规律。", "My daily routine is very regular.", "总结描述"),
-    )
+    ) }
 
-    val a1bDirections = listOf(
+    val a1bDirections  by lazy { listOf(
         Triple("请问银行怎么走？", "Excuse me, how do I get to the bank?", "问路"),
         Triple("直走然后在第二个路口右转。", "Go straight and turn right at the second intersection.", "方向指示"),
         Triple("医院在邮局对面。", "The hospital is opposite the post office.", "方位表达"),
@@ -1100,9 +1100,9 @@ object SentenceData {
         Triple("我昨天在城里迷路了。", "I got lost in the city yesterday.", "过去时"),
         Triple("商场在马路对面。", "The mall is across the street.", "位置表达"),
         Triple("一直走到十字路口。", "Walk straight until the intersection.", "路线描述"),
-    )
+    ) }
 
-    val a1bRestaurant = listOf(
+    val a1bRestaurant  by lazy { listOf(
         Triple("请给我菜单。", "Please give me the menu.", "点餐用语"),
         Triple("我想点一份牛排。", "I would like to order a steak.", "点餐表达"),
         Triple("这道菜辣吗？", "Is this dish spicy?", "菜肴询问"),
@@ -1173,9 +1173,9 @@ object SentenceData {
         Triple("我们分开付账。", "We split the bill.", "结账方式"),
         Triple("甜点很好吃。", "The dessert is very tasty.", "食物评价"),
         Triple("我请朋友吃了晚饭。", "I treated my friend to dinner.", "过去时"),
-    )
+    ) }
 
-    val a1bShopping = listOf(
+    val a1bShopping  by lazy { listOf(
         Triple("这件多少钱？", "How much is this one?", "价格询问"),
         Triple("可以便宜一点吗？", "Can it be a little cheaper?", "还价"),
         Triple("我想买一件红色的。", "I would like to buy the red one.", "选择+意愿"),
@@ -1246,9 +1246,9 @@ object SentenceData {
         Triple("我上周买了一个新手机。", "I bought a new phone last week.", "过去时"),
         Triple("这件衣服打折。", "This clothing is on sale.", "折扣信息"),
         Triple("超市的蔬菜很新鲜。", "The vegetables at the supermarket are very fresh.", "商品评价"),
-    )
+    ) }
 
-    val a1bTravel = listOf(
+    val a1bTravel  by lazy { listOf(
         Triple("我下个月去北京。", "I am going to Beijing next month.", "将来计划"),
         Triple("你需要带护照。", "You need to bring your passport.", "行李建议"),
         Triple("订机票了吗？", "Have you booked the flight ticket?", "预订询问"),
@@ -1319,9 +1319,9 @@ object SentenceData {
         Triple("便宜的旅馆不好订。", "Cheap hotels are hard to book.", "预订困难"),
         Triple("导游介绍了很多有趣的事。", "The guide introduced many interesting things.", "导游评价"),
         Triple("我迫不及待想去旅行。", "I can't wait to travel.", "情感表达"),
-    )
+    ) }
 
-    val a1bPeople = listOf(
+    val a1bPeople  by lazy { listOf(
         Triple("她有一头长发。", "She has long hair.", "外貌描述"),
         Triple("他个子很高。", "He is very tall.", "身高描述"),
         Triple("她笑起来很甜。", "She smiles sweetly.", "气质描述"),
@@ -1392,9 +1392,9 @@ object SentenceData {
         Triple("她总是面带微笑。", "She always has a smile on her face.", "表情描述"),
         Triple("他穿了一件新衬衫。", "He wore a new shirt.", "过去时"),
         Triple("她是我认识的最有趣的人。", "She is the most interesting person I know.", "最高级"),
-    )
+    ) }
 
-    val a1bFeelings = listOf(
+    val a1bFeelings  by lazy { listOf(
         Triple("我今天很高兴。", "I am very happy today.", "正面情感"),
         Triple("她有点难过。", "She is a little sad.", "负面情感"),
         Triple("你为什么生气？", "Why are you angry?", "情感询问"),
@@ -1465,9 +1465,9 @@ object SentenceData {
         Triple("一切都会好的。", "Everything will be fine.", "安慰表达"),
         Triple("这个消息让我们很开心。", "The news made us very happy.", "情感反应"),
         Triple("我永远忘不了那一天。", "I will never forget that day.", "情感表达"),
-    )
+    ) }
 
-    val a1aNeighbor = listOf(
+    val a1aNeighbor  by lazy { listOf(
         Triple("我邻居是一位老人。", "My neighbor is an elderly person.", "社区词汇"),
         Triple("这附近有公园吗？", "Is there a park nearby?", "设施询问"),
         Triple("社区环境很好。", "The community environment is very good.", "环境描述"),
@@ -1538,9 +1538,9 @@ object SentenceData {
         Triple("如果你搬走了我会想念你的。", "If you move away, I will miss you.", "条件+情感"),
         Triple("社区活动已经定期举办了。", "Community activities have been held regularly.", "完成时+活动"),
         Triple("如果你喜欢安静这里很适合。", "If you like quietness, this place is very suitable.", "条件+评价"),
-    )
+    ) }
 
-    val a1aWorkday = listOf(
+    val a1aWorkday  by lazy { listOf(
         Triple("我每天早上九点开始工作。", "I start work at nine every morning.", "工作时间"),
         Triple("开会是最重要的部分。", "Meetings are the most important part.", "最高级+工作"),
         Triple("他刚完成了一个项目。", "He has just finished a project.", "现在完成时"),
@@ -1611,9 +1611,9 @@ object SentenceData {
         Triple("如果没有会议今天就轻松了。", "If there are no meetings, today will be easy.", "条件+轻松"),
         Triple("团队合作已经更加默契了。", "Team cooperation has become more tacit.", "完成时+团队"),
         Triple("如果你累了可以休息一下。", "If you're tired, you can take a break.", "条件+休息"),
-    )
+    ) }
 
-    val a1aSubjects = listOf(
+    val a1aSubjects  by lazy { listOf(
         Triple("我最喜欢数学课。", "I like math class the most.", "最高级+科目"),
         Triple("历史很有意思。", "History is very interesting.", "科目评价"),
         Triple("物理比化学难。", "Physics is harder than chemistry.", "比较级"),
@@ -1684,9 +1684,9 @@ object SentenceData {
         Triple("如果你遇到困难不要放弃。", "If you encounter difficulties, don't give up.", "条件+鼓励"),
         Triple("这个知识点已经讲过了。", "This knowledge point has been taught already.", "完成时+知识"),
         Triple("如果合理安排时间就不累。", "If you arrange time properly, it won't be tiring.", "条件+安排"),
-    )
+    ) }
 
-    val a1aHoliday = listOf(
+    val a1aHoliday  by lazy { listOf(
         Triple("暑假我打算去海边。", "I plan to go to the beach this summer vacation.", "将来计划"),
         Triple("寒假我会回家过年。", "I will go home for the New Year during winter vacation.", "将来时+文化"),
         Triple("假期你打算做什么？", "What do you plan to do during the holiday?", "计划询问"),
@@ -1757,9 +1757,9 @@ object SentenceData {
         Triple("如果路上堵车就晚点出发。", "If there's a traffic jam, leave a bit later.", "条件+交通"),
         Triple("住宿安排已经确认了。", "The accommodation arrangement has been confirmed.", "完成时+住宿"),
         Triple("如果你有推荐的地方请告诉我。", "If you have a place to recommend, please tell me.", "条件+推荐"),
-    )
+    ) }
 
-    val a1aServices = listOf(
+    val a1aServices  by lazy { listOf(
         Triple("请问邮局几点关门？", "Excuse me, what time does the post office close?", "服务询问"),
         Triple("医院在哪里？", "Where is the hospital?", "位置询问"),
         Triple("我想寄一个包裹。", "I would like to send a parcel.", "服务请求"),
@@ -1830,9 +1830,9 @@ object SentenceData {
         Triple("如果流程不清楚可以看说明。", "If the process is unclear, you can read the instructions.", "条件+指引"),
         Triple("公共厕所已经免费使用了。", "Public toilets have become free to use.", "完成时+设施"),
         Triple("如果你想了解更多可以上网查。", "If you want to know more, you can check online.", "条件+查询"),
-    )
+    ) }
 
-    val a1aInvitation = listOf(
+    val a1aInvitation  by lazy { listOf(
         Triple("周末有空一起吃饭吗？", "Are you free to have a meal together this weekend?", "邀请+时间"),
         Triple("我想邀请你来参加我的生日派对。", "I would like to invite you to my birthday party.", "正式邀请"),
         Triple("这周六你有空吗？", "Are you free this Saturday?", "时间确认"),
@@ -1903,9 +1903,9 @@ object SentenceData {
         Triple("如果你有建议可以随时提。", "If you have suggestions, you can bring them up anytime.", "条件+建议"),
         Triple("聚会气氛已经很热闹了。", "The party atmosphere has become lively.", "完成时+气氛"),
         Triple("如果你玩得开心下次再来。", "If you have fun, come again next time.", "条件+邀请"),
-    )
+    ) }
 
-    val a1aExperience = listOf(
+    val a1aExperience  by lazy { listOf(
         Triple("我去年去过日本。", "I went to Japan last year.", "过去经历"),
         Triple("那是我第一次坐飞机。", "That was my first time flying.", "第一次经历"),
         Triple("我小时候养过一只猫。", "I had a cat when I was a child.", "过去+动物"),
@@ -1976,9 +1976,9 @@ object SentenceData {
         Triple("如果你愿意分享我洗耳恭听。", "If you are willing to share, I'm all ears.", "条件+倾听"),
         Triple("那次面试我已经通过了。", "I have passed that interview.", "完成时+面试"),
         Triple("如果没有勇气就不会有收获。", "If there is no courage, there will be no reward.", "条件+勇气"),
-    )
+    ) }
 
-    val a1aCity = listOf(
+    val a1aCity  by lazy { listOf(
         Triple("北京比我们城市大很多。", "Beijing is much bigger than our city.", "比较级+城市"),
         Triple("我喜欢在乡下生活。", "I like living in the countryside.", "农村+喜好"),
         Triple("城市交通很拥堵。", "City traffic is very congested.", "城市问题"),
@@ -2049,9 +2049,9 @@ object SentenceData {
         Triple("如果你厌倦了城市就去旅行。", "If you are tired of the city, go traveling.", "条件+建议"),
         Triple("很多村子已经通了公路。", "Many villages have been connected by roads.", "完成时+设施"),
         Triple("如果你在农村长大会有不同感受。", "If you grew up in the countryside, you'll feel differently.", "条件+感受"),
-    )
+    ) }
 
-    val a1aFestival = listOf(
+    val a1aFestival  by lazy { listOf(
         Triple("春节是一年中最重要的节日。", "Spring Festival is the most important holiday of the year.", "最高级+节日"),
         Triple("中秋节吃月饼。", "We eat mooncakes during Mid-Autumn Festival.", "节日习惯"),
         Triple("过年我们会放烟花。", "We set off fireworks during the New Year.", "活动+节日"),
@@ -2122,9 +2122,9 @@ object SentenceData {
         Triple("你如果收到红包要记得感谢。", "If you receive a red envelope, remember to say thanks.", "条件+礼仪"),
         Triple("我已经贴好了春联。", "I have put up the Spring Festival couplets.", "完成时+习俗"),
         Triple("如果所有节日都放假就好了。", "If only all festivals were holidays.", "条件+愿望"),
-    )
+    ) }
 
-    val a1aProblems = listOf(
+    val a1aProblems  by lazy { listOf(
         Triple("我不知道该怎么办。", "I don't know what to do.", "困惑表达"),
         Triple("可以帮帮我吗？", "Can you help me?", "求助"),
         Triple("先冷静下来。", "Calm down first.", "建议-第一步"),
@@ -2195,9 +2195,9 @@ object SentenceData {
         Triple("如果大家一起想办法效率更高。", "If everyone thinks together, it's more efficient.", "条件+合作"),
         Triple("那个错误已经被修复了。", "That mistake has been fixed.", "完成时+修复"),
         Triple("如果你后悔了也没关系可以重来。", "If you regret it, it's okay, you can start over.", "条件+安慰"),
-    )
+    ) }
 
-    val a2_travel = listOf(
+    val a2_travel  by lazy { listOf(
         Triple("我们需要提前预订酒店。", "We need to book the hotel in advance.", "情态+计划"),
         Triple("你打算什么时候出发？", "When do you plan to leave?", "计划询问"),
         Triple("我查了航班信息。", "I checked the flight information.", "过去时"),
@@ -2218,9 +2218,9 @@ object SentenceData {
         Triple("旅行社给了很多建议。", "The travel agency gave a lot of advice.", "过去时+量词"),
         Triple("我们应该买旅游保险。", "We should buy travel insurance.", "情态+安全"),
         Triple("这个行程安排得很合理。", "This itinerary is arranged very reasonably.", "评价表达"),
-    )
+    ) }
 
-    val a2_work = listOf(
+    val a2_work  by lazy { listOf(
         Triple("我需要在会议上发言。", "I need to speak at the meeting.", "需求表达"),
         Triple("请把文件发到我邮箱。", "Please send the file to my email.", "请求+邮件"),
         Triple("这个项目需要团队合作。", "This project requires teamwork.", "需求+合作"),
@@ -2241,9 +2241,9 @@ object SentenceData {
         Triple("邮件我已经回复了。", "I have already replied to the email.", "完成时"),
         Triple("这个问题需要尽快解决。", "This problem needs to be solved as soon as possible.", "被动+紧急"),
         Triple("谢谢你的支持和理解。", "Thank you for your support and understanding.", "感谢表达"),
-    )
+    ) }
 
-    val a2_study = listOf(
+    val a2_study  by lazy { listOf(
         Triple("老师说我进步很大。", "The teacher said I have made great progress.", "间接引语"),
         Triple("我需要多练习口语。", "I need to practice speaking more.", "需求+练习"),
         Triple("考试分数比上次高了。", "My exam score is higher than last time.", "比较级"),
@@ -2264,9 +2264,9 @@ object SentenceData {
         Triple("小组讨论很有帮助。", "Group discussion is very helpful.", "帮助+评价"),
         Triple("这次作业完成得不错。", "This homework was completed quite well.", "被动+评价"),
         Triple("学习是一个长期的过程。", "Learning is a long-term process.", "观点+过程"),
-    )
+    ) }
 
-    val a2_social = listOf(
+    val a2_social  by lazy { listOf(
         Triple("这周末有个聚会。", "There is a party this weekend.", "存在+时间"),
         Triple("你认识她吗？", "Do you know her?", "认识询问"),
         Triple("大家聊得很开心。", "Everyone chatted happily.", "过去+社交"),
@@ -2287,9 +2287,9 @@ object SentenceData {
         Triple("你玩得开心吗？", "Did you have a good time?", "询问+体验"),
         Triple("我们拍了很多合照。", "We took many group photos.", "过去+拍照"),
         Triple("社交能力很重要。", "Social skills are very important.", "重要性+社交"),
-    )
+    ) }
 
-    val a2_health = listOf(
+    val a2_health  by lazy { listOf(
         Triple("我预约了医生。", "I made an appointment with the doctor.", "过去+预约"),
         Triple("你需要多休息。", "You need to rest more.", "需求+休息"),
         Triple("这个药每天吃两次。", "Take this medicine twice a day.", "医嘱"),
@@ -2310,9 +2310,9 @@ object SentenceData {
         Triple("按时吃药别忘记。", "Do not forget to take medicine on time.", "提醒+按时"),
         Triple("健康比什么都重要。", "Health is more important than anything.", "比较+重要性"),
         Triple("他终于康复了。", "He finally recovered.", "终于+康复"),
-    )
+    ) }
 
-    val a2_rent = listOf(
+    val a2_rent  by lazy { listOf(
         Triple("这间公寓月租多少？", "How much is the monthly rent for this apartment?", "价格询问"),
         Triple("房子离地铁站多远？", "How far is the house from the subway station?", "距离询问"),
         Triple("押金是一个月房租。", "The deposit is one month rent.", "押金+金额"),
@@ -2333,9 +2333,9 @@ object SentenceData {
         Triple("这个地段很方便。", "This location is very convenient.", "地段+方便"),
         Triple("朝向是南面。", "It faces south.", "朝向+方位"),
         Triple("我们签了半年合同。", "We signed a six-month contract.", "过去+时长"),
-    )
+    ) }
 
-    val a2_bank = listOf(
+    val a2_bank  by lazy { listOf(
         Triple("我要办一张银行卡。", "I need to open a bank card.", "需求+办理"),
         Triple("请问手续费是多少？", "What is the service charge?", "费用询问"),
         Triple("可以用信用卡吗？", "Can I use a credit card?", "支付+许可"),
@@ -2356,9 +2356,9 @@ object SentenceData {
         Triple("贷款利率是多少？", "What is the loan interest rate?", "利率询问"),
         Triple("投资理财要谨慎。", "Investment requires caution.", "谨慎+投资"),
         Triple("请帮我查一下账户。", "Please help me check the account.", "请求+查询"),
-    )
+    ) }
 
-    val a2_media = listOf(
+    val a2_media  by lazy { listOf(
         Triple("你喜欢什么类型的电影？", "What type of movie do you like?", "类型询问"),
         Triple("这个节目很好看。", "This show is very entertaining.", "评价+节目"),
         Triple("我每天看新闻。", "I watch the news every day.", "频度+新闻"),
@@ -2379,9 +2379,9 @@ object SentenceData {
         Triple("娱乐信息真假难辨。", "It is hard to tell if entertainment news is true.", "真假+困难"),
         Triple("自拍成为很多人的习惯。", "Taking selfies is a habit for many.", "习惯+广泛"),
         Triple("网络改变了娱乐方式。", "The internet has changed how we are entertained.", "改变+完成时"),
-    )
+    ) }
 
-    val a2_culture = listOf(
+    val a2_culture  by lazy { listOf(
         Triple("有些习俗我不太了解。", "I do not know much about some customs.", "否定+了解"),
         Triple("打招呼的方式很不同。", "The way of greeting is very different.", "不同+文化"),
         Triple("尊重当地传统很重要。", "Respecting local traditions is very important.", "重要性+尊重"),
@@ -2402,9 +2402,9 @@ object SentenceData {
         Triple("我逐渐习惯了新环境。", "I gradually got used to the new environment.", "逐渐+适应"),
         Triple("尊重别人的信仰很重要。", "Respecting others beliefs is important.", "信仰+尊重"),
         Triple("文化交流是双向的。", "Cultural exchange is a two-way street.", "双向+交流"),
-    )
+    ) }
 
-    val a2_biz = listOf(
+    val a2_biz  by lazy { listOf(
         Triple("我们公司主要做外贸。", "Our company mainly does foreign trade.", "公司+业务"),
         Triple("订单已确认。", "The order has been confirmed.", "完成时+订单"),
         Triple("请发一份报价单。", "Please send a quotation.", "请求+报价"),
@@ -2425,9 +2425,9 @@ object SentenceData {
         Triple("这个月底要交货。", "Goods must be delivered by month end.", "必须+交货"),
         Triple("谈判进展很顺利。", "The negotiations are going smoothly.", "谈判+顺利"),
         Triple("建立信任需要时间。", "Building trust takes time.", "信任+时间"),
-    )
+    ) }
 
-    val b1b_project = listOf(
+    val b1b_project  by lazy { listOf(
         Triple("这个项目已经进行到第三阶段。", "This project has progressed to the third stage.", "完成时+进度"),
         Triple("我们需要重新评估风险。", "We need to reassess the risks.", "重估+风险"),
         Triple("项目进度比预期慢了。", "The project progress is slower than expected.", "比较+进度"),
@@ -2448,9 +2448,9 @@ object SentenceData {
         Triple("这个月目标已经达成了。", "This months target has been achieved.", "完成时+达成"),
         Triple("及时反馈问题非常重要。", "Providing timely feedback is very important.", "重要性+反馈"),
         Triple("如果有困难及时说。", "If there are difficulties speak up promptly.", "条件+及时"),
-    )
+    ) }
 
-    val b1b_method = listOf(
+    val b1b_method  by lazy { listOf(
         Triple("学习要有计划性。", "Learning requires planning.", "观点+计划"),
         Triple("你应该找到适合自己的方法。", "You should find a method that suits you.", "建议+适合"),
         Triple("每天坚持学一点。", "Stick to learning a little every day.", "坚持+每天"),
@@ -2471,9 +2471,9 @@ object SentenceData {
         Triple("多感官学习效果好。", "Multi-sensory learning is effective.", "多感官+效果"),
         Triple("保持好奇心非常重要。", "Keeping curiosity is very important.", "保持+好奇心"),
         Triple("学以致用才能巩固。", "Applying what you learn helps consolidate it.", "应用+巩固"),
-    )
+    ) }
 
-    val b1b_travel_exp = listOf(
+    val b1b_travel_exp  by lazy { listOf(
         Triple("那是一次难忘的旅行。", "That was an unforgettable trip.", "难忘+评价"),
         Triple("我遇到了很多有趣的人。", "I met many interesting people.", "过去+人物"),
         Triple("当地美食让我大开眼界。", "The local cuisine opened my eyes.", "食物+开阔"),
@@ -2494,9 +2494,9 @@ object SentenceData {
         Triple("那次旅行花了大概两万。", "That trip cost about twenty thousand.", "花费+概数"),
         Triple("在路上我发现了真实的自己。", "On the road I discovered my true self.", "发现+自己"),
         Triple("旅行不是逃避是探索。", "Travel is not an escape but an exploration.", "不是而是+定义"),
-    )
+    ) }
 
-    val b1b_society = listOf(
+    val b1b_society  by lazy { listOf(
         Triple("老龄化是全球性问题。", "Aging is a global issue.", "全球+老龄化"),
         Triple("贫富差距需要缩小。", "The wealth gap needs to be narrowed.", "被动+贫富"),
         Triple("社会公平是基本追求。", "Social fairness is a basic pursuit.", "社会公平+追求"),
@@ -2517,9 +2517,9 @@ object SentenceData {
         Triple("年轻人压力太大了。", "Young people are under too much pressure.", "程度+压力"),
         Triple("社会需要更多的包容。", "Society needs more tolerance.", "需求+包容"),
         Triple("讨论社会问题要理性。", "Discussions of social issues should be rational.", "情态+理性"),
-    )
+    ) }
 
-    val b1b_opinion = listOf(
+    val b1b_opinion  by lazy { listOf(
         Triple("我认为学习语言很有趣。", "I think learning languages is very interesting.", "观点+有趣"),
         Triple("依我看这个策略有问题。", "In my view this strategy has problems.", "看法+问题"),
         Triple("我倾向于支持第一种方案。", "I tend to support the first option.", "倾向+支持"),
@@ -2540,9 +2540,9 @@ object SentenceData {
         Triple("我赞成大多数人的意见。", "I agree with the majority.", "赞成+多数"),
         Triple("独立思考是一种能力。", "Independent thinking is a skill.", "独立思考+能力"),
         Triple("你的观点让我重新思考。", "Your view made me rethink.", "促使+重新思考"),
-    )
+    ) }
 
-    val b1b_career = listOf(
+    val b1b_career  by lazy { listOf(
         Triple("选择职业要慎重。", "Choose your career carefully.", "祈使+慎重"),
         Triple("我喜欢有挑战性的工作。", "I like challenging work.", "喜好+挑战"),
         Triple("跳槽之前要想清楚。", "Think carefully before changing jobs.", "跳槽+想清"),
@@ -2563,9 +2563,9 @@ object SentenceData {
         Triple("职场中要学会说不。", "You need to learn to say no in the workplace.", "学会+拒绝"),
         Triple("持续学习是职场生存之道。", "Continuous learning is the way to survive in the workplace.", "持续+生存"),
         Triple("你的价值由你自己决定。", "Your value is decided by yourself.", "被动+自己"),
-    )
+    ) }
 
-    val b1b_tech = listOf(
+    val b1b_tech  by lazy { listOf(
         Triple("手机改变了生活方式。", "Smartphones have changed our lifestyle.", "完成时+改变"),
         Triple("人工智能渗透各行各业。", "AI is penetrating every industry.", "进行时+渗透"),
         Triple("科技让生活更便捷。", "Technology makes life more convenient.", "比较+便捷"),
@@ -2586,9 +2586,9 @@ object SentenceData {
         Triple("机器人会取代很多岗位吗？", "Will robots replace many jobs?", "将来+替换"),
         Triple("科技伦理值得深思。", "Tech ethics deserve deep reflection.", "值得+深思"),
         Triple("适应变化的能力很重要。", "The ability to adapt to change is important.", "能力+适应"),
-    )
+    ) }
 
-    val b1b_edu = listOf(
+    val b1b_edu  by lazy { listOf(
         Triple("教育应该注重全面发展。", "Education should focus on all-round development.", "全面+发展"),
         Triple("应试教育需要改革。", "Exam-oriented education needs reform.", "被动+改革"),
         Triple("每个孩子都有自己的天赋。", "Every child has their own talent.", "每个+天赋"),
@@ -2609,9 +2609,9 @@ object SentenceData {
         Triple("因材施教是最好的方法。", "Teaching according to aptitude is the best method.", "最高级+因材"),
         Triple("网络资源让学习触手可及。", "Online resources make learning accessible.", "触手可及+学习"),
         Triple("教育改革需要时间。", "Educational reform takes time.", "需要+时间"),
-    )
+    ) }
 
-    val b1b_env = listOf(
+    val b1b_env  by lazy { listOf(
         Triple("保护环境人人有责。", "Everyone is responsible for protecting the environment.", "责任+环境"),
         Triple("塑料污染越来越严重。", "Plastic pollution is getting more serious.", "越来越+严重"),
         Triple("我们应该减少碳排放。", "We should reduce carbon emissions.", "应该+减少"),
@@ -2632,9 +2632,9 @@ object SentenceData {
         Triple("保护海洋刻不容缓。", "Protecting the oceans is urgent.", "刻不容缓+海洋"),
         Triple("生态平衡非常重要。", "Ecological balance is very important.", "生态+重要"),
         Triple("可持续发展是唯一出路。", "Sustainable development is the only way out.", "唯一+持续"),
-    )
+    ) }
 
-    val b1b_health_life = listOf(
+    val b1b_health_life  by lazy { listOf(
         Triple("健康饮食非常重要。", "A healthy diet is very important.", "健康+重要"),
         Triple("我每周运动三次。", "I exercise three times a week.", "频度+运动"),
         Triple("良好的睡眠质量很重要。", "Good sleep quality is important.", "良好+睡眠"),
@@ -2655,9 +2655,9 @@ object SentenceData {
         Triple("身体发出信号不要忽略。", "Do not ignore the signals your body sends.", "否定+信号"),
         Triple("健康是无价的财富。", "Health is priceless wealth.", "无价+比喻"),
         Triple("预防胜于治疗。", "Prevention is better than cure.", "比较+预防"),
-    )
+    ) }
 
-    val b1a_meeting = listOf(
+    val b1a_meeting  by lazy { listOf(
         Triple("这个项目的截止日期是下周五。", "The deadline for this project is next Friday.", "将来时"),
         Triple("我们需要准备一份详细的报告。", "We need to prepare a detailed report.", "情态动词"),
         Triple("会议将在下午两点开始。", "The meeting will start at two o'clock in the afternoon.", "将来时"),
@@ -2678,9 +2678,9 @@ object SentenceData {
         Triple("我们需要更多的资源来完成它。", "We need more resources to complete it.", "情态动词"),
         Triple("客户要求我们在周五前交付。", "The client requested delivery before Friday.", "过去时"),
         Triple("让我们开会讨论解决方案。", "Let's have a meeting to discuss solutions.", "let's建议"),
-    )
+    ) }
 
-    val b1a_academic = listOf(
+    val b1a_academic  by lazy { listOf(
         Triple("这篇论文探讨了一个重要问题。", "This paper explores an important issue.", "现在时"),
         Triple("研究结果显示了明显的趋势。", "The research results show a clear trend.", "现在时"),
         Triple("我们需要更多的数据来支持结论。", "We need more data to support the conclusion.", "情态动词"),
@@ -2701,9 +2701,9 @@ object SentenceData {
         Triple("这个发现可能会改变我们的理解。", "This finding may change our understanding.", "情态动词"),
         Triple("学术诚信是每个研究者的责任。", "Academic integrity is the responsibility of every researcher.", "现在时"),
         Triple("我们计划在下个月发表文章。", "We plan to publish the article next month.", "现在时"),
-    )
+    ) }
 
-    val b1a_travel_guide = listOf(
+    val b1a_travel_guide  by lazy { listOf(
         Triple("这个城市有很多历史古迹。", "This city has many historical sites.", "现在时"),
         Triple("最好的参观时间是春天。", "The best time to visit is spring.", "现在时"),
         Triple("你可以乘坐地铁到达那里。", "You can take the subway to get there.", "情态动词"),
@@ -2724,9 +2724,9 @@ object SentenceData {
         Triple("如果你喜欢购物，可以去市中心。", "If you like shopping, you can go downtown.", "条件句"),
         Triple("这个城市的安全情况很好。", "The safety situation in this city is very good.", "现在时"),
         Triple("我们需要将近的汇率。", "We need to check the recent exchange rate.", "情态动词"),
-    )
+    ) }
 
-    val b1a_culture_shock = listOf(
+    val b1a_culture_shock  by lazy { listOf(
         Triple("刚到国外时我感到很迷茫。", "I felt very confused when I first arrived abroad.", "过去时"),
         Triple("文化差异让我感到不适应。", "Cultural differences made me feel uncomfortable.", "过去时"),
         Triple("我花了很长时间适应新环境。", "It took me a long time to adapt to the new environment.", "过去时"),
@@ -2747,9 +2747,9 @@ object SentenceData {
         Triple("的不同价值观有时会导致误解。", "Different values can sometimes lead to misunderstandings.", "现在时"),
         Triple("我已经习惯了这里的生活方式。", "I have gotten used to the lifestyle here.", "现在完成时"),
         Triple("跨文化交流能力在当今很重要。", "Cross-cultural communication skills are important nowadays.", "现在时"),
-    )
+    ) }
 
-    val b1a_media = listOf(
+    val b1a_media  by lazy { listOf(
         Triple("社交媒体改变了我们的沟通方式。", "Social media has changed our way of communicating.", "现在完成时"),
         Triple("这个新闻引起了公众的关注。", "This news has attracted public attention.", "现在完成时"),
         Triple("媒体报道应该保持客观公正。", "Media reports should remain objective and fair.", "情态动词"),
@@ -2770,9 +2770,9 @@ object SentenceData {
         Triple("这篇文章的分析很深入。", "The analysis in this article is very thorough.", "现在时"),
         Triple("我们被各种广告包围着。", "We are surrounded by various advertisements.", "现在时被动"),
         Triple("数字媒体正在改变消费习惯。", "Digital media is changing consumption habits.", "现在进行时"),
-    )
+    ) }
 
-    val b1a_workplace = listOf(
+    val b1a_workplace  by lazy { listOf(
         Triple("团队合作对于这个项目很重要。", "Teamwork is very important for this project.", "现在时"),
         Triple("我们需要定期开会讨论进展。", "We need to have regular meetings to discuss progress.", "情态动词"),
         Triple("我的同事很乐意提供帮助。", "My colleagues are very willing to provide help.", "现在时"),
@@ -2793,9 +2793,9 @@ object SentenceData {
         Triple("领导能力是可以培养的。", "Leadership skills can be developed.", "情态动词被动"),
         Triple("我们团队取得了很好的业绩。", "Our team has achieved excellent performance.", "现在完成时"),
         Triple("职场中的多元文化越来越常见。", "Multiculturalism in the workplace is becoming more common.", "现在进行时"),
-    )
+    ) }
 
-    val b1a_learning = listOf(
+    val b1a_learning  by lazy { listOf(
         Triple("有效的方法可以提高学习效率。", "Effective methods can improve learning efficiency.", "情态动词"),
         Triple("我制定了一个详细的学习计划。", "I made a detailed study plan.", "过去时"),
         Triple("复习是巩固知识的关键。", "Reviewing is the key to consolidating knowledge.", "现在时"),
@@ -2816,9 +2816,9 @@ object SentenceData {
         Triple("这个网站的教程质量很高。", "The tutorial quality on this website is very high.", "现在时"),
         Triple("我已经完成了所有必修课。", "I have completed all the required courses.", "现在完成时"),
         Triple("学习策略需要不断调整优化。", "Learning strategies need continuous adjustment and optimization.", "情态动词"),
-    )
+    ) }
 
-    val b1a_economics = listOf(
+    val b1a_economics  by lazy { listOf(
         Triple("通货膨胀影响了人们的生活成本。", "Inflation has affected people's cost of living.", "现在完成时"),
         Triple("经济增长需要稳定的政策环境。", "Economic growth requires a stable policy environment.", "现在时"),
         Triple("失业率是一个重要的经济指标。", "The unemployment rate is an important economic indicator.", "现在时"),
@@ -2839,9 +2839,9 @@ object SentenceData {
         Triple("知识和信息成为重要资产。", "Knowledge and information have become important assets.", "现在完成时"),
         Triple("经济决策需要考虑多方面因素。", "Economic decisions need to consider multiple factors.", "情态动词"),
         Triple("数字经济正在改变商业模式。", "The digital economy is changing business models.", "现在进行时"),
-    )
+    ) }
 
-    val b1a_law = listOf(
+    val b1a_law  by lazy { listOf(
         Triple("每个人都享有基本的法律权利。", "Everyone enjoys basic legal rights.", "现在时"),
         Triple("我们需要了解自己的法律义务。", "We need to understand our legal obligations.", "情态动词"),
         Triple("合同纠纷应该通过协商解决。", "Contract disputes should be resolved through negotiation.", "情态动词被动"),
@@ -2862,9 +2862,9 @@ object SentenceData {
         Triple("法律环境在不断变化。", "The legal environment is constantly changing.", "现在进行时"),
         Triple("遵守法律是公民的责任。", "Abiding by the law is the responsibility of citizens.", "现在时"),
         Triple("我们需要了解劳动法的相关规定。", "We need to understand relevant provisions of labor law.", "情态动词"),
-    )
+    ) }
 
-    val b1a_mental = listOf(
+    val b1a_mental  by lazy { listOf(
         Triple("心理健康和身体健康同样重要。", "Mental health is as important as physical health.", "现在时"),
         Triple("我们应该学会管理压力。", "We should learn to manage stress.", "情态动词"),
         Triple("如果感到焦虑，可以寻求专业帮助。", "If you feel anxious, you can seek professional help.", "条件句"),
@@ -2885,9 +2885,9 @@ object SentenceData {
         Triple("社交关系影响心理健康。", "Social relationships affect mental health.", "现在时"),
         Triple("寻求心理帮助是勇敢的表现。", "Seeking psychological help is a sign of courage.", "现在时"),
         Triple("我们需要建立支持性的社区环境。", "We need to build a supportive community environment.", "情态动词"),
-    )
+    ) }
 
-    val b2b_project = listOf(
+    val b2b_project  by lazy { listOf(
         Triple("项目管理需要协调多个部门的资源。", "Project management requires coordinating resources from multiple departments.", "动名词"),
         Triple("我们已经制定了详细的项目时间表。", "We have formulated a detailed project schedule.", "现在完成时"),
         Triple("风险管理是项目成功的关键因素。", "Risk management is a key factor in project success.", "现在时"),
@@ -2908,9 +2908,9 @@ object SentenceData {
         Triple("我们需要建立项目绩效评估体系。", "We need to establish a project performance evaluation system.", "情态动词"),
         Triple("资源管理是项目经理的重要职责。", "Resource management is an important responsibility of the project manager.", "现在时"),
         Triple("项目收尾阶段需要完成所有交付物。", "The project closure phase requires completing all deliverables.", "现在时"),
-    )
+    ) }
 
-    val b2b_writing = listOf(
+    val b2b_writing  by lazy { listOf(
         Triple("学术写作需要遵循严格的格式规范。", "Academic writing needs to follow strict formatting standards.", "情态动词"),
         Triple("引言部分应该明确提出研究问题。", "The introduction should clearly pose the research question.", "情态动词"),
         Triple("文献综述需要对现有研究进行批判性分析。", "The literature review needs to provide a critical analysis of existing research.", "情态动词"),
@@ -2931,9 +2931,9 @@ object SentenceData {
         Triple("研究限制应该在论文中诚实说明。", "Research limitations should be honestly stated in the paper.", "情态动词"),
         Triple("引用管理软件可以提高写作效率。", "Citation management software can improve writing efficiency.", "情态动词"),
         Triple("同行评审有助于提高学术写作质量。", "Peer review helps improve the quality of academic writing.", "现在时"),
-    )
+    ) }
 
-    val b2b_travel = listOf(
+    val b2b_travel  by lazy { listOf(
         Triple("国际旅行需要提前了解目的地文化。", "International travel requires understanding the destination culture in advance.", "情态动词"),
         Triple("签证申请过程可能比较复杂耗时。", "The visa application process can be quite complex and time-consuming.", "情态动词"),
         Triple("我们应该尊重当地的风俗习惯。", "We should respect local customs and habits.", "情态动词"),
@@ -2954,9 +2954,9 @@ object SentenceData {
         Triple("我们可以住在当地人家里体验真实生活。", "We can stay with local families to experience authentic life.", "情态动词"),
         Triple("旅行安全应该是首要考虑因素。", "Travel safety should be the primary consideration.", "情态动词"),
         Triple("国际旅行拓宽了我们的视野。", "International travel broadens our horizons.", "现在时"),
-    )
+    ) }
 
-    val b2b_social = listOf(
+    val b2b_social  by lazy { listOf(
         Triple("社会媒体对年轻人的价值观有深远影响。", "Social media has a profound impact on young people's values.", "现在时"),
         Triple("城市化进程改变了人们的生活方式。", "The urbanization process has changed people's lifestyles.", "现在完成时"),
         Triple("人口老龄化带来了新的社会挑战。", "Population aging has brought new social challenges.", "现在完成时"),
@@ -2977,9 +2977,9 @@ object SentenceData {
         Triple("城乡差距在许多国家仍然存在。", "The urban-rural gap still exists in many countries.", "现在时"),
         Triple("社会政策应该关注弱势群体。", "Social policies should focus on vulnerable groups.", "情态动词"),
         Triple("全球化既带来机遇也带来挑战。", "Globalization brings both opportunities and challenges.", "现在时"),
-    )
+    ) }
 
-    val b2b_negotiation = listOf(
+    val b2b_negotiation  by lazy { listOf(
         Triple("谈判前需要充分了解对方的需求。", "You need to fully understand the other party's needs before negotiating.", "情态动词"),
         Triple("建立信任是成功谈判的基础。", "Building trust is the foundation of successful negotiation.", "现在时"),
         Triple("我们应该寻找双赢的解决方案。", "We should look for win-win solutions.", "情态动词"),
@@ -3000,9 +3000,9 @@ object SentenceData {
         Triple("谈判结果应该对双方都有利。", "The negotiation result should be beneficial to both parties.", "情态动词"),
         Triple("我们可以邀请第三方调解。", "We can invite a third party to mediate.", "情态动词"),
         Triple("谈判技巧可以通过实践不断提高。", "Negotiation skills can be continuously improved through practice.", "情态动词被动"),
-    )
+    ) }
 
-    val b2b_edu_policy = listOf(
+    val b2b_edu_policy  by lazy { listOf(
         Triple("教育政策应该促进教育公平。", "Education policy should promote educational equity.", "情态动词"),
         Triple("课程改革需要考虑到学生需求。", "Curriculum reform needs to take student needs into account.", "情态动词"),
         Triple("教师培训是提高教育质量的关键。", "Teacher training is the key to improving education quality.", "现在时"),
@@ -3023,9 +3023,9 @@ object SentenceData {
         Triple("技术在教育中的应用越来越广泛。", "The application of technology in education is becoming more widespread.", "现在进行时"),
         Triple("教育政策制定需要多方参与。", "Education policy-making requires multi-party participation.", "现在时"),
         Triple("我们需要建立更灵活的教育体系。", "We need to establish a more flexible education system.", "情态动词"),
-    )
+    ) }
 
-    val b2b_tech = listOf(
+    val b2b_tech  by lazy { listOf(
         Triple("技术创新推动了社会进步。", "Technological innovation has driven social progress.", "现在完成时"),
         Triple("人工智能正在改变各个行业。", "Artificial intelligence is transforming various industries.", "现在进行时"),
         Triple("我们需要关注技术伦理问题。", "We need to pay attention to technological ethics issues.", "情态动词"),
@@ -3046,9 +3046,9 @@ object SentenceData {
         Triple("我们需要建立国家创新体系。", "We need to establish a national innovation system.", "情态动词"),
         Triple("技术创新能力是国家竞争力的核心。", "Technological innovation capability is the core of national competitiveness.", "现在时"),
         Triple("我们应该支持中小企业的技术创新。", "We should support technological innovation in small and medium enterprises.", "情态动词"),
-    )
+    ) }
 
-    val b2b_environment = listOf(
+    val b2b_environment  by lazy { listOf(
         Triple("环境保护是每个人的责任。", "Environmental protection is everyone's responsibility.", "现在时"),
         Triple("气候变化对生态系统构成威胁。", "Climate change poses a threat to ecosystems.", "现在时"),
         Triple("我们需要减少碳排放。", "We need to reduce carbon emissions.", "情态动词"),
@@ -3069,9 +3069,9 @@ object SentenceData {
         Triple("环境正义要求公平分配环境风险。", "Environmental justice requires fair distribution of environmental risks.", "现在时"),
         Triple("我们应该支持环保组织的工作。", "We should support the work of environmental organizations.", "情态动词"),
         Triple("全球环境合作是应对气候变化的必要条件。", "Global environmental cooperation is necessary for addressing climate change.", "现在时"),
-    )
+    ) }
 
-    val b2b_globalization = listOf(
+    val b2b_globalization  by lazy { listOf(
         Triple("全球化促进了经济一体化。", "Globalization has promoted economic integration.", "现在完成时"),
         Triple("文化交流增加了相互理解。", "Cultural exchange has increased mutual understanding.", "现在完成时"),
         Triple("全球供应链提高了效率但也增加了风险。", "Global supply chains have increased efficiency but also added risks.", "现在完成时"),
@@ -3092,9 +3092,9 @@ object SentenceData {
         Triple("我们需要应对全球粮食安全问题。", "We need to address global food security issues.", "情态动词"),
         Triple("全球金融稳定需要协调机制。", "Global financial stability needs coordination mechanisms.", "现在时"),
         Triple("全球化既创造机会也带来不确定性。", "Globalization creates both opportunities and uncertainties.", "现在时"),
-    )
+    ) }
 
-    val b2b_cross_cultural = listOf(
+    val b2b_cross_cultural  by lazy { listOf(
         Triple("跨文化交际能力在全球化时代很重要。", "Cross-cultural communication competence is very important in the era of globalization.", "现在时"),
         Triple("文化维度理论帮助理解文化差异。", "Cultural dimension theory helps understand cultural differences.", "现在时"),
         Triple("我们应该避免文化偏见和刻板印象。", "We should avoid cultural bias and stereotypes.", "情态动词"),
@@ -3115,9 +3115,9 @@ object SentenceData {
         Triple("跨文化合作可以产生创新想法。", "Cross-cultural collaboration can generate innovative ideas.", "情态动词"),
         Triple("我们应该克服文化中心主义。", "We should overcome ethnocentrism.", "情态动词"),
         Triple("跨文化理解促进世界和平。", "Cross-cultural understanding promotes world peace.", "现在时"),
-    )
+    ) }
 
-    val b2a_strategy = listOf(
+    val b2a_strategy  by lazy { listOf(
         Triple("商业战略需要基于对市场趋势的深入分析来制定。", "Business strategy needs to be formulated based on in-depth analysis of market trends.", "被动语态"),
         Triple("差异化战略可以帮助企业在竞争中获得优势。", "Differentiation strategy can help enterprises gain advantages in competition.", "情态动词"),
         Triple("战略实施比战略制定更具挑战性。", "Strategy implementation is more challenging than strategy formulation.", "比较级"),
@@ -3138,9 +3138,9 @@ object SentenceData {
         Triple("战略思维是企业领导者必备的能力。", "Strategic thinking is an essential capability for business leaders.", "现在时"),
         Triple("企业社会责任应该融入企业战略。", "Corporate social responsibility should be integrated into corporate strategy.", "情态动词被动"),
         Triple("动态能力理论解释了企业如何适应变化。", "Dynamic capability theory explains how enterprises adapt to changes.", "现在时"),
-    )
+    ) }
 
-    val b2a_speech = listOf(
+    val b2a_speech  by lazy { listOf(
         Triple("学术演讲需要清晰的逻辑结构。", "An academic speech needs a clear logical structure.", "现在时"),
         Triple("开场白应该吸引听众的注意力。", "The opening should capture the audience's attention.", "情态动词"),
         Triple("演讲者需要使用适当的视觉辅助工具。", "The speaker needs to use appropriate visual aids.", "情态动词"),
@@ -3161,9 +3161,9 @@ object SentenceData {
         Triple("学术演讲应该体现批判性思维。", "Academic speeches should demonstrate critical thinking.", "情态动词"),
         Triple("演讲者需要管理演讲焦虑。", "The speaker needs to manage speech anxiety.", "情态动词"),
         Triple("学术演讲的目的是传播知识和激发思考。", "The purpose of an academic speech is to disseminate knowledge and stimulate thinking.", "现在时"),
-    )
+    ) }
 
-    val b2a_overseas = listOf(
+    val b2a_overseas  by lazy { listOf(
         Triple("海外生活需要适应不同的文化环境。", "Overseas life requires adapting to different cultural environments.", "动名词"),
         Triple("语言障碍是海外生活的主要挑战之一。", "Language barriers are among the main challenges of overseas life.", "现在时"),
         Triple("海外留学经历对个人成长很有价值。", "The experience of studying abroad is very valuable for personal growth.", "现在时"),
@@ -3184,9 +3184,9 @@ object SentenceData {
         Triple("我们需要应对可能出现的偏见和歧视。", "We need to cope with possible prejudice and discrimination.", "情态动词"),
         Triple("海外生活是一次宝贵的人生经历。", "Overseas life is a valuable life experience.", "现在时"),
         Triple("我们应该充分利用海外学习的机会。", "We should make full use of the opportunity to study overseas.", "情态动词"),
-    )
+    ) }
 
-    val b2a_debate = listOf(
+    val b2a_debate  by lazy { listOf(
         Triple("辩论需要清晰的逻辑和有说服力的论据。", "A debate requires clear logic and persuasive arguments.", "现在时"),
         Triple("辩论者需要预测对方可能的论点。", "Debaters need to anticipate possible arguments from the opposing side.", "情态动词"),
         Triple("有效的反驳需要准确理解对方观点。", "Effective refutation requires accurately understanding the opponent's viewpoint.", "现在时"),
@@ -3207,9 +3207,9 @@ object SentenceData {
         Triple("辩论者需要尊重不同的观点。", "Debaters need to respect different viewpoints.", "情态动词"),
         Triple("证据应该来自可靠和权威的来源。", "Evidence should come from reliable and authoritative sources.", "情态动词"),
         Triple("辩论的最终目标是说服而不是战胜对手。", "The ultimate goal of debate is to persuade, not to defeat the opponent.", "现在时"),
-    )
+    ) }
 
-    val b2a_crisis = listOf(
+    val b2a_crisis  by lazy { listOf(
         Triple("危机管理需要快速决策和有效沟通。", "Crisis management requires quick decision-making and effective communication.", "动名词"),
         Triple("危机预警系统可以帮助提前识别风险。", "Crisis early warning systems can help identify risks in advance.", "情态动词"),
         Triple("危机沟通应该透明和及时。", "Crisis communication should be transparent and timely.", "情态动词"),
@@ -3230,9 +3230,9 @@ object SentenceData {
         Triple("危机中的领导力表现为决断和同理心。", "Leadership in crisis is demonstrated through decisiveness and empathy.", "现在时"),
         Triple("危机管理计划应该包括沟通预案。", "Crisis management plans should include communication protocols.", "情态动词"),
         Triple("从危机中学习是组织韧性的体现。", "Learning from crises is a manifestation of organizational resilience.", "现在时"),
-    )
+    ) }
 
-    val b2a_ethics = listOf(
+    val b2a_ethics  by lazy { listOf(
         Triple("科研伦理确保研究以负责任的方式进行。", "Research ethics ensure that research is conducted in a responsible manner.", "现在时"),
         Triple("知情同意是涉及人类受试者的研究的基本要求。", "Informed consent is a basic requirement for research involving human subjects.", "现在时"),
         Triple("科研不端行为损害了科学诚信。", "Research misconduct damages scientific integrity.", "现在时"),
@@ -3253,9 +3253,9 @@ object SentenceData {
         Triple("科研伦理需要机构层面的支持。", "Research ethics needs institutional-level support.", "情态动词"),
         Triple("负责任的研究行为可以建立公众信任。", "Responsible research conduct can build public trust.", "现在时"),
         Triple("科研伦理是研究卓越的基础。", "Research ethics is the foundation of research excellence.", "现在时"),
-    )
+    ) }
 
-    val b2a_digital = listOf(
+    val b2a_digital  by lazy { listOf(
         Triple("数字化转型改变了企业的运营模式。", "Digital transformation has changed the operational models of enterprises.", "现在完成时"),
         Triple("数字技术创造了新的商业模式。", "Digital technology has created new business models.", "现在完成时"),
         Triple("数据成为数字经济中的关键资产。", "Data has become a key asset in the digital economy.", "现在完成时"),
@@ -3276,9 +3276,9 @@ object SentenceData {
         Triple("数字化转型需要关注用户体验。", "Digital transformation needs to focus on user experience.", "情态动词"),
         Triple("数字技术正在改变 healthcare 服务。", "Digital technology is changing healthcare services.", "现在进行时"),
         Triple("数字化转型是企业生存的必要条件。", "Digital transformation is a necessary condition for enterprise survival.", "现在时"),
-    )
+    ) }
 
-    val b2a_sustainable = listOf(
+    val b2a_sustainable  by lazy { listOf(
         Triple("可持续发展需要平衡经济增长、社会包容和环境保护。", "Sustainable development requires balancing economic growth, social inclusion, and environmental protection.", "动名词"),
         Triple("联合国可持续发展目标是全球行动的框架。", "The UN Sustainable Development Goals are a framework for global action.", "现在时"),
         Triple("可持续发展需要代际公平的理念。", "Sustainable development requires the concept of intergenerational equity.", "现在时"),
@@ -3299,9 +3299,9 @@ object SentenceData {
         Triple("可持续农业保障粮食安全。", "Sustainable agriculture ensures food security.", "现在时"),
         Triple("可持续发展需要长期思维和行动。", "Sustainable development requires long-term thinking and action.", "现在时"),
         Triple("可持续发展是人类共同的责任。", "Sustainable development is the shared responsibility of humanity.", "现在时"),
-    )
+    ) }
 
-    val b2a_international = listOf(
+    val b2a_international  by lazy { listOf(
         Triple("国际关系基于国家利益和全球挑战。", "International relations are based on national interests and global challenges.", "现在时被动"),
         Triple("多边主义是应对全球问题的有效方式。", "Multilateralism is an effective way to address global issues.", "现在时"),
         Triple("国际关系理论有助于理解全球政治。", "International relations theory helps understand global politics.", "现在时"),
@@ -3322,9 +3322,9 @@ object SentenceData {
         Triple("国际冲突需要通过对话和谈判解决。", "International conflicts need to be resolved through dialogue and negotiation.", "情态动词被动"),
         Triple("全球环境治理需要国际协议。", "Global environmental governance needs international agreements.", "现在时"),
         Triple("国际关系研究需要多学科的视角。", "The study of international relations needs multidisciplinary perspectives.", "现在时"),
-    )
+    ) }
 
-    val b2a_literature = listOf(
+    val b2a_literature  by lazy { listOf(
         Triple("文学赏析需要理解文本的历史和文化背景。", "Literary appreciation requires understanding the historical and cultural context of the text.", "动名词"),
         Triple("叙事技巧是文学分析的重要方面。", "Narrative techniques are an important aspect of literary analysis.", "现在时"),
         Triple("文学理论提供了分析文本的不同视角。", "Literary theory provides different perspectives for analyzing texts.", "现在时"),
@@ -3345,9 +3345,9 @@ object SentenceData {
         Triple("文学赏析培养批判性思维和同理心。", "Literary appreciation cultivates critical thinking and empathy.", "现在时"),
         Triple("数字人文为文学研究提供了新工具。", "Digital humanities provide new tools for literary research.", "现在时"),
         Triple("文学是人类经验和想象力的记录。", "Literature is a record of human experience and imagination.", "现在时"),
-    )
+    ) }
 
-    val c1_macro = listOf(
+    val c1_macro  by lazy { listOf(
         Triple("宏观经济政策需要平衡通货膨胀和失业率。", "Macroeconomic policy needs to balance inflation and unemployment rates.", "情态动词"),
         Triple("财政政策通过政府支出和税收影响经济。", "Fiscal policy influences the economy through government spending and taxation.", "现在时"),
         Triple("货币政策由中央银行制定和执行。", "Monetary policy is formulated and implemented by central banks.", "现在时被动"),
@@ -3368,9 +3368,9 @@ object SentenceData {
         Triple("货币政策传导机制影响政策的有效性。", "The monetary policy transmission mechanism affects the effectiveness of policy.", "现在时"),
         Triple("宏观稳定性是可持续经济增长的前提条件。", "Macro-stability is a prerequisite for sustainable economic growth.", "现在时"),
         Triple("行为宏观经济学融合了心理学和经济学的见解。", "Behavioral macroeconomics integrates insights from psychology and economics.", "现在时"),
-    )
+    ) }
 
-    val c1_philosophy = listOf(
+    val c1_philosophy  by lazy { listOf(
         Triple("哲学思辨要求我们对基本假设提出质疑。", "Philosophical speculation requires us to question fundamental assumptions.", "情态动词"),
         Triple("认识论探讨知识的本质和范围。", "Epistemology explores the nature and scope of knowledge.", "现在时"),
         Triple("伦理学提供了评估道德行为的框架。", "Ethics provides a framework for evaluating moral actions.", "现在时"),
@@ -3391,9 +3391,9 @@ object SentenceData {
         Triple("自由意志问题关系到道德责任和人类行为。", "The problem of free will relates to moral responsibility and human action.", "现在时"),
         Triple("哲学对话促进了批判性思维和理性讨论。", "Philosophical dialogue promotes critical thinking and rational discussion.", "现在时"),
         Triple("哲学智慧引导我们思考生活的意义和价值。", "Philosophical wisdom guides us to contemplate the meaning and value of life.", "现在时"),
-    )
+    ) }
 
-    val c1_art = listOf(
+    val c1_art  by lazy { listOf(
         Triple("艺术评论分析艺术作品的意义、形式和文化背景。", "Art criticism analyzes the meaning, form, and cultural context of artworks.", "现在时"),
         Triple("美学理论探讨了艺术价值和审美体验的本质。", "Aesthetic theory explores the nature of artistic value and aesthetic experience.", "现在时"),
         Triple("当代艺术挑战了传统艺术的定义和界限。", "Contemporary art challenges traditional definitions and boundaries of art.", "现在时"),
@@ -3414,9 +3414,9 @@ object SentenceData {
         Triple("当代艺术实践越来越关注社会和政治议题。", "Contemporary art practices increasingly focus on social and political issues.", "现在时"),
         Triple("艺术评论作为公共话语促进文化对话和批判性思考。", "Art criticism as public discourse promotes cultural dialogue and critical thinking.", "现在时"),
         Triple("艺术是人类创造力和文化表达的永恒记录。", "Art is an enduring record of human creativity and cultural expression.", "现在时"),
-    )
+    ) }
 
-    val c1_law_case = listOf(
+    val c1_law_case  by lazy { listOf(
         Triple("法律案例分析需要识别关键事实和法律争议点。", "Legal case analysis requires identifying key facts and legal issues in dispute.", "动名词"),
         Triple("判例法体系下法院判决成为未来类似案件的参考。", "Under the case law system, court judgments become references for future similar cases.", "现在时"),
         Triple("法律推理需要运用法律规则到具体事实。", "Legal reasoning requires applying legal rules to specific facts.", "动名词"),
@@ -3437,9 +3437,9 @@ object SentenceData {
         Triple("法律案件研究培养了法律思维和分析能力。", "Legal case study cultivates legal thinking and analytical abilities.", "现在时"),
         Triple("法律写作需要精确、清晰和有说服力的表达。", "Legal writing requires precise, clear, and persuasive expression.", "现在时"),
         Triple("法律职业发展需要持续学习和专业发展。", "Legal career development requires continuous learning and professional development.", "现在时"),
-    )
+    ) }
 
-    val c1_ai_ethics = listOf(
+    val c1_ai_ethics  by lazy { listOf(
         Triple("人工智能伦理需要平衡创新发展和风险管控。", "AI ethics needs to balance innovative development and risk management.", "动名词"),
         Triple("算法偏见可能导致歧视和不公平的结果。", "Algorithmic bias may lead to discrimination and unfair outcomes.", "情态动词"),
         Triple("人工智能决策透明度是确保问责制的关键。", "Transparency in AI decision-making is key to ensuring accountability.", "现在时"),
@@ -3460,9 +3460,9 @@ object SentenceData {
         Triple("可解释人工智能是提高透明度和信任的重要途径。", "Explainable AI is an important pathway to improve transparency and trust.", "现在时"),
         Triple("人工智能伦理需要持续的对话和适应性治理。", "AI ethics needs continuous dialogue and adaptive governance.", "现在时"),
         Triple("负责任的创新要求预测和解决潜在的负面影响。", "Responsible innovation requires anticipating and addressing potential negative impacts.", "现在时"),
-    )
+    ) }
 
-    val c1_env_policy = listOf(
+    val c1_env_policy  by lazy { listOf(
         Triple("环境政策需要平衡经济发展和生态保护。", "Environmental policy needs to balance economic development and ecological protection.", "动名词"),
         Triple("气候变化政策要求全球减排承诺和行动。", "Climate change policy requires global commitments and actions for emission reduction.", "现在时"),
         Triple("环境监管需要确保合规和有效的执行。", "Environmental regulation needs to ensure compliance and effective enforcement.", "动名词"),
@@ -3483,9 +3483,9 @@ object SentenceData {
         Triple("环境公民诉讼是环境法治的重要途径。", "Environmental citizen litigation is an important pathway for environmental rule of law.", "现在时"),
         Triple("环境政策学习有助于改进政策设计和实施。", "Environmental policy learning helps improve policy design and implementation.", "现在时"),
         Triple("环境领导力需要政治意愿和公众参与的支持。", "Environmental leadership needs support from political will and public participation.", "现在时"),
-    )
+    ) }
 
-    val c1_medicine = listOf(
+    val c1_medicine  by lazy { listOf(
         Triple("精准医学根据个体特征定制医疗方案。", "Precision medicine customizes medical treatment based on individual characteristics.", "现在时"),
         Triple("临床试验需要严格的设计和伦理审查。", "Clinical trials require rigorous design and ethical review.", "现在时"),
         Triple("基因编辑技术带来了医学治疗和伦理挑战。", "Gene editing technology brings both medical treatment opportunities and ethical challenges.", "现在时"),
@@ -3506,9 +3506,9 @@ object SentenceData {
         Triple("医学人文强调对患者整体需求的理解。", "Medical humanities emphasize understanding patients' holistic needs.", "现在时"),
         Triple("医学创新需要科学发现、工程技术和临床需求的结合。", "Medical innovation requires combining scientific discovery, engineering technology, and clinical needs.", "现在时"),
         Triple("医学使命是改善人类健康和减轻疾病痛苦。", "The mission of medicine is to improve human health and alleviate disease suffering.", "现在时"),
-    )
+    ) }
 
-    val c1_culture_exchange = listOf(
+    val c1_culture_exchange  by lazy { listOf(
         Triple("文化交流增进了不同国家和民族之间的相互理解。", "Cultural exchange enhances mutual understanding between different countries and nations.", "现在时"),
         Triple("文化外交通过艺术、教育和人文交流促进国际关系。", "Cultural diplomacy promotes international relations through art, education, and people-to-people exchanges.", "现在时"),
         Triple("文化多样性是人类共同遗产需要保护。", "Cultural diversity is a common human heritage that needs protection.", "现在时"),
@@ -3529,9 +3529,9 @@ object SentenceData {
         Triple("文化可持续发展需要保护传统和促进创新。", "Cultural sustainable development needs to protect tradition and promote innovation.", "动名词"),
         Triple("跨文化对话促进全球公民意识和共同价值观。", "Intercultural dialogue promotes global citizenship and shared values.", "现在时"),
         Triple("文化交流是人类文明进步和和平的重要动力。", "Cultural exchange is an important driving force for the progress of human civilization and peace.", "现在时"),
-    )
+    ) }
 
-    val c1_leadership = listOf(
+    val c1_leadership  by lazy { listOf(
         Triple("领导力不仅仅是职位更是一种影响他人的能力。", "Leadership is not just a position but an ability to influence others.", "现在时"),
         Triple("变革型领导激励追随者为共同愿景努力。", "Transformational leadership inspires followers to work toward a shared vision.", "现在时"),
         Triple("领导力发展需要自我认知和持续学习。", "Leadership development requires self-awareness and continuous learning.", "现在时"),
@@ -3552,9 +3552,9 @@ object SentenceData {
         Triple("共享领导力模型强调分布式决策。", "Shared leadership models emphasize distributed decision-making.", "现在时"),
         Triple("领导力需要持续反思和调整。", "Leadership requires continuous reflection and adjustment.", "现在时"),
         Triple("伟大领导者以价值观、愿景和对他人的信念引领。", "Great leaders lead with values, vision, and belief in others.", "现在时"),
-    )
+    ) }
 
-    val c1_innovation = listOf(
+    val c1_innovation  by lazy { listOf(
         Triple("创新思维需要挑战现状和接受不确定性。", "Innovative thinking requires challenging the status quo and embracing uncertainty.", "动名词"),
         Triple("创新生态系统需要人才、资本、政策和文化的协同。", "Innovation ecosystems need synergy among talent, capital, policy, and culture.", "现在时"),
         Triple("颠覆性创新改变了行业格局和商业模式。", "Disruptive innovation changes industry landscapes and business models.", "现在时"),
@@ -3575,9 +3575,9 @@ object SentenceData {
         Triple("创新需要个人创造力和组织能力的结合。", "Innovation requires combining individual creativity and organizational capability.", "动名词"),
         Triple("创新生态系统需要不断演化和适应。", "Innovation ecosystems need to constantly evolve and adapt.", "动名词"),
         Triple("创新最终目的是创造价值和改善人类生活。", "The ultimate purpose of innovation is to create value and improve human life.", "现在时"),
-    )
+    ) }
 
-    val c2_linguistics = listOf(
+    val c2_linguistics  by lazy { listOf(
         Triple("语言学理论研究语言的本质、结构和演变规律。", "Linguistic theory studies the nature, structure, and evolutionary patterns of language.", "现在时"),
         Triple("生成语法理论提出语言能力是人类天生具备的认知系统。", "Generative grammar theory proposes that linguistic competence is an innate cognitive system in humans.", "现在时"),
         Triple("社会语言学考察语言变异和社会结构之间的关系。", "Sociolinguistics examines the relationship between language variation and social structure.", "现在时"),
@@ -3598,9 +3598,9 @@ object SentenceData {
         Triple("语言意识形态研究语言如何反映和再制社会权力关系。", "Language ideology research examines how language reflects and reproduces social power relations.", "现在时"),
         Triple("语言作为认知工具塑造我们的思维和感知经验的方式。", "Language as a cognitive tool shapes the way we think and perceive experience.", "现在时"),
         Triple("语言学跨学科性质要求我们整合多种方法和理论视角。", "The interdisciplinary nature of linguistics requires us to integrate multiple methodological and theoretical perspectives.", "现在时"),
-    )
+    ) }
 
-    val c2_political_phil = listOf(
+    val c2_political_phil  by lazy { listOf(
         Triple("政治哲学探讨权力、正义、自由和社群的根本问题。", "Political philosophy explores fundamental questions about power, justice, liberty, and community.", "现在时"),
         Triple("社会契约理论解释了政治权威合法性的来源和基础。", "Social contract theory explains the source and foundation of the legitimacy of political authority.", "现在时"),
         Triple("当代政治哲学争论围绕分配正义和个人权利展开。", "Contemporary political philosophy debates revolve around distributive justice and individual rights.", "现在时"),
@@ -3621,9 +3621,9 @@ object SentenceData {
         Triple("政治哲学想象力帮助我们超越现状想象更公正的社会安排。", "Political philosophical imagination helps us go beyond the status quo to imagine more just social arrangements.", "现在时"),
         Triple("比较政治理论通过跨文化对话丰富政治哲学的概念资源。", "Comparative political theory enriches the conceptual resources of political philosophy through cross-cultural dialogue.", "现在时"),
         Triple("政治哲学最终追问的是人类集体生活应该如何组织和评判。", "Political philosophy ultimately asks how human collective life should be organized and evaluated.", "现在时"),
-    )
+    ) }
 
-    val c2_writing = listOf(
+    val c2_writing  by lazy { listOf(
         Triple("文学创作通过想象力探索人类经验、情感和社会现实的复杂性。", "Literary creation explores the complexity of human experience, emotion, and social reality through imagination.", "现在时"),
         Triple("叙事技巧包括视点、时间结构、人物塑造和象征体系。", "Narrative techniques include point of view, temporal structure, character development, and symbolic systems.", "现在时"),
         Triple("后现代文学挑战了现实主义表征和宏大叙事的权威。", "Postmodern literature challenges the authority of realistic representation and grand narratives.", "现在时"),
@@ -3644,9 +3644,9 @@ object SentenceData {
         Triple("跨媒体叙事扩展了文学故事讲述的媒介和形式可能性。", "Transmedia storytelling expands the media and formal possibilities of literary storytelling.", "现在时"),
         Triple("文学记忆研究探讨文学如何塑造集体记忆和历史意识。", "Literary memory studies explore how literature shapes collective memory and historical consciousness.", "现在时"),
         Triple("文学最终是对于人类存在条件最深邃和持久的反思形式之一。", "Literature is ultimately one of the deepest and most enduring forms of reflection on the human condition.", "现在时"),
-    )
+    ) }
 
-    val c2_intl_law = listOf(
+    val c2_intl_law  by lazy { listOf(
         Triple("国际法治理国家间关系、国际组织和跨国法律争议。", "International law governs relations between states, international organizations, and transnational legal disputes.", "现在时"),
         Triple("国际法院是解决国家间法律争端的主要司法机构。", "The International Court of Justice is the principal judicial organ for resolving legal disputes between states.", "现在时"),
         Triple("国际人道法在武装冲突中保护非战斗人员和战俘。", "International humanitarian law protects non-combatants and prisoners of war during armed conflicts.", "现在时"),
@@ -3667,9 +3667,9 @@ object SentenceData {
         Triple("国际争端解决机制包括外交、法律和技术手段。", "International dispute settlement mechanisms include diplomatic, legal, and technical means.", "现在时"),
         Triple("国际法律职业需要了解不同法律体系和跨文化沟通能力。", "The international legal profession requires understanding different legal systems and cross-cultural communication skills.", "现在时"),
         Triple("国际法在全球治理和世界和平维护中扮演不可或缺的角色。", "International law plays an indispensable role in global governance and the maintenance of world peace.", "现在时"),
-    )
+    ) }
 
-    val c2_quantum = listOf(
+    val c2_quantum  by lazy { listOf(
         Triple("量子物理研究物质在最小尺度上的行为和相互作用。", "Quantum physics studies the behavior and interactions of matter at the smallest scales.", "现在时"),
         Triple("量子力学原理挑战了经典物理的确定性和局域性概念。", "The principles of quantum mechanics challenge the classical physics concepts of determinism and locality.", "现在时"),
         Triple("量子叠加允许量子系统同时处于多个状态。", "Quantum superposition allows quantum systems to exist in multiple states simultaneously.", "现在时"),
@@ -3690,9 +3690,9 @@ object SentenceData {
         Triple("量子模拟为理解复杂量子系统提供了新工具。", "Quantum simulation provides new tools for understanding complex quantum systems.", "现在时"),
         Triple("量子信息科学连接了量子物理、计算机科学和信息技术。", "Quantum information science connects quantum physics, computer science, and information technology.", "现在时"),
         Triple("量子未来学探讨量子技术对人类社会可能产生的深远变革性影响。", "Quantum futurology explores the potentially profound transformative impacts quantum technology may have on human society.", "现在时"),
-    )
+    ) }
 
-    val c2_psychology = listOf(
+    val c2_psychology  by lazy { listOf(
         Triple("社会心理学研究人们的思想、情感和行为如何受他人影响。", "Social psychology studies how people's thoughts, feelings, and behaviors are influenced by others.", "现在时"),
         Triple("认知心理学探索人类信息 processing、记忆和决策的认知机制。", "Cognitive psychology explores cognitive mechanisms of human information processing, memory, and decision-making.", "现在时"),
         Triple("发展心理学追踪人类从婴儿到老年的心理发展变化。", "Developmental psychology tracks psychological developmental changes in humans from infancy to old age.", "现在时"),
@@ -3713,9 +3713,9 @@ object SentenceData {
         Triple("心理科学发现不断挑战常识性的人类行为理解。", "Psychological science findings constantly challenge common-sense understandings of human behavior.", "现在时"),
         Triple("应用心理学将心理学原理应用于教育、工作、健康和司法等领域。", "Applied psychology applies psychological principles to education, work, health, and judicial fields.", "现在时"),
         Triple("心理学最终目标是理解心智、改善生活和促进人类福祉。", "The ultimate goal of psychology is to understand the mind, improve life, and promote human well-being.", "现在时"),
-    )
+    ) }
 
-    val c2_bioethics = listOf(
+    val c2_bioethics  by lazy { listOf(
         Triple("生物伦理学研究生物医学中的道德问题和困境。", "Bioethics studies moral issues and dilemmas in biomedicine.", "现在时"),
         Triple("生命伦理原则包括尊重自主、不伤害、 beneficence 和正义。", "Bioethical principles include respect for autonomy, non-maleficence, beneficence, and justice.", "现在时"),
         Triple("安乐死和协助自杀引发了关于生命尊严和医疗角色的道德争议。", "Euthanasia and assisted suicide raise moral controversies about dignity of life and the role of medicine.", "现在时"),
@@ -3736,9 +3736,9 @@ object SentenceData {
         Triple("生物伦理委员会审查研究提案和制定伦理指导方针。", "Bioethics committees review research proposals and formulate ethical guidelines.", "现在时"),
         Triple("生物伦理判断需要情境敏感性、道德推理和同理心。", "Bioethics judgment requires contextual sensitivity, moral reasoning, and empathy.", "现在时"),
         Triple("生物伦理最终目标是确保科学技术服务于人类尊严和共同福利。", "The ultimate goal of bioethics is to ensure that science and technology serve human dignity and the common good.", "现在时"),
-    )
+    ) }
 
-    val c2_architecture = listOf(
+    val c2_architecture  by lazy { listOf(
         Triple("建筑美学研究建筑形式、空间和意义的美学质量。", "Architectural aesthetics studies the aesthetic quality of architectural form, space, and meaning.", "现在时"),
         Triple("现代主义建筑强调功能、理性和摒弃装饰的原则。", "Modernist architecture emphasizes principles of function, rationality, and rejection of ornament.", "现在时"),
         Triple("后现代建筑质疑了现代主义的统一性和历史健忘症。", "Postmodern architecture questions the uniformity and historical amnesia of modernism.", "现在时"),
@@ -3759,9 +3759,9 @@ object SentenceData {
         Triple("包容性设计确保建筑环境对所有人无障碍和欢迎。", "Inclusive design ensures that the built environment is accessible and welcoming to everyone.", "现在时"),
         Triple("建筑未来面临着资源稀缺、气候不稳定和城市化加速的挑战。", "Architectural future faces challenges of resource scarcity, climate instability, and accelerated urbanization.", "现在时"),
         Triple("建筑最终是关于为人类经验创造意义框架和空间表达。", "Architecture is ultimately about creating meaningful frameworks and spatial expressions for human experience.", "现在时"),
-    )
+    ) }
 
-    val c2_music = listOf(
+    val c2_music  by lazy { listOf(
         Triple("音乐鉴赏理解音乐作品的结构、表现力和文化历史背景。", "Music appreciation understands the structure, expressiveness, and cultural-historical context of musical works.", "现在时"),
         Triple("西方古典音乐传统从巴洛克到当代历经多次风格转变。", "The Western classical music tradition has undergone multiple stylistic transformations from Baroque to contemporary.", "现在完成时"),
         Triple("民族音乐学研究不同文化音乐传统和音乐作为文化实践。", "Ethnomusicology studies different cultural musical traditions and music as cultural practice.", "现在时"),
@@ -3782,9 +3782,9 @@ object SentenceData {
         Triple("音乐科技和人工智能正在开拓音乐创作和体验新前沿。", "Music technology and artificial intelligence are opening up new frontiers in music creation and experience.", "现在进行时"),
         Triple("音乐批评和理论实践帮助理解音乐作品深度和复杂性。", "Music criticism and theoretical practice help understand the depth and complexity of musical works.", "现在时"),
         Triple("音乐最终是时间艺术以声音为媒介表达人类深层情感和思想。", "Music is ultimately a temporal art that expresses deep human emotions and thoughts through the medium of sound.", "现在时"),
-    )
+    ) }
 
-    val c2_futurology = listOf(
+    val c2_futurology  by lazy { listOf(
         Triple("未来学作为跨学科领域研究长期的未来趋势和可能性。", "Futurology as an interdisciplinary field studies long-term future trends and possibilities.", "现在时"),
         Triple("技术预测方法包括德尔菲法、情景规划和交叉影响分析。", "Technology forecasting methods include Delphi method, scenario planning, and cross-impact analysis.", "现在时"),
         Triple("未来思考需要平衡趋势外推、系统变革和根本不确定性。", "Futures thinking needs to balance trend extrapolation, systemic change, and radical uncertainty.", "动名词"),
@@ -3805,7 +3805,7 @@ object SentenceData {
         Triple("未来责任要求我们现在的决策考虑后代需要和权利。", "Futures responsibility requires that our current decisions consider the needs and rights of future generations.", "现在时"),
         Triple("未来希望保持开放、批判性、责任和创造力之间的平衡。", "Futures hope maintains balance between openness, criticality, responsibility, and creativity.", "现在时"),
         Triple("未来学最终关于选择什么样的未来我们希望创造和如何共同实现它。", "Futurology is ultimately about choosing what kind of future we want to create and how to achieve it together.", "现在时"),
-    )
+    ) }
 
     fun generateAllSentences(): List<SentenceEntity> {
         val all = mutableListOf<SentenceEntity>()
