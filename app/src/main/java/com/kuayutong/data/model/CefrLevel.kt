@@ -16,12 +16,11 @@ enum class CefrLevel(
     B2_BASIC("初级B2", 7, R.drawable.ic_level_b2_basic),
     B2_ADVANCED("高级B2", 8, R.drawable.ic_level_b2_advanced),
     C1("C1", 9, R.drawable.ic_level_c1),
-    C2("C2", 10, R.drawable.ic_level_c2);
-    // NCE levels temporarily disabled - data not ready (901/3600 sentences)
-    // NCE1("新概念1", 11, R.mipmap.ic_level_nce1),
-    // NCE2("新概念2", 12, R.mipmap.ic_level_nce2),
-    // NCE3("新概念3", 13, R.mipmap.ic_level_nce3),
-    // NCE4("新概念4", 14, R.mipmap.ic_level_nce4);
+    C2("C2", 10, R.drawable.ic_level_c2),
+    NCE1("新概念1", 11, R.mipmap.ic_level_nce1),
+    NCE2("新概念2", 12, R.mipmap.ic_level_nce2),
+    NCE3("新概念3", 13, R.mipmap.ic_level_nce3),
+    NCE4("新概念4", 14, R.mipmap.ic_level_nce4);
 
     companion object {
         fun getAllLevels(): List<CefrLevel> = entries.sortedBy { it.order }

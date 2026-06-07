@@ -36,6 +36,8 @@ object TtsManager {
                     Log.e(TAG, "American English not supported, falling back to default")
                     textToSpeech?.language = Locale.ENGLISH
                 }
+                textToSpeech?.setSpeechRate(0.85f) // Slightly slower for clearer pronunciation
+                textToSpeech?.setPitch(1.0f)
                 isInitialized = true
                 Log.d(TAG, "TTS initialized successfully")
                 onInitialized?.invoke()
@@ -62,24 +64,27 @@ object TtsManager {
             // Queue for later
             pendingText = text
             pendingCallback = onDone
+            Log.w(TAG, "TTS not initialized, queuing text: $text")
             return
         }
         
         textToSpeech?.stop()
-        textToSpeech?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "TTS_${System.currentTimeMillis()}")
         
-        // Note: onDone callback is not reliably called with QUEUE_FLUSH
-        // For reliable callback, use UtteranceProgressListener with QUEUE_ADD
+        // Set up callback listener before speaking to avoid double-speak
         if (onDone != null) {
             textToSpeech?.setOnUtteranceProgressListener(object : UtteranceProgressListener() {
                 override fun onStart(utteranceId: String?) {}
                 override fun onDone(utteranceId: String?) {
                     onDone()
                 }
-                override fun onError(utteranceId: String?) {}
+                @Deprecated("Deprecated in Java")
+                override fun onError(utteranceId: String?) {
+                    Log.e(TAG, "TTS error on utterance: $utteranceId")
+                }
             })
-            textToSpeech?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "TTS_${System.currentTimeMillis()}")
         }
+        
+        textToSpeech?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "TTS_${System.currentTimeMillis()}")
     }
     
     /**

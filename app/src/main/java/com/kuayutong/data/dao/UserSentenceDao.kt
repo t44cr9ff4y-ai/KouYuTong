@@ -16,6 +16,7 @@ interface UserSentenceDao {
     @Query("""
         SELECT * FROM user_sentences 
         WHERE level = :level 
+          AND nextReviewDate > 0
           AND nextReviewDate <= :todayMillis 
         ORDER BY nextReviewDate ASC 
         LIMIT :limit

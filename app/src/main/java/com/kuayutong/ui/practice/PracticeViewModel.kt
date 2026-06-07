@@ -191,29 +191,35 @@ class PracticeViewModel : ViewModel() {
         val consecutiveCorrect = sentenceConsecutiveCorrect.getOrDefault(sentenceId, 0) + 1
         sentenceConsecutiveCorrect[sentenceId] = consecutiveCorrect
 
-        // Save to database
-        viewModelScope.launch {
-            database.userSentenceDao().insertUserSentence(
-                UserSentenceEntity(
-                    sentenceId = sentenceId,
-                    level = currentLevel,
-                    isCorrect = true,
-                    attempts = wrongAttempts + 1,
-                    translatedAt = System.currentTimeMillis(),
-                    userAnswer = "", // Will be filled by caller
-                    lastQuality = 3 // Default quality for practice mode
-                )
-            )
-        }
-
         if (consecutiveCorrect >= 2) {
-            // Mastered for today, move to next sentence
+            // Mastered for today! Insert to DB with SM-2 scheduling
+            // "不背单词" style: first review on the SAME DAY (4 hours later)
+            val firstReviewDate = System.currentTimeMillis() + (4 * 60 * 60 * 1000L) // +4 hours
+            viewModelScope.launch {
+                database.userSentenceDao().insertUserSentence(
+                    UserSentenceEntity(
+                        sentenceId = sentenceId,
+                        level = currentLevel,
+                        isCorrect = true,
+                        attempts = wrongAttempts + 1,
+                        translatedAt = System.currentTimeMillis(),
+                        userAnswer = "",
+                        easeFactor = 2.5f,
+                        interval = 0,
+                        repetition = 0,
+                        nextReviewDate = firstReviewDate,
+                        lastReviewDate = System.currentTimeMillis(),
+                        isLearnedToday = true,
+                        lastQuality = 4 // Good response
+                    )
+                )
+            }
             practiceCompletedCount++
             sentenceConsecutiveCorrect[sentenceId] = 0 // Reset for potential future reviews
             updatePracticeProgress()
             moveToNextPracticeSentence()
         } else {
-            // Need one more correct answer, stay on this sentence
+            // Need one more correct answer to confirm mastery
             _resultMessage.postValue("正确！再试一次确认掌握")
         }
     }
@@ -391,7 +397,7 @@ class PracticeViewModel : ViewModel() {
 
         val functionWords = setOf("the", "a", "an", "is", "are", "was", "were", "be",
             "been", "has", "have", "had", "do", "does", "did", "will", "would",
-            "shall", "should", "can", "could", "may", "might", "must", "of", "in ",
+            "shall", "should", "can", "could", "may", "might", "must", "of", "in",
             "on", "at", "to", "for", "with", "by", "from", "my", "your", "his")
 
         val userContent = userWords.filter { it !in functionWords && it.length > 2 }

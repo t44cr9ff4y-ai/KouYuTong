@@ -173,7 +173,11 @@ class PracticeFragment : Fragment() {
             "初级B2" to "B2_BASIC",
             "高级B2" to "B2_ADVANCED",
             "C1" to "C1",
-            "C2" to "C2"
+            "C2" to "C2",
+            "新概念1" to "NCE1",
+            "新概念2" to "NCE2",
+            "新概念3" to "NCE3",
+            "新概念4" to "NCE4"
         )
 
         val levelNames = levels.map { it.first }.toTypedArray()
