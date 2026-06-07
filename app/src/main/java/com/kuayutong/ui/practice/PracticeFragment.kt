@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.kuayutong.R
 import com.kuayutong.databinding.FragmentPracticeBinding
+import com.kuayutong.util.TtsManager
 
 class PracticeFragment : Fragment() {
 
@@ -50,12 +51,15 @@ class PracticeFragment : Fragment() {
             if (message.isNotEmpty()) {
                 binding.tvResult.text = message
                 binding.tvResult.visibility = View.VISIBLE
-                binding.tvResult.setTextColor(
-                    if (message == "正确！")
-                        resources.getColor(R.color.success, null)
-                    else
-                        resources.getColor(R.color.error, null)
-                )
+                if (message == "正确！") {
+                    binding.tvResult.setTextColor(resources.getColor(R.color.success, null))
+                    // Play TTS on correct answer
+                    viewModel.currentSentence.value?.let { sentence ->
+                        TtsManager.speak(sentence.englishAnswer)
+                    }
+                } else {
+                    binding.tvResult.setTextColor(resources.getColor(R.color.error, null))
+                }
             } else {
                 binding.tvResult.visibility = View.GONE
             }
@@ -69,6 +73,10 @@ class PracticeFragment : Fragment() {
             if (hint.isNotEmpty()) {
                 binding.tvResult.text = hint
                 binding.tvResult.setTextColor(resources.getColor(R.color.warning, null))
+                // Play TTS when hint is shown (after 2 wrong attempts)
+                viewModel.currentSentence.value?.let { sentence ->
+                    TtsManager.speak(sentence.englishAnswer)
+                }
             }
         }
 
@@ -130,6 +138,7 @@ class PracticeFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        TtsManager.stop()
         _binding = null
     }
 }

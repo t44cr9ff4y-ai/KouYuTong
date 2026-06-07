@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.room.Room
 import com.kuayutong.data.AppDatabase
 import com.kuayutong.data.seed.SentenceSeeder
+import com.kuayutong.util.TtsManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -25,6 +26,9 @@ class KouYuTongApplication : Application() {
         ).addMigrations(AppDatabase.MIGRATION_1_2)
             .fallbackToDestructiveMigration()
             .build()
+
+        // Initialize TTS for American English pronunciation
+        TtsManager.init(this)
 
         // Seed database on first launch
         CoroutineScope(Dispatchers.IO).launch {
