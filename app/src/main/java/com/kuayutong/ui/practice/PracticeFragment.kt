@@ -5,10 +5,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.LinearLayout
+import android.widget.Spinner
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.kuayutong.R
 import com.kuayutong.databinding.FragmentPracticeBinding
+import com.kuayutong.util.PracticeSettings
 import com.kuayutong.util.TtsManager
 
 class PracticeFragment : Fragment() {
@@ -32,6 +38,12 @@ class PracticeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        
+        // Apply saved settings to ViewModel
+        val practiceLimit = PracticeSettings.getDailyPracticeLimit(requireContext())
+        val reviewLimit = PracticeSettings.getDailyReviewLimit(requireContext())
+        viewModel.setDailyLimits(practiceLimit, reviewLimit)
+        
         setupObservers()
         setupListeners()
         viewModel.loadSentencesByLevel(selectedLevelCode)
@@ -146,7 +158,7 @@ class PracticeFragment : Fragment() {
 
         // Settings button
         binding.btnSettings.setOnClickListener {
-            // TODO: open settings fragment/dialog
+            showSettingsDialog()
         }
     }
 
@@ -173,6 +185,82 @@ class PracticeFragment : Fragment() {
                 binding.btnLevelSelector.text = "等级: ${levels[which].first}"
                 viewModel.loadSentencesByLevel(selectedLevelCode)
             }
+            .show()
+    }
+
+    private fun showSettingsDialog() {
+        val context = requireContext()
+        val currentPractice = PracticeSettings.getDailyPracticeLimit(context)
+        val currentReview = PracticeSettings.getDailyReviewLimit(context)
+        
+        // Build practice options: 10, 20, 30, ..., 100
+        val practiceOptions = (PracticeSettings.MIN_PRACTICE_LIMIT..PracticeSettings.MAX_PRACTICE_LIMIT step PracticeSettings.PRACTICE_STEP).toList()
+        val reviewOptions = (PracticeSettings.MIN_REVIEW_LIMIT..PracticeSettings.MAX_REVIEW_LIMIT step PracticeSettings.REVIEW_STEP).toList()
+        
+        val layout = LinearLayout(context).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(50, 20, 50, 20)
+        }
+        
+        // Practice limit label
+        layout.addView(TextView(context).apply {
+            text = "每日学习新句数量（1-100，每10句一档）："
+            textSize = 14f
+            setPadding(0, 0, 0, 8)
+        })
+        
+        // Practice limit spinner
+        val practiceSpinner = Spinner(context).apply {
+            val adapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, 
+                practiceOptions.map { "${it}句" })
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            setAdapter(adapter)
+            setSelection(practiceOptions.indexOf(currentPractice).coerceAtLeast(0))
+        }
+        layout.addView(practiceSpinner)
+        
+        // Spacer
+        layout.addView(View(context).apply {
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, 24)
+        })
+        
+        // Review limit label
+        layout.addView(TextView(context).apply {
+            text = "每日复习旧句数量（1-200，每20句一档）："
+            textSize = 14f
+            setPadding(0, 0, 0, 8)
+        })
+        
+        // Review limit spinner
+        val reviewSpinner = Spinner(context).apply {
+            val adapter = ArrayAdapter(context, android.R.layout.simple_spinner_item,
+                reviewOptions.map { "${it}句" })
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            setAdapter(adapter)
+            setSelection(reviewOptions.indexOf(currentReview).coerceAtLeast(0))
+        }
+        layout.addView(reviewSpinner)
+        
+        AlertDialog.Builder(context)
+            .setTitle("练习设置")
+            .setView(layout)
+            .setPositiveButton("保存") { _, _ ->
+                val newPractice = practiceOptions[practiceSpinner.selectedItemPosition]
+                val newReview = reviewOptions[reviewSpinner.selectedItemPosition]
+                
+                PracticeSettings.setDailyPracticeLimit(context, newPractice)
+                PracticeSettings.setDailyReviewLimit(context, newReview)
+                viewModel.setDailyLimits(newPractice, newReview)
+                
+                // Reload with new limits
+                when (viewModel.currentMode.value) {
+                    PracticeMode.MODE_PRACTICE -> viewModel.switchMode(PracticeMode.MODE_PRACTICE)
+                    PracticeMode.MODE_REVIEW -> viewModel.switchMode(PracticeMode.MODE_REVIEW)
+                    else -> {}
+                }
+            }
+            .setNegativeButton("取消", null)
             .show()
     }
 
